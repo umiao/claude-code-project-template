@@ -34,7 +34,7 @@ def main(hook_input: dict) -> None:
         print("[TEST GUARD] Tests timed out after 120s", file=sys.stderr)
         sys.exit(2)
 
-    if result.returncode != 0:
+    if result.returncode not in (0, 5):  # 0 = pass, 5 = no tests collected
         # Show last 30 lines of output to keep it concise
         output_lines = (result.stdout + result.stderr).strip().splitlines()
         summary = "\n".join(output_lines[-30:])
