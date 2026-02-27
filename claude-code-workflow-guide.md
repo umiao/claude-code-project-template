@@ -10,7 +10,7 @@ with Claude Code. Based on patterns developed across real production projects.
 1. [Architecture Overview](#1-architecture-overview)
 2. [Enforcing Code Quality](#2-enforcing-code-quality)
 3. [Extended Thinking & Reflection](#3-extended-thinking--reflection)
-4. [Human-Machine Communication](#4-human-machine-communication)
+4. [Human-AI Cooperation: Structured Handoff](#4-human-ai-cooperation-structured-handoff)
 5. [Self-Learning Loops](#5-self-learning-loops)
 6. [Autonomous Multi-Session Execution](#6-autonomous-multi-session-execution)
 7. [Session Continuity](#7-session-continuity)
@@ -280,7 +280,35 @@ a separate context.
 
 ---
 
-## 4. Human-Machine Communication
+## 4. Human-AI Cooperation: Structured Handoff
+
+### Design Principle
+
+This section describes the **Structured Handoff** paradigm: a named, repeatable
+pattern for tasks that require human input before the AI can proceed. The core
+principle is that the AI never wastes a session on uncompletable work, and the
+human always knows exactly what is needed and where to put it. Both sides have
+clear responsibilities and a machine-enforced protocol connecting them.
+
+### Four-Step Lifecycle
+
+Every NEEDS-INPUT task moves through four stages:
+
+```
+ 1. TAG               2. GUIDE             3. VALIDATE          4. UNBLOCK
+ Developer adds       /collect-input       input-reviewer       /collect-input
+ [NEEDS-INPUT]        guides human         agent runs           unblock <task-id>
+ tag in TASKS.md  --> through the      --> task-specific     --> removes tag,
+                      per-task spec        checks on files       task is ready
+                      (requirements,       ([PASS]/[FAIL]/
+                      templates,           [WARN] verdicts)
+                      examples)
+```
+
+The tag is the contract. The guide makes the contract actionable. The validator
+ensures quality. The unblock is the handshake that releases the task back to
+the AI. No step can be skipped -- premature unblocking (step 4 without step 3)
+is an anti-pattern caught by the input-reviewer agent.
 
 ### The NEEDS-INPUT Protocol
 
@@ -336,6 +364,65 @@ The SessionStart hook includes an `[INPUT]` line in its output:
 
 This gives Claude immediate visibility into which tasks require human action, preventing
 wasted time on tasks that can't proceed.
+
+### Multi-Project Blocking Awareness
+
+When running autonomous mode across multiple projects, each project maintains its
+own `session_state.json` with a `skipped_tasks` array. Tasks skipped due to
+NEEDS-INPUT are recorded with their reason. To triage human effort across all
+projects at once, aggregate the skip records:
+
+```bash
+# Aggregate NEEDS-INPUT skips across all projects
+for f in ~/projects/*/.claude/session_state.json; do
+  python3 -c "
+import json, sys, os
+state = json.load(open(sys.argv[1], encoding='utf-8'))
+proj = os.path.basename(os.path.dirname(os.path.dirname(sys.argv[1])))
+for s in state.get('skipped_tasks', []):
+    if 'NEEDS-INPUT' in s.get('reason', ''):
+        print(f'  {proj}: {s[\"task\"]} -- {s[\"reason\"]}')
+" "$f"
+done
+```
+
+The principle: **AI tags, skips, and surfaces -- human triages across projects,
+provides input, unblocks, and resumes.** The AI never blocks waiting for human
+action; the human never has to guess what the AI needs. The protocol makes both
+sides' obligations explicit and machine-verifiable.
+
+### Best Practices
+
+- **One spec file per task**: Each NEEDS-INPUT task should have its own file in
+  `docs/human_input/` (e.g., `T-P1-3_jd_fixtures.md`) with exact requirements,
+  file format, minimum count, and content criteria.
+- **Machine-checkable validation rules**: Every spec should define checks that the
+  input-reviewer agent can run automatically (file count, minimum length, required
+  patterns, format compliance). Vague criteria like "good quality" are not actionable.
+- **Include an example file**: Place a `_example.txt` or `*.example` at the target
+  location so the human has a concrete reference, not just a description.
+- **Reference spec from TASKS.md**: The `[NEEDS-INPUT: ...]` tag in TASKS.md should
+  name both the deliverable and the spec file, e.g.,
+  `[NEEDS-INPUT: 3-5 JD files in tests/fixtures/jd/ -- see docs/human_input/T-P1-3_jd_fixtures.md]`
+- **Keep the master checklist current**: `docs/human_input/README.md` should list all
+  NEEDS-INPUT tasks with `[ ]`/`[x]` status so both human and SessionStart hook can
+  parse it at a glance.
+
+### Anti-Patterns
+
+- **Silent skip**: Autonomous mode skips a NEEDS-INPUT task but does not record it
+  in `session_state.json` or surface it via `[INPUT]`. The human never learns the
+  task is blocked. Fix: always log skips and always show the `[INPUT]` line.
+- **Premature unblock**: Running `/collect-input unblock` before validation passes.
+  The task appears unblocked but fails immediately when the AI attempts it. Fix:
+  the unblock step must require a passing validation run.
+- **Vague specs**: A spec that says "provide some test data" without file count,
+  format, content criteria, or an example. The human guesses, provides wrong input,
+  validation fails, time is wasted. Fix: every spec must be machine-checkable.
+- **Over-blocking**: Tagging a task as NEEDS-INPUT when the AI could generate
+  reasonable defaults or synthetic data. Only tag when the input genuinely requires
+  human judgment or access (real credentials, domain-specific examples, subjective
+  preferences). Fix: before tagging, ask "can the AI produce a reasonable default?"
 
 ---
 

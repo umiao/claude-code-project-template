@@ -124,6 +124,42 @@ See `docs/workflow/autonomous.md` for the full ruleset.
 
 ---
 
+## Human-AI Cooperation: Structured Handoff
+
+**Design principle:** Tasks needing human input are explicitly tagged, validated
+before unblocking, and surfaced proactively -- never silently skipped.
+
+The system uses a four-step lifecycle for any task that cannot proceed without
+human-provided artifacts (fixture files, configuration preferences, credentials setup):
+
+```
+TAG                GUIDE              VALIDATE           UNBLOCK
+TASKS.md adds      /collect-input     input-reviewer     /collect-input
+[NEEDS-INPUT]  --> guides human   --> agent checks    --> unblock <id>
+               --> through spec   --> files meet spec --> removes tag
+```
+
+**In autonomous mode**, the orchestrator skips NEEDS-INPUT tasks and records
+them in `session_state.json` under `skipped_tasks`. The SessionStart hook
+surfaces them in an `[INPUT]` line so neither Claude nor the user loses track.
+
+**Across multiple projects**, each project's `session_state.json` records its
+own NEEDS-INPUT skips. Aggregate them to triage human effort across projects:
+
+```bash
+# Show all NEEDS-INPUT skips across projects
+for f in ~/projects/*/.claude/session_state.json; do
+  python3 -c "import json,sys; d=json.load(open(sys.argv[1],encoding='utf-8')); \
+    [print(f'{sys.argv[1]}: {s[\"task\"]} -- {s[\"reason\"]}') \
+     for s in d.get('skipped_tasks',[]) if 'NEEDS-INPUT' in s.get('reason','')]" "$f"
+done
+```
+
+For full details on the NEEDS-INPUT protocol, /collect-input skill, and validation
+infrastructure, see [Section 4 of the workflow guide](claude-code-workflow-guide.md#4-human-ai-cooperation-structured-handoff).
+
+---
+
 ## File Map
 
 | Path | Purpose |
