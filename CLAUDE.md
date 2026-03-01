@@ -50,6 +50,14 @@
 - **Fix violations immediately**: When a check you run (lint, emoji scan, tests) discovers
   violations in project files, fix them immediately.
 
+### Task Planning Mode
+When the user says "plan tasks" / "edit TASKS.md only" / contains keyword "TASKS.md":
+- **ONLY** read code and edit TASKS.md (add/reorder/restructure tasks, set dependencies)
+- Do **NOT** execute any task, write code, create files, or run tests
+- Do **NOT** use TaskCreate/TaskUpdate/TaskList tools (session-only, not persistent)
+- Write clear task specs with acceptance criteria, complexity, and dependencies
+- End by summarizing what changed in TASKS.md
+
 ## Hook Development Rules
 - **Never use bare `json.load(sys.stdin)`** -- always use `hook_utils.safe_read_stdin()`
 - **Hooks must never crash** -- infrastructure errors must exit 0, never a raw traceback
