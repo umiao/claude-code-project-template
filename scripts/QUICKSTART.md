@@ -25,7 +25,16 @@ source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
 
-### 3. Customize CLAUDE.md
+### 3. Install git hooks
+
+```bash
+bash scripts/setup-hooks.sh
+```
+
+This installs a pre-commit hook that enforces ruff version parity with
+`requirements.txt`, runs lint on staged Python files, and scans for emoji.
+
+### 4. Customize CLAUDE.md
 
 Open `CLAUDE.md` and update all `<!-- CUSTOMIZE -->` sections:
 - Project overview and tech stack
@@ -33,19 +42,19 @@ Open `CLAUDE.md` and update all `<!-- CUSTOMIZE -->` sections:
 - Project-specific invariants
 - Prohibited actions
 
-### 4. Set up your task backlog
+### 5. Set up your task backlog
 
 Edit `TASKS.md` to replace the example tasks with your actual tasks.
 Follow the existing format for priorities, complexity, and acceptance criteria.
 
-### 5. Customize hooks (optional)
+### 6. Customize hooks (optional)
 
 - **`file_watch_warn.py`**: Update `WATCHED_PATHS` with your critical file paths
 - **`lint_check.py`**: Update `LINT_COMMAND` and `LINT_PATHS` if not using ruff
 - **`test_check.py`**: Update `TEST_COMMAND` and `TEST_PATHS` if not using pytest
 - **`input-reviewer.md`**: Add task-specific validation checks
 
-### 6. Verify hooks work
+### 7. Verify hooks work
 
 ```bash
 # Start a Claude Code session -- the SessionStart hook should fire

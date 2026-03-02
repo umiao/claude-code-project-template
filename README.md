@@ -191,14 +191,17 @@ See `scripts/QUICKSTART.md` for the full setup guide. The essentials:
 git clone <this-repo> my-project && cd my-project
 pip install -r requirements.txt
 
-# 2. Customize for your project
+# 2. Install git hooks
+bash scripts/setup-hooks.sh
+
+# 3. Customize for your project
 #    Edit CLAUDE.md -- set your project overview, tech stack, and invariants
 #    Edit TASKS.md  -- replace example tasks with your backlog
 
-# 3. Run interactively
+# 4. Run interactively
 claude
 
-# 4. Run autonomously (loops until tasks are done)
+# 5. Run autonomously (loops until tasks are done)
 bash scripts/autonomous_run.sh
 ```
 

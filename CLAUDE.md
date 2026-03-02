@@ -22,6 +22,7 @@
 - `tests/` - Test files
 - `config/` - Configuration files
 - `data/` - Runtime data (not in git)
+- `scripts/git-hooks/` - Git hook sources (installed via `scripts/setup-hooks.sh`)
 
 ## Invariants (must always hold, violation = bug)
 <!-- CUSTOMIZE: List your project's invariants. These are checked by /review -->

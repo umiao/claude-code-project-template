@@ -51,3 +51,5 @@ T-P0-2 (Depends on T-P0-1)
 
 ## Completed Tasks
 <!-- Move finished tasks here with [x] and completion date -->
+
+- [x] **2026-03-02** -- Git pre-commit hook for ruff version consistency: pinned ruff==0.1.14, fixed CI lint job, created pre-commit hook (version guard + lint + emoji scan), created setup-hooks.sh installer, updated docs.
