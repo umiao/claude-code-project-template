@@ -98,7 +98,7 @@ Before stopping, complete these steps (the **Stop hook** enforces them):
 
 1. **Verify**: Run code, check outputs exist, run tests if applicable
 2. **PROGRESS.md**: Append a session entry (format below)
-3. **TASKS.md**: Update task status
+3. **TASKS.md**: Update task status (done = remove spec from active section AND add to Completed)
 4. **LESSONS.md**: Only if bug >10 min, surprising behavior, or effective pattern
 
 ```
@@ -107,7 +107,7 @@ Before stopping, complete these steps (the **Stop hook** enforces them):
 - **Deliverables**: Files created/modified
 - **Sanity check result**: What was verified
 - **Status**: [DONE] / [PARTIAL] (what remains) / [BLOCKED] (why)
-- **Request**: Cross off TASK-XXX / No change
+- **Request**: Move TASK-XXX to Completed / No change
 ```
 
 Full protocol details: `docs/workflow/exit-protocol.md`

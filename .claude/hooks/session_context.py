@@ -101,6 +101,16 @@ def _summarize_task_oneline(task_block: str) -> str:
     return " ".join(parts)
 
 
+def _get_completed_task_ids(content: str) -> set[str]:
+    """Extract task IDs from the Completed Tasks section for dedup filtering."""
+    section_match = re.search(
+        r"## Completed Tasks\s*\n(.*?)(?=\n## |\Z)", content, re.DOTALL
+    )
+    if not section_match:
+        return set()
+    return set(re.findall(r"(T-\S+)(?=:)", section_match.group(1)))
+
+
 def _get_active_tasks(root: Path, current_task_id: str | None) -> str:
     """Extract tasks from TASKS.md with two-tier detail.
 
@@ -112,6 +122,7 @@ def _get_active_tasks(root: Path, current_task_id: str | None) -> str:
         return "No TASKS.md found."
 
     content = tasks_file.read_text(encoding="utf-8")
+    completed_ids = _get_completed_task_ids(content)
     sections: list[str] = []
 
     # Extract section content for In Progress, Active Tasks, Blocked
@@ -140,6 +151,9 @@ def _get_active_tasks(root: Path, current_task_id: str | None) -> str:
             # Check if this is the current task
             task_id_match = re.match(r"####\s+(T-\S+):", block)
             task_id = task_id_match.group(1) if task_id_match else None
+
+            if task_id and task_id in completed_ids:
+                continue
 
             if current_task_id and task_id == current_task_id:
                 # FULL details for current task
