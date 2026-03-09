@@ -41,3 +41,10 @@
 - **Sanity check result**: `hexo clean && hexo g` zero errors, 352 files generated, 90 post HTML files (matches baseline). 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P0-2 to Completed
+
+## 2026-03-09 -- [T-P0-3] Rendering Compatibility Audit
+- **What I did**: Audited hexo-renderer-marked compatibility with NexT theme. Verified all 5 required posts: images (asset_img renders correctly), TOC (headers generated for client-side TOC), code blocks (highlight sql classes present), mermaid (NexT built-in support working). Found critical bug: MathJax disabled on all pages because `every_page: false` + no posts had `mathjax: true` in front matter. Fixed by setting `every_page: true` in `_config.next.yml` (32/47 posts use math). No renderer switch needed.
+- **Deliverables**: Modified `_config.next.yml` (math.every_page: false -> true).
+- **Sanity check result**: `hexo clean && hexo g` zero errors, 352 files, 90 post HTML files (matches baseline). `enableMath: true` confirmed in generated HTML. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P0-3 to Completed

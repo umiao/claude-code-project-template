@@ -116,7 +116,7 @@ back2top:
 # Math Formulas Render Support
 # ---------------------------------------------------------------
 math:
-  every_page: false
+  every_page: true
   mathjax:
     enable: true
     tags: ams

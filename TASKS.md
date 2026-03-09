@@ -10,31 +10,6 @@
 
 ### P0 -- Must Have (core functionality)
 
-#### T-P0-3: Rendering Compatibility Audit
-- **Priority**: P0
-- **Complexity**: M (1 session)
-- **Depends on**: T-P0-2
-- **Acceptance Criteria**:
-  - [ ] Evaluate markdown renderer: test if `hexo-renderer-marked` works with NexT TOC/mermaid, or switch to `hexo-renderer-markdown-it`
-  - [ ] If switching renderer: `npm install hexo-renderer-markdown-it && npm uninstall hexo-renderer-marked`, then verify all 47 posts build without error
-  - [ ] Post list diff: `find public -name "*.html" -path "*/20*" | sort` matches baseline (same post count)
-  - [ ] Spot-check 5 posts via `hexo s`, for EACH verify:
-    - Images load (no 404) -- check posts with `{% asset_img %}` tags
-    - TOC generates in sidebar
-    - Code blocks have syntax highlighting
-    - Math formulas render correctly (check DS/DDIA posts)
-    - Page layout is normal (no overflow, no broken sidebar)
-  - [ ] Specific posts to check:
-    - `Designing-Data-Intensive-Applications-Note-17` (longest DDIA, images + possible math)
-    - `Designing-Data-Intensive-Applications-Note-10` (images)
-    - `SQL-Study-Note-1` (code blocks)
-    - `DS-Study-Note-9` (formulas)
-    - Any post with mermaid diagrams
-  - [ ] Fix any rendering issues found
-- **Files**: `package.json` (if renderer changed), `_config.next.yml` (highlight adjustments)
-
----
-
 #### T-P0-4: First Deployment -- Theme Only
 - **Priority**: P0
 - **Complexity**: S (< 30 min)
@@ -249,3 +224,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-02** -- Git pre-commit hook for ruff version consistency: pinned ruff==0.1.14, fixed CI lint job, created pre-commit hook (version guard + lint + emoji scan), created setup-hooks.sh installer, updated docs.
 - [x] **2026-03-09** -- T-P0-1: Backup + Baseline Build: created blog-refactor branch, fixed Hexo scripts/ conflict by renaming to tools/, baseline build succeeds (90 post HTML files, zero errors), rollback verified.
 - [x] **2026-03-09** -- T-P0-2: Install NexT Theme: installed hexo-theme-next, created _config.next.yml (Gemini, TOC, reading progress, local search, mermaid, MathJax, code copy, social links, androidstudio highlight), switched theme to next, 90 post HTML files generated.
+- [x] **2026-03-09** -- T-P0-3: Rendering Compatibility Audit: hexo-renderer-marked works with NexT (no switch needed). Fixed MathJax not loading (every_page: false -> true, since 32/47 posts use math). Verified images, TOC, code highlighting, mermaid across 5 posts. 90 post HTML files match baseline.
