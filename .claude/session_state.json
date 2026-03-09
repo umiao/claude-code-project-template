@@ -1,9 +1,16 @@
 {
   "mode": "autonomous",
   "current_task": null,
-  "last_completed": "T-P0-2",
+  "last_completed": "T-P0-3",
   "last_completed_at": "2026-03-09",
-  "completed_this_session": ["T-P0-2"],
-  "all_done": false,
-  "attempt_count": {}
+  "completed_this_session": [],
+  "skipped_tasks": [
+    {
+      "task": "T-P0-4",
+      "reason": "Deployment to live public site (umiao.github.io) requires user confirmation. Build verified and ready.",
+      "attempts": 1
+    }
+  ],
+  "all_done": true,
+  "all_done_reason": "All remaining tasks blocked by T-P0-4 (First Deploy), which requires user action. User must run `cd blog_proj && hexo clean && hexo g && hexo d` to unblock."
 }

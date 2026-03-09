@@ -31,7 +31,10 @@
       "WebFetch(domain:www.teamblind.com)",
       "WebFetch(domain:jobs.apple.com)",
       "WebFetch(domain:careers.linkedin.com)",
-      "WebFetch(domain:gcsservices.careers.microsoft.com)"
+      "WebFetch(domain:gcsservices.careers.microsoft.com)",
+      "Bash(wc:*)",
+      "Bash(find:*)",
+      "Bash(head:*)"
     ]
   }
 }

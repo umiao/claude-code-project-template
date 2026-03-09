@@ -48,3 +48,10 @@
 - **Sanity check result**: `hexo clean && hexo g` zero errors, 352 files, 90 post HTML files (matches baseline). `enableMath: true` confirmed in generated HTML. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P0-3 to Completed
+
+## 2026-03-09 -- [T-P0-4] First Deployment -- Theme Only
+- **What I did**: Verified build is ready for deployment. `hexo clean && hexo g` produces 352 files, 90 post HTML files, NexT v8.27.0 Gemini scheme confirmed in output, MathJax enabled, zero errors. hexo-deployer-git v3.0.0 installed, deploy config points to umiao.github.io master branch. All 11 tests pass. Cannot execute `hexo d` autonomously -- deploying to a live public site requires user confirmation.
+- **Deliverables**: None (build verification only). TASKS.md updated with blocked status.
+- **Sanity check result**: Build verified: 352 files, 90 posts, NexT theme confirmed, MathJax enabled. 11/11 pytest pass.
+- **Status**: [BLOCKED] Deployment to live public site (umiao.github.io) requires user action. User should run `cd blog_proj && hexo clean && hexo g && hexo d` to deploy, then spot-check the live site.
+- **Request**: No change (T-P0-4 remains Active but marked Blocked)

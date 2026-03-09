@@ -216,6 +216,7 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 
 ## Blocked
 <!-- Tasks that can't proceed and why -->
+- T-P0-4 (First Deploy): [NEEDS-USER-ACTION: `hexo d` deploys to live public site umiao.github.io. Build verified (352 files, 90 posts, NexT Gemini, MathJax enabled, zero errors). User must run `hexo d` manually or confirm autonomous deployment.]
 - T-P2-3 (About Page): [NEEDS-INPUT: user to provide current role/bio details]
 
 ## Completed Tasks
