@@ -1,44 +1,25 @@
-# Environment and secrets
-.env
-.env.*
-*.cookie
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-venv/
-*.egg-info/
-.eggs/
-dist/
-build/
-
-# Data (runtime data not tracked)
-data/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-.mypy_cache/
-.ruff_cache/
-
-# Claude autonomous mode state (ephemeral, per-session)
-.claude/session_state.json
-.claude/checkpoint.json
-.claude/last_*_pass
-.claude/autonomous.lock
-
-# Misc
+db.json
 *.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+
+# IDE
+.idea/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Claude session artifacts
+.claude/autonomous.lock
+.claude/last_lint_pass
+.claude/last_task_dedup_pass
+.claude/last_test_pass
+.claude/hooks/__pycache__/
+
+# Theme (has its own git repo)
+themes/yilia/

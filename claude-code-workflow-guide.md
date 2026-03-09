@@ -910,7 +910,7 @@ your-project/
   docs/
     workflow/            # Extended documentation
     human_input/         # Input collection specs
-  scripts/
+  tools/
     autonomous_run.sh    # Orchestrator
 ```
 
@@ -923,7 +923,7 @@ your-project/
 | `/e2e-test` | Run full test suite with analysis |
 | `/improve` | Scan for quality improvements |
 | `/collect-input status` | Check human input task status |
-| `bash scripts/autonomous_run.sh 10` | Run 10 autonomous sessions |
+| `bash tools/autonomous_run.sh 10` | Run 10 autonomous sessions |
 
 ### Hook Quick Reference
 

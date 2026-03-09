@@ -6,7 +6,7 @@
 ## One Task Per Session
 Each session works on **exactly one task** from TASKS.md. Pick the highest-priority
 unblocked task, complete it, then **stop**. The external orchestrator
-(`scripts/autonomous_run.sh`) handles launching the next session with fresh context.
+(`tools/autonomous_run.sh`) handles launching the next session with fresh context.
 
 ## Git Commit Per Task
 After completing the task (all acceptance criteria met, tests pass, ruff clean):

@@ -27,3 +27,10 @@
 - **Sanity check result**: ruff clean, emoji scan clean, 11/11 pytest pass, setup-hooks.sh installs successfully, version extraction tested.
 - **Status**: [DONE]
 - **Request**: No change
+
+## 2026-03-09 -- [T-P0-1] Backup + Baseline Build
+- **What I did**: Created blog-refactor branch. Fixed Hexo/scripts conflict by renaming `scripts/` to `tools/` (Hexo loads all files in `scripts/` as Node plugins). Updated all references across 10+ files. Ran `hexo clean && hexo g` -- zero errors, 90 post HTML files generated. Saved baseline post list to `baseline-posts.txt`. Verified branch switching (main and back) works.
+- **Deliverables**: New branch `blog-refactor`. Renamed `scripts/` -> `tools/`. Updated references in CLAUDE.md, README.md, TASKS.md, ci.yml, autonomous.md, claude-code-workflow-guide.md, and all files within tools/. Created `baseline-posts.txt`.
+- **Sanity check result**: hexo generate zero errors, 11/11 pytest pass, branch rollback verified.
+- **Status**: [DONE]
+- **Request**: Move T-P0-1 to Completed

@@ -22,7 +22,7 @@
 - `tests/` - Test files
 - `config/` - Configuration files
 - `data/` - Runtime data (not in git)
-- `scripts/git-hooks/` - Git hook sources (installed via `scripts/setup-hooks.sh`)
+- `tools/git-hooks/` - Git hook sources (installed via `tools/setup-hooks.sh`)
 
 ## Invariants (must always hold, violation = bug)
 <!-- CUSTOMIZE: List your project's invariants. These are checked by /review -->
@@ -88,7 +88,7 @@ recent progress, and lessons. Trust its output at session start.
   ```
 
 ### Autonomous Mode
-When triggered via `scripts/autonomous_run.sh`, read `docs/workflow/autonomous.md` for
+When triggered via `tools/autonomous_run.sh`, read `docs/workflow/autonomous.md` for
 the full ruleset.
 
 ---

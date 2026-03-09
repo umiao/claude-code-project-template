@@ -1,0 +1,32 @@
+---
+title: Options Futures and Other Derivatives - Note - 2
+date: 2023-09-10 23:59:30
+categories:
+- [Investment]
+tags:
+- options
+- futures
+- trading
+- investment
+---
+Discussing different types of traders.
+{% asset_img cover.jpg apple %}
+<!-- more -->
+
+# Types of traders
+Three broad categories of traders can be identified: 
+- **Hedgers**: Use derivatives to reduce the risk that they face from potential future movements in a market variable.
+- **Speculators**: Bet on the future direction of a market variable.
+- **Arbitrageurs**: Take offsetting positions in two or more instruments to lock in a profit.
+
+## Hedgers
+
+
+
+
+
+
+
+
+
+

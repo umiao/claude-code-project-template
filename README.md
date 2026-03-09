@@ -174,7 +174,7 @@ infrastructure, see [Section 4 of the workflow guide](claude-code-workflow-guide
 | `.claude/hooks/` | Python hook scripts (9 hooks + template) |
 | `.claude/agents/` | Agent definitions (reviewer, test-runner, refactor-advisor, input-reviewer) |
 | `.claude/skills/` | Skill definitions (review, improve, sanity-check, e2e-test, collect-input) |
-| `scripts/` | Utility scripts including autonomous runner |
+| `tools/` | Utility scripts including autonomous runner |
 | `src/` | Source code |
 | `tests/` | Test files |
 | `docs/` | Extended documentation and workflow specs |
@@ -184,7 +184,7 @@ infrastructure, see [Section 4 of the workflow guide](claude-code-workflow-guide
 
 ## Quick Start
 
-See `scripts/QUICKSTART.md` for the full setup guide. The essentials:
+See `tools/QUICKSTART.md` for the full setup guide. The essentials:
 
 ```bash
 # 1. Clone and install
@@ -192,7 +192,7 @@ git clone <this-repo> my-project && cd my-project
 pip install -r requirements.txt
 
 # 2. Install git hooks
-bash scripts/setup-hooks.sh
+bash tools/setup-hooks.sh
 
 # 3. Customize for your project
 #    Edit CLAUDE.md -- set your project overview, tech stack, and invariants
@@ -202,7 +202,7 @@ bash scripts/setup-hooks.sh
 claude
 
 # 5. Run autonomously (loops until tasks are done)
-bash scripts/autonomous_run.sh
+bash tools/autonomous_run.sh
 ```
 
 ---
