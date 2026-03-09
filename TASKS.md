@@ -10,30 +10,6 @@
 
 ### P0 -- Must Have (core functionality)
 
-#### T-P0-2: Install NexT Theme
-- **Priority**: P0
-- **Complexity**: M (1 session)
-- **Depends on**: T-P0-1
-- **Acceptance Criteria**:
-  - [ ] `npm install hexo-theme-next` succeeds
-  - [ ] `_config.next.yml` created with settings migrated from yilia:
-    - Scheme: Gemini or Pisces
-    - TOC sidebar enabled
-    - Reading progress bar enabled
-    - Local search enabled (`hexo-generator-json-content` already installed)
-    - Mermaid enabled (native NexT support)
-    - MathJax enabled
-    - Code copy button enabled
-    - Social links: GitHub (umiao), Facebook
-    - Highlight theme: androidstudio or equivalent
-  - [ ] `_config.yml` line 100 changed to `theme: next`
-  - [ ] `themes/yilia/` kept as fallback (not deleted)
-  - [ ] `hexo clean && hexo g` succeeds with zero errors
-  - [ ] `hexo s` -- home page renders, sidebar works, navigation works
-- **Files**: `_config.yml`, `_config.next.yml` (new), `package.json`
-
----
-
 #### T-P0-3: Rendering Compatibility Audit
 - **Priority**: P0
 - **Complexity**: M (1 session)
@@ -272,3 +248,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 
 - [x] **2026-03-02** -- Git pre-commit hook for ruff version consistency: pinned ruff==0.1.14, fixed CI lint job, created pre-commit hook (version guard + lint + emoji scan), created setup-hooks.sh installer, updated docs.
 - [x] **2026-03-09** -- T-P0-1: Backup + Baseline Build: created blog-refactor branch, fixed Hexo scripts/ conflict by renaming to tools/, baseline build succeeds (90 post HTML files, zero errors), rollback verified.
+- [x] **2026-03-09** -- T-P0-2: Install NexT Theme: installed hexo-theme-next, created _config.next.yml (Gemini, TOC, reading progress, local search, mermaid, MathJax, code copy, social links, androidstudio highlight), switched theme to next, 90 post HTML files generated.

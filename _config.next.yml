@@ -1,0 +1,160 @@
+# NexT Theme Configuration (Alternate Theme Config)
+# See: https://theme-next.js.org/docs/getting-started/configuration
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+scheme: Gemini
+
+# Dark Mode
+darkmode: true
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+
+menu_settings:
+  icons: true
+  badges: false
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+sidebar:
+  position: left
+  display: post
+
+avatar:
+  # url: /images/avatar.gif
+  rounded: true
+  rotated: false
+
+site_state: true
+
+# Social Links
+social:
+  GitHub: https://github.com/umiao || fab fa-github
+  Facebook: https://www.facebook.com/ || fab fa-facebook
+
+social_icons:
+  enable: true
+  icons_only: false
+  transition: false
+
+# Table of Contents in the Sidebar
+toc:
+  enable: true
+  number: true
+  wrap: true
+  expand_all: false
+  max_depth: 6
+
+# ---------------------------------------------------------------
+# Footer Settings
+# ---------------------------------------------------------------
+footer:
+  since: 2021
+  powered: true
+
+# ---------------------------------------------------------------
+# Post Settings
+# ---------------------------------------------------------------
+excerpt_description: true
+read_more_btn: true
+
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enable: true
+    another_day: true
+  categories: true
+
+tag_icon: true
+
+# ---------------------------------------------------------------
+# Codeblock Settings
+# ---------------------------------------------------------------
+codeblock:
+  theme:
+    light: androidstudio
+    dark: androidstudio
+  copy_button:
+    enable: true
+    style: flat
+  fold:
+    enable: false
+    height: 500
+  language: true
+
+# ---------------------------------------------------------------
+# Reading Progress Bar
+# ---------------------------------------------------------------
+reading_progress:
+  enable: true
+  start_at: left
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 3px
+
+# ---------------------------------------------------------------
+# Back to Top
+# ---------------------------------------------------------------
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+# ---------------------------------------------------------------
+# Math Formulas Render Support
+# ---------------------------------------------------------------
+math:
+  every_page: false
+  mathjax:
+    enable: true
+    tags: ams
+
+# ---------------------------------------------------------------
+# Mermaid
+# ---------------------------------------------------------------
+mermaid:
+  enable: true
+  theme:
+    light: default
+    dark: dark
+
+# ---------------------------------------------------------------
+# Local Search
+# ---------------------------------------------------------------
+local_search:
+  enable: true
+  top_n_per_article: 3
+  unescape: false
+  preload: false
+
+# ---------------------------------------------------------------
+# Image Zoom
+# ---------------------------------------------------------------
+mediumzoom: true
+
+# ---------------------------------------------------------------
+# CDN Settings
+# ---------------------------------------------------------------
+vendors:
+  internal: local
+  plugins: cdnjs
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+motion:
+  enable: true
+  async: false
+  duration: 200

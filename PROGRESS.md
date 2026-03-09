@@ -34,3 +34,10 @@
 - **Sanity check result**: hexo generate zero errors, 11/11 pytest pass, branch rollback verified.
 - **Status**: [DONE]
 - **Request**: Move T-P0-1 to Completed
+
+## 2026-03-09 -- [T-P0-2] Install NexT Theme
+- **What I did**: Installed hexo-theme-next via npm. Created `_config.next.yml` with Gemini scheme, TOC sidebar, reading progress bar, local search (installed hexo-generator-searchdb), mermaid, MathJax, code copy button, social links (GitHub/Facebook), androidstudio highlight theme. Changed `_config.yml` theme to `next` and set `hljs: true` for NexT compatibility. Kept themes/yilia/ as fallback.
+- **Deliverables**: `_config.next.yml` (new), modified `_config.yml` (theme: next, hljs: true), modified `package.json` (added hexo-theme-next, hexo-generator-searchdb).
+- **Sanity check result**: `hexo clean && hexo g` zero errors, 352 files generated, 90 post HTML files (matches baseline). 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P0-2 to Completed
