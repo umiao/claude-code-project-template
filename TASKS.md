@@ -10,18 +10,6 @@
 
 ### P2 -- Nice to Have (polish, optimization)
 
-#### T-P2-1: Post Front Matter Cleanup
-- **Priority**: P2
-- **Complexity**: M (1 session)
-- **Depends on**: T-P0-6
-- **Acceptance Criteria**:
-  - [ ] All posts have `description:` field in front matter (for SEO)
-  - [ ] Category/tag naming is consistent across all posts (audit and normalize)
-  - [ ] All posts have `<!-- more -->` break for proper excerpt on index page
-- **Files**: All `source/_posts/*.md`
-
----
-
 #### T-P2-2: SEO Basics (Sitemap + RSS)
 - **Priority**: P2
 - **Complexity**: S (< 30 min)
@@ -99,3 +87,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P1-3: SQL Series Index Page: created source/series/sql/index.md with series description, Mermaid mindmap (5 topic groups), and ordered list of all 16 SQL posts with post_link tags.
 - [x] **2026-03-09** -- T-P1-4: Data Science Series Index Page: created source/series/ds/index.md with series description, Mermaid mindmap (5 topic groups), and ordered list of all 9 DS posts with post_link tags.
 - [x] **2026-03-09** -- T-P1-5: Deploy Series Pages: deployed all series pages to production via safe-deploy.sh. 327 files, no draft leakage, 59 posts deployed.
+- [x] **2026-03-09** -- T-P2-1: Post Front Matter Cleanup: added description field to all 59 posts, normalized 5 inconsistent tags (DataScience -> Data Science, capitalized investment/options/futures/trading). All posts already had more breaks.

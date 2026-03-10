@@ -4,10 +4,11 @@ date: 2023-09-09 12:42:55
 categories:
 - [Investment]
 tags:
-- options
-- futures
-- trading
-- investment
+- Options
+- Futures
+- Trading
+- Investment
+description: "Learning note of \"Options Futures and Other Derivatives\", 11th Edition."
 ---
 Learning note of "Options Futures and Other Derivatives", 11th Edition.
 {% asset_img cover.jpg apple %}

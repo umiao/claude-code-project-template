@@ -4,9 +4,10 @@ date: 2022-05-02 09:39:44
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
 - Naive Bayes
+description: "Naïve Bayesian Classifier: is a typical learning based method which make hypothesis on the distribution of prediction target."
 ---
 
 **Naïve Bayesian Classifier**: is a typical learning based method which make hypothesis on the distribution of prediction target.

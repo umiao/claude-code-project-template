@@ -7,6 +7,7 @@ tags:
 - Git
 - Data System
 - Version Control
+description: "Thorough analysis and learning notes on Git version control based on official Git documentation."
 ---
 Thorough analysis and learning note based on git documentation (https://git-scm.com/book/en/v2).
 {% asset_img cover.jpg ML_note %}

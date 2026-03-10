@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "The setting of query conditions, together with table creating can be further optimized."
 ---
 The setting of query conditions, together with table creating can be further optimized.
 {% asset_img sql.jpg SQL Note of blur! %}

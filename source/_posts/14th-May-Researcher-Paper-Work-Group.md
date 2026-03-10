@@ -5,6 +5,7 @@ categories:
 - [Research, Paper Read]
 tags:
 - Research
+description: "Notes from a research paper discussion group covering robust selection, stream processing, and UCB procedures."
 ---
 Discussion on challenges with stream processing.
 {% asset_img cover.png ML_note %}

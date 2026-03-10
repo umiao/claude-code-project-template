@@ -4,9 +4,10 @@ date: 2024-03-21 16:27:44
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on replication lag problems and multi-leader replication."
 ---
 Discussion on replication lag problems and multi-leader replication.
 {% asset_img cover.png ML_note %}

@@ -5,7 +5,8 @@ categories:
 - [UCLA, Course Study, ECE209 in 2022 spring]
 tags: 
 - UCLA 
-- DataScience
+- Data Science
+description: "Lost of sensor-generated data can be very common. The methods of imputation can be coarsely categorized into: 1. Prediction methods; 2. Interpolation methods..."
 ---
 
 > Lost of sensor-generated data can be very common. The methods of imputation can be coarsely categorized into: 1. Prediction methods; 2. Interpolation methods; 3. Statistical Learning methods.

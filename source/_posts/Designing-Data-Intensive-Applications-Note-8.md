@@ -4,9 +4,10 @@ date: 2024-02-25 10:58:40
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on Encoding and Schema."
 ---
 Discussion on Encoding and Schema.
 {% asset_img cover.png ML_note %}

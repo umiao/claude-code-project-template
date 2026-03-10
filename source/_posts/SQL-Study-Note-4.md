@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "SQL Views for storing and reusing query results as virtual tables."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

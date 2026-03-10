@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "SQL data manipulation syntax including INSERT, UPDATE, and DELETE operations with table attributes."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

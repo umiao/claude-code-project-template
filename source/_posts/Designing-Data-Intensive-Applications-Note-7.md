@@ -4,9 +4,10 @@ date: 2024-02-24 10:07:04
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on techniques related to data warehouse / OLAP."
 ---
 Discussion on techniques related to data warehouse / OLAP.
 {% asset_img cover.png ML_note %}

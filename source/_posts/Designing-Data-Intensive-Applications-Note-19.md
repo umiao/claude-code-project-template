@@ -4,9 +4,10 @@ date: 2024-05-06 14:51:50
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on challenges with stream processing."
 ---
 Discussion on challenges with stream processing.
 {% asset_img cover.png ML_note %}

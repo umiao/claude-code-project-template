@@ -5,7 +5,8 @@ categories:
 - [UCLA, Course Study, ECE209 in 2022 spring]
 tags: 
 - UCLA 
-- DataScience
+- Data Science
+description: "It is meaningful and believed to be possible to discover the pattern of the missing parts of the time series data. Such patterns may vary in different scenar..."
 ---
 
 It is meaningful and believed to be possible to discover the pattern of the missing parts of the time series data. Such patterns may vary in different scenarios and sources and may be related with physical devices and configurations.

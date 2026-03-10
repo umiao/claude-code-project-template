@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "Other issues which deserve attention when writing SELECT clause."
 ---
 
 Other issues which deserve attention when writing SELECT clause.

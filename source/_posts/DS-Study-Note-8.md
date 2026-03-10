@@ -4,9 +4,10 @@ date: 2022-05-03 22:48:16
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
 - Random Forest
+description: "Random Forest inherits the idea of bagging, which is part of Ensemble Learning paradigm."
 ---
 
 Random Forest inherits the idea of **bagging**, which is part of **Ensemble Learning** paradigm.

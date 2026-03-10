@@ -4,8 +4,9 @@ date: 2022-04-22 09:23:14
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
+description: "Overfitting is a modeling error in statistics that occurs when a function is too closely aligned to a limited set of data points. ---- Definition ranked 1st ..."
 ---
 
 >Overfitting is a modeling error in statistics that occurs when a function is too closely aligned to a limited set of data points. ---- Definition ranked 1st in Google 

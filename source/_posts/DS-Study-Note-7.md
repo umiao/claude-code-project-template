@@ -4,9 +4,10 @@ date: 2022-05-02 16:37:57
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
 - Regularization
+description: "The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the projection of a vector to the domain of positive real number. They can both be..."
 ---
 The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the **projection** of a vector to the domain of **positive** real number. They can both be viewed as metrics of distance. 
 

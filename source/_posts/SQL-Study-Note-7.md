@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "SQL transactions and ACID principles for ensuring data integrity."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

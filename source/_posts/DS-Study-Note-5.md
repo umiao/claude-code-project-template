@@ -4,9 +4,10 @@ date: 2022-04-26 23:51:47
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
 - SVM
+description: "SVM is a machine learning model which aims at finding a Decision Boundary with a subset of the training set. The SVM is a non-probabilistic binary classifier."
 ---
 SVM is a machine learning model which aims at finding a Decision Boundary with a subset of the training set. The SVM is a non-probabilistic binary classifier.
 {% asset_img svm.png ML_note %}

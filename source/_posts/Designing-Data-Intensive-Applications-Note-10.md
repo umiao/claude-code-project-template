@@ -4,9 +4,10 @@ date: 2024-02-25 20:37:34
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on distributed system goal and Replication implementations."
 ---
 Discussion on distributed system goal and Replication implementations.
 {% asset_img cover.png ML_note %}

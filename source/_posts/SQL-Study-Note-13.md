@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "Window function is also known as Online Analytical Processing function (LAP), which is able to conduct realtime processing and analyzing on the database data."
 ---
 
 Window function is also known as **Online Analytical Processing function (LAP)**, which is able to conduct realtime processing and analyzing on the database data. 

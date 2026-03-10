@@ -5,6 +5,7 @@ categories:
 - [AI, NLP]
 tags:
 - NLP
+description: "Review the major NLP tasks as well as methods (in terms of text classification)."
 ---
 
 Review the major NLP tasks as well as methods (in terms of text classification).

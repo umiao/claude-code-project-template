@@ -7,6 +7,7 @@ tags:
 - English
 - Vocabulary
 - Word Frequency
+description: "As an engineer working in the industry, English is a very important and basic tool...Also, if we think like a machine, it would be then very natural for us t..."
 ---
 As an engineer working in the industry, English is a very important and basic tool...Also, if we think like a machine, it would be then very natural for us to study English Vocab in its frequency order.. A weird idea, right?
 {% asset_img cover.jpg vocab %}

@@ -4,9 +4,10 @@ date: 2024-02-24 09:34:35
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on Indexes and Multi-Column Index solution (R-Tree)."
 ---
 Discussion on Indexes and Multi-Column Index solution (R-Tree).
 {% asset_img cover.png ML_note %}

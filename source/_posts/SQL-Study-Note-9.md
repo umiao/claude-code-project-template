@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "Data modeling pipeline, database constraints, and normalization forms for relational databases."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

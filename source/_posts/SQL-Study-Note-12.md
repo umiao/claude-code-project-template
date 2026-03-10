@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "Common Table Expression (CTE) is viewed as a better way to realize the functionality of subquery."
 ---
 
 **Common Table Expression (CTE)** is viewed as a better way to realize the functionality of subquery.

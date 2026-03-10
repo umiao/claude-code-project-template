@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "Most data science practitioners would not be granted the privilege of managing the database system (not even the privilege to update / delete), so..."
 ---
 {% asset_img sql.jpg SQL Note of blur! %}
 

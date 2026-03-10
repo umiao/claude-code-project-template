@@ -4,8 +4,9 @@ date: 2022-04-26 22:28:19
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
+description: "Metrics are used for model training and evaluation. It reveals a model's performance on a given dataset."
 ---
 
 {% asset_img metric.png ML_note %}

@@ -4,9 +4,10 @@ date: 2024-02-23 15:44:41
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Introduction to designing data intensive applications, a.k.a data systems, providing high-level ideas about what it is and why it is needed."
 ---
 Introduction to designing data intensive applications, a.k.a data systems, providing high-level ideas about what it is and why it is needed.
 {% asset_img cover.png ML_note %}

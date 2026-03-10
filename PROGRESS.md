@@ -104,3 +104,10 @@
 - **Sanity check result**: Dry-run clean. Deploy succeeded (`HEAD -> master` push confirmed). All 4 series HTML files present in `public/`. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P1-5 to Completed
+
+## 2026-03-09 -- [T-P2-1] Post Front Matter Cleanup
+- **What I did**: Added `description:` field to all 59 posts for SEO (auto-extracted from first paragraph, with manual overrides for 12 posts). Normalized 5 inconsistent tags: `DataScience` -> `Data Science` (47 posts), lowercase `investment/options/futures/trading` -> capitalized (2 posts each). Verified all posts already had `<!-- more -->` breaks.
+- **Deliverables**: All 59 `source/_posts/*.md` files updated, `tools/add_descriptions.py` (utility script)
+- **Sanity check result**: `hexo generate` produces 327 files (matches baseline). 11/11 pytest pass. Ruff clean. Tag audit shows all tags consistently capitalized.
+- **Status**: [DONE]
+- **Request**: Move T-P2-1 to Completed

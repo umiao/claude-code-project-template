@@ -7,6 +7,7 @@ tags:
 
 - Keyboard
 - Term
+description: "For better communication during teamwork / paircoding / code review... It is vital to keep every keyboard's key's name in mind."
 ---
 For better communication during teamwork / paircoding / code review... It is vital to keep every keyboard's key's name in mind.
 {% asset_img cover.jpg apple %}

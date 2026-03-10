@@ -7,6 +7,7 @@ tags:
 - Productivity
 - Apple Watch
 - Tips
+description: "My pup sent me an Apple Watch as a gift, and for long time I have now idea how to make full use of it."
 ---
 My pup sent me an Apple Watch as a gift, and for long time I have now idea how to make full use of it.
 {% asset_img cover.jpg apple %}

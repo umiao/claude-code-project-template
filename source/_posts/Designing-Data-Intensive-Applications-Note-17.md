@@ -4,9 +4,10 @@ date: 2024-04-27 11:27:31
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on challenges with consensus."
 ---
 Discussion on challenges with consensus.
 {% asset_img cover.png ML_note %}

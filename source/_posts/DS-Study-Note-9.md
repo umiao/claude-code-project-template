@@ -4,10 +4,11 @@ date: 2022-05-25 19:54:23
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
 - GBM
 - XGBoost
+description: "Study notes on Gradient Boosting Machine Tree models including GBM and XGBoost algorithms."
 ---
 
 # Gradient Boosting Machine Tree

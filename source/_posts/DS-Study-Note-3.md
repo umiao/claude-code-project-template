@@ -4,8 +4,9 @@ date: 2022-04-26 15:19:27
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
+description: "Dimension curse stands for the troubles you would meet when processing high-dimensional data. E.g., computation of similarity, distance, neighbour or any met..."
 ---
 
 {% asset_img over.png ML_note %}

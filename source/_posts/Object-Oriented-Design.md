@@ -7,6 +7,7 @@ tags:
 - OOD
 - Object Oriented Design
 - Software Engineering
+description: "Important principles as well as solution to concrete interview questions."
 ---
 
 Important principles as well as solution to concrete interview questions.

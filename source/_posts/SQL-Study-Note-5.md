@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "SQL stored procedures and user-defined functions for encapsulating reusable query logic."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

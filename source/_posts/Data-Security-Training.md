@@ -5,10 +5,11 @@ date: 2024-09-15 19:55:57
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Cyber Security
 - Data Security
+description: "Notes and revisits of data & cyber security training session."
 ---
 Notes and revisits of data & cyber security training session.
 {% asset_img cover.jpg ML_note %}

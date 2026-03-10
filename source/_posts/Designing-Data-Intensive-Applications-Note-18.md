@@ -4,9 +4,10 @@ date: 2024-05-05 12:00:33
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on challenges with batch processing jobs."
 ---
 Discussion on challenges with batch processing jobs.
 {% asset_img cover.png ML_note %}

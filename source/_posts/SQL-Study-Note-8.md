@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "MySQL data types including VARCHAR, TEXT, and best practices for type selection."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

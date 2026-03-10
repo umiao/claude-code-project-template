@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "SQL triggers and scheduled events for automating database operations."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

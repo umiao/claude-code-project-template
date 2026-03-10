@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "The optimization of SQL script can be extremely important, just as the importance of algorithm theory & analysis to programming."
 ---
 The optimization of SQL script can be extremely important, just as the importance of algorithm theory & analysis to programming.
 {% asset_img sql.jpg SQL Note of blur! %}

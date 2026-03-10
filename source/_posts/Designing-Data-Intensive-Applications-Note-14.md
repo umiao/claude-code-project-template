@@ -4,9 +4,10 @@ date: 2024-03-24 14:21:49
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on partition related topics."
 ---
 Discussion on partition related topics.
 {% asset_img cover.png ML_note %}

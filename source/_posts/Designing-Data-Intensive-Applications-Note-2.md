@@ -4,9 +4,10 @@ date: 2024-02-23 16:01:35
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Topics about scalability, load & press. Definition, metrics and mitigation."
 ---
 Topics about scalability, load & press. Definition, metrics and mitigation.
 {% asset_img cover.png ML_note %}

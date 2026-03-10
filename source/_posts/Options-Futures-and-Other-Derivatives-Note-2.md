@@ -4,10 +4,11 @@ date: 2023-09-10 23:59:30
 categories:
 - [Investment]
 tags:
-- options
-- futures
-- trading
-- investment
+- Options
+- Futures
+- Trading
+- Investment
+description: "Discussing different types of traders."
 ---
 Discussing different types of traders.
 {% asset_img cover.jpg apple %}

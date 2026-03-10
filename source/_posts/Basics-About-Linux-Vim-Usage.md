@@ -8,6 +8,7 @@ tags:
 - Linux
 - Vim
 - CLI
+description: "For a Software Engineer / Researcher, Linux and Vim should be the basic of basics (as important parts of CLI, Command Line Interface). In this post, we have ..."
 ---
 For a Software Engineer / Researcher, Linux and Vim should be the basic of basics (as important parts of CLI, Command Line Interface). In this post, we have discussed some basic knowledge as well as useful tips.
 {% asset_img cover.jpg apple %}

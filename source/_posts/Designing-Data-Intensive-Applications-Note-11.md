@@ -4,9 +4,10 @@ date: 2024-02-26 20:01:56
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on implementation and optimization of replication log."
 ---
 Discussion on implementation and optimization of replication log.
 {% asset_img cover.png ML_note %}

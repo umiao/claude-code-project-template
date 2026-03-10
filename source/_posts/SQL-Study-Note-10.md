@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "Index can be used to find the row (line) numbers corresponding to the value being queried. Index is added to certain columns and is stored in memory (RAM) fo..."
 ---
 {% asset_img sql.jpg SQL Note of blur! %}
 

@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "SQL syntax basics covering SELECT, WHERE, JOIN, and fundamental database query operations."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

@@ -4,9 +4,10 @@ date: 2024-03-24 09:31:49
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on leaderless replication."
 ---
 Discussion on leaderless replication.
 {% asset_img cover.png ML_note %}

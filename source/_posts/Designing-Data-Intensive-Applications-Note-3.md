@@ -4,9 +4,10 @@ date: 2024-02-23 16:28:51
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on maintainability, evolvability and operability."
 ---
 Discussion on maintainability, evolvability and operability.
 {% asset_img cover.png ML_note %}

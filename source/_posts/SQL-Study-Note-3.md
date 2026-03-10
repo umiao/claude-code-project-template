@@ -6,7 +6,8 @@ categories:
 - [Job Search, SQL]
 tags: 
 - SQL 
-- DataScience
+- Data Science
+description: "SQL built-in functions and aggregate functions including COUNT, MAX, MIN, AVG, and SUM."
 ---
 
 {% asset_img sql.jpg SQL Note of blur! %}

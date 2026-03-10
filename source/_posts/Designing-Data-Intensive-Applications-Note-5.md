@@ -4,9 +4,10 @@ date: 2024-02-24 00:38:40
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on Storage structures."
 ---
 Discussion on Storage structures.
 {% asset_img cover.png ML_note %}

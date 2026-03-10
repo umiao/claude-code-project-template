@@ -7,6 +7,7 @@ tags:
 - IQ
 - Brainteasers
 - Math
+description: "Strange questions you would expected to meet only in interviews of financial / trading firms LOL!"
 ---
 Strange questions you would expected to meet only in interviews of financial / trading firms LOL!
 

@@ -4,8 +4,9 @@ date: 2022-04-23 00:41:01
 categories:
 - [Data Science, General Knowledge]
 tags:
-- DataScience
+- Data Science
 - Machine Learning
+description: "The target of Machine Learning is to fit an (unknown) distribution. There lies three possible error: bias, variance and irreducible error."
 ---
 The target of Machine Learning is to fit an (unknown) distribution. There lies three possible error: bias, variance and irreducible error. 
 <!-- more -->

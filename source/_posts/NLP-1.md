@@ -5,6 +5,7 @@ categories:
 - [AI, NLP]
 tags:
 - NLP
+description: "Have a glance on the NLP tasks and techniques. Will be discussed in a more detailed manner."
 ---
 Have a glance on the NLP tasks and techniques. Will be discussed in a more detailed manner.
 {% asset_img rm.png SQL Note of blur! %}

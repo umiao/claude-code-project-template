@@ -4,9 +4,10 @@ date: 2024-04-21 09:54:34
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on challenges with distributed systems."
 ---
 Discussion on challenges with distributed systems.
 {% asset_img cover.png ML_note %}

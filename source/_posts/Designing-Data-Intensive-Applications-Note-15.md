@@ -4,9 +4,10 @@ date: 2024-03-29 13:52:54
 categories:
 - [Data Science, Data System]
 tags:
-- DataScience
+- Data Science
 - Data System
 - Designing Data-Intensive-Applications
+description: "Discussion on transaction related topics."
 ---
 Discussion on transaction related topics.
 {% asset_img cover.png ML_note %}
