@@ -1,5 +1,6 @@
 ---
 title: Behavioral Interview Questions Crack
+permalink: behavioral-interview-questions-crack/
 date: 2024-10-26 12:09:07
 categories:
 - [Job Search, Software Engineering]

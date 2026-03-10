@@ -1,5 +1,6 @@
 ---
 title: System-Design-Interview (Alex Xu) Notes - Chapter 1 - 9
+permalink: system-design-interview-alex-xu-notes-1/
 date: 2025-05-11 22:29:48
 categories:
 - [Job Search, Software Engineering]

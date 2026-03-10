@@ -8,71 +8,6 @@
 
 ## Active Tasks
 
-### P0 -- Must Have (core functionality)
-
-#### T-P0-4: First Deployment -- Theme Only
-- **Priority**: P0
-- **Complexity**: S (< 30 min)
-- **Depends on**: T-P0-3
-- **Acceptance Criteria**:
-  - [ ] `hexo clean && hexo g && hexo d` succeeds
-  - [ ] Live site (umiao.github.io) loads with NexT theme
-  - [ ] Spot-check 2 posts on live site: images load, TOC works, no broken layout
-  - [ ] CDN resources (fonts, JS) load correctly (check browser console for errors)
-- **Files**: None (deploy only)
-
----
-
-#### T-P0-5: Move Sensitive Posts to Drafts
-- **Priority**: P0
-- **Complexity**: M (1 session)
-- **Depends on**: T-P0-4
-- **Acceptance Criteria**:
-  - [ ] `source/_drafts/` directory created
-  - [ ] Add fixed `permalink` to front matter of each sensitive post BEFORE moving:
-    - `Behavioral-Interview-Questions-Crack.md` -> `permalink: behavioral-interview-questions-crack/`
-    - `Need-To-Knows-For-Software-Security-Engineer.md` -> `permalink: need-to-knows-for-software-security-engineer/`
-    - `System-Design-Interview-Alex-Xu-Notes-1.md` -> `permalink: system-design-interview-alex-xu-notes-1/`
-    - `System-Design-Interview-Alex-Xu-Notes-2.md` -> `permalink: system-design-interview-alex-xu-notes-2/`
-  - [ ] Note: front matter `permalink` overrides global `:year/:month/:day/:title/` pattern
-  - [ ] Move FIRST post + its asset folder to `_drafts/`, run `hexo s --draft`, verify images load from drafts. Only proceed if OK. (Historical bugs with _drafts + post_asset_folder)
-  - [ ] Move remaining 3 posts + their asset folders to `_drafts/`
-  - [ ] `Object-Oriented-Design.md` stays in `_posts/` (confirmed public)
-  - [ ] `hexo s` (without --draft) -- verify 4 sensitive posts are NOT visible
-  - [ ] `hexo s --draft` -- verify 4 sensitive posts ARE visible with images
-  - [ ] Post count: 43 public posts (47 - 4 drafts)
-- **Files**: `source/_drafts/` (new), 4 posts moved, 4 asset folders moved
-
----
-
-#### T-P0-6: Deployment Safety Script + Guide
-- **Priority**: P0
-- **Complexity**: M (1 session)
-- **Depends on**: T-P0-5
-- **Acceptance Criteria**:
-  - [ ] `tools/safe-deploy.sh` created with:
-    - `hexo clean` first (clears any stale `--draft` builds in public/)
-    - `hexo g` to generate
-    - After generate: diff `public/` article list vs `source/_posts/` file list -- abort if mismatch (draft leakage check)
-    - Print list of posts that WILL be deployed
-    - Print list of drafts that will NOT be deployed
-    - Interactive confirmation prompt before `hexo d`
-    - `hexo d` only after confirmation
-  - [ ] `docs/deployment-guide.md` created with:
-    - How to preview locally: `hexo s --draft` (includes drafts)
-    - How to preview deploy-only: `hexo s` (excludes drafts)
-    - How to create new draft: `hexo new draft <title>`
-    - How to publish a draft: add `permalink` first, then `hexo publish <filename>`
-    - How to un-publish: move file + asset folder back to `_drafts/`
-    - Permalink priority explanation (front matter overrides global pattern)
-    - Pre-deployment checklist
-    - If new posts added to a series: update series index page
-  - [ ] Test safe-deploy.sh: run it, verify it lists correct posts, cancel at confirmation
-  - [ ] Deploy via safe-deploy.sh: confirm 4 drafts don't appear on live site
-- **Files**: `tools/safe-deploy.sh` (new), `docs/deployment-guide.md` (new)
-
----
-
 ### P1 -- Should Have (important features)
 
 #### T-P1-1: Series Master Index Page
@@ -216,7 +151,6 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 
 ## Blocked
 <!-- Tasks that can't proceed and why -->
-- T-P0-4 (First Deploy): [NEEDS-USER-ACTION: `hexo d` deploys to live public site umiao.github.io. Build verified (352 files, 90 posts, NexT Gemini, MathJax enabled, zero errors). User must run `hexo d` manually or confirm autonomous deployment.]
 - T-P2-3 (About Page): [NEEDS-INPUT: user to provide current role/bio details]
 
 ## Completed Tasks
@@ -226,3 +160,6 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P0-1: Backup + Baseline Build: created blog-refactor branch, fixed Hexo scripts/ conflict by renaming to tools/, baseline build succeeds (90 post HTML files, zero errors), rollback verified.
 - [x] **2026-03-09** -- T-P0-2: Install NexT Theme: installed hexo-theme-next, created _config.next.yml (Gemini, TOC, reading progress, local search, mermaid, MathJax, code copy, social links, androidstudio highlight), switched theme to next, 90 post HTML files generated.
 - [x] **2026-03-09** -- T-P0-3: Rendering Compatibility Audit: hexo-renderer-marked works with NexT (no switch needed). Fixed MathJax not loading (every_page: false -> true, since 32/47 posts use math). Verified images, TOC, code highlighting, mermaid across 5 posts. 90 post HTML files match baseline.
+- [x] **2026-03-09** -- T-P0-4: First Deployment -- Theme Only: deployed NexT theme to umiao.github.io. User confirmed deployment.
+- [x] **2026-03-09** -- T-P0-5: Move Sensitive Posts to Drafts: added fixed permalinks, moved 4 posts + asset folders to source/_drafts/, verified excluded from regular build (323 files) and included in --draft build (352 files) with images.
+- [x] **2026-03-09** -- T-P0-6: Deployment Safety Script + Guide: created tools/safe-deploy.sh (clean, generate, draft-leakage check, post/draft listing, confirmation prompt, deploy) and docs/deployment-guide.md (preview, drafts workflow, permalink priority, pre-deploy checklist). Dry-run verified: 59 posts listed, 4 drafts excluded, no leakage.

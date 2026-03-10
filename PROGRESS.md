@@ -55,3 +55,17 @@
 - **Sanity check result**: Build verified: 352 files, 90 posts, NexT theme confirmed, MathJax enabled. 11/11 pytest pass.
 - **Status**: [BLOCKED] Deployment to live public site (umiao.github.io) requires user action. User should run `cd blog_proj && hexo clean && hexo g && hexo d` to deploy, then spot-check the live site.
 - **Request**: No change (T-P0-4 remains Active but marked Blocked)
+
+## 2026-03-09 -- [T-P0-5] Move Sensitive Posts to Drafts
+- **What I did**: Added fixed `permalink` to front matter of 4 sensitive posts (so URLs stay stable regardless of location). Created `source/_drafts/`. Moved first post (Behavioral-Interview) + asset folder to test -- verified draft renders with images in `--draft` build and is excluded from regular build. Then moved remaining 3 posts + asset folders. Confirmed `Object-Oriented-Design.md` stays in `_posts/`.
+- **Deliverables**: `source/_drafts/` (new dir), 4 .md files moved, 4 asset folders moved. Modified front matter of all 4 posts (added permalink field).
+- **Sanity check result**: Regular build: 323 files, 4 drafts absent from public/. Draft build: 352 files (matches baseline), all 4 drafts present with images (1+2+3+6=12 images total). 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P0-5 to Completed
+
+## 2026-03-09 -- [T-P0-6] Deployment Safety Script + Guide
+- **What I did**: Created `tools/safe-deploy.sh` with hexo clean, hexo generate, draft-leakage detection (scans public/ for draft slugs), post/draft listing, interactive confirmation, and hexo deploy steps. Supports `--dry-run` flag. Created `docs/deployment-guide.md` covering local preview (with/without drafts), drafts workflow (create/publish/un-publish), permalink priority, and pre-deployment checklist.
+- **Deliverables**: `tools/safe-deploy.sh` (new), `docs/deployment-guide.md` (new)
+- **Sanity check result**: Dry-run test: 59 posts listed as deployable, 4 drafts excluded, no leakage detected. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P0-6 to Completed

@@ -1,5 +1,6 @@
 ---
 title: Need-To-Knows For Software Security Engineer
+permalink: need-to-knows-for-software-security-engineer/
 date: 2023-08-31 19:35:51
 categories:
 - [Job Search, Software Engineering]
