@@ -69,3 +69,10 @@
 - **Sanity check result**: Dry-run test: 59 posts listed as deployable, 4 drafts excluded, no leakage detected. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P0-6 to Completed
+
+## 2026-03-09 -- [T-P1-1] Series Master Index Page
+- **What I did**: Created `source/series/index.md` with links to DDIA, SQL, and Data Science series pages. Added `series: /series/ || fa fa-book` menu item to `_config.next.yml` nav bar.
+- **Deliverables**: `source/series/index.md` (new), `_config.next.yml` (modified)
+- **Sanity check result**: `hexo generate` produces 324 files. Series page at `public/series/index.html` with correct links to `/series/ddia/`, `/series/sql/`, `/series/ds/`. Nav bar shows Series link with book icon. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P1-1 to Completed

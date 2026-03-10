@@ -10,18 +10,6 @@
 
 ### P1 -- Should Have (important features)
 
-#### T-P1-1: Series Master Index Page
-- **Priority**: P1
-- **Complexity**: S (< 30 min)
-- **Depends on**: T-P0-6
-- **Acceptance Criteria**:
-  - [ ] `source/series/index.md` created with links to DDIA, SQL, DS series
-  - [ ] Menu added to `_config.next.yml`: `Series: /series/ || fa fa-book`
-  - [ ] Page accessible via nav bar, links work
-- **Files**: `source/series/index.md` (new), `_config.next.yml`
-
----
-
 #### T-P1-2: DDIA Series Index Page
 - **Priority**: P1
 - **Complexity**: M (1 session)
@@ -163,3 +151,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P0-4: First Deployment -- Theme Only: deployed NexT theme to umiao.github.io. User confirmed deployment.
 - [x] **2026-03-09** -- T-P0-5: Move Sensitive Posts to Drafts: added fixed permalinks, moved 4 posts + asset folders to source/_drafts/, verified excluded from regular build (323 files) and included in --draft build (352 files) with images.
 - [x] **2026-03-09** -- T-P0-6: Deployment Safety Script + Guide: created tools/safe-deploy.sh (clean, generate, draft-leakage check, post/draft listing, confirmation prompt, deploy) and docs/deployment-guide.md (preview, drafts workflow, permalink priority, pre-deploy checklist). Dry-run verified: 59 posts listed, 4 drafts excluded, no leakage.
+- [x] **2026-03-09** -- T-P1-1: Series Master Index Page: created source/series/index.md with links to DDIA, SQL, DS series. Added Series menu item to _config.next.yml nav bar.
