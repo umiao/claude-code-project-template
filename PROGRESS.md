@@ -111,3 +111,10 @@
 - **Sanity check result**: `hexo generate` produces 327 files (matches baseline). 11/11 pytest pass. Ruff clean. Tag audit shows all tags consistently capitalized.
 - **Status**: [DONE]
 - **Request**: Move T-P2-1 to Completed
+
+## 2026-03-09 -- [T-P2-2] SEO Basics (Sitemap + RSS)
+- **What I did**: Installed `hexo-generator-sitemap` and `hexo-generator-feed` npm packages. Added sitemap and RSS feed configuration to `_config.yml`. Verified `hexo generate` produces both `public/sitemap.xml` (23KB) and `public/atom.xml` (328KB) with correct `https://umiao.github.io/` URLs.
+- **Deliverables**: `_config.yml` (sitemap + feed config), `package.json` (2 new dependencies)
+- **Sanity check result**: `hexo generate` produces 329 files. Both sitemap.xml and atom.xml present with correct URLs. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P2-2 to Completed

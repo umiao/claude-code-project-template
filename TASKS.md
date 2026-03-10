@@ -10,20 +10,6 @@
 
 ### P2 -- Nice to Have (polish, optimization)
 
-#### T-P2-2: SEO Basics (Sitemap + RSS)
-- **Priority**: P2
-- **Complexity**: S (< 30 min)
-- **Depends on**: T-P0-4
-- **Acceptance Criteria**:
-  - [ ] `npm install hexo-generator-sitemap hexo-generator-feed`
-  - [ ] Sitemap config added to `_config.yml`
-  - [ ] RSS feed config added to `_config.yml`
-  - [ ] `hexo g` produces `public/sitemap.xml` and `public/atom.xml`
-  - [ ] Both files contain correct URLs
-- **Files**: `_config.yml`, `package.json`
-
----
-
 #### T-P2-3: About Page Restructure
 - **Priority**: P2
 - **Complexity**: S (< 30 min)
@@ -88,3 +74,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P1-4: Data Science Series Index Page: created source/series/ds/index.md with series description, Mermaid mindmap (5 topic groups), and ordered list of all 9 DS posts with post_link tags.
 - [x] **2026-03-09** -- T-P1-5: Deploy Series Pages: deployed all series pages to production via safe-deploy.sh. 327 files, no draft leakage, 59 posts deployed.
 - [x] **2026-03-09** -- T-P2-1: Post Front Matter Cleanup: added description field to all 59 posts, normalized 5 inconsistent tags (DataScience -> Data Science, capitalized investment/options/futures/trading). All posts already had more breaks.
+- [x] **2026-03-09** -- T-P2-2: SEO Basics (Sitemap + RSS): installed hexo-generator-sitemap and hexo-generator-feed, added config to _config.yml, verified sitemap.xml and atom.xml generated with correct URLs.

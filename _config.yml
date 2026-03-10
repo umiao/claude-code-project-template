@@ -107,6 +107,19 @@ deploy:
   branch: master
   
 
+# Sitemap
+sitemap:
+  path: sitemap.xml
+  rel: true
+
+# RSS Feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+  content_limit_delim: ' '
+
 # Mermaid tag
 mermaid:
   enable: true
