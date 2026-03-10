@@ -10,21 +10,6 @@
 
 ### P1 -- Should Have (important features)
 
-#### T-P1-2: DDIA Series Index Page
-- **Priority**: P1
-- **Complexity**: M (1 session)
-- **Depends on**: T-P1-1
-- **Acceptance Criteria**:
-  - [ ] `source/series/ddia/index.md` created with:
-    - Series description (1-2 paragraphs about DDIA book)
-    - Mermaid mindmap at TOPIC level only (Part I/II/III groupings, NOT 19 leaf nodes)
-    - Ordered markdown list of all 19 posts with `{% post_link %}` links
-  - [ ] Mermaid mindmap renders correctly via `hexo s`
-  - [ ] All 19 post links work
-- **Files**: `source/series/ddia/index.md` (new)
-
----
-
 #### T-P1-3: SQL Series Index Page
 - **Priority**: P1
 - **Complexity**: S (< 30 min)
@@ -152,3 +137,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P0-5: Move Sensitive Posts to Drafts: added fixed permalinks, moved 4 posts + asset folders to source/_drafts/, verified excluded from regular build (323 files) and included in --draft build (352 files) with images.
 - [x] **2026-03-09** -- T-P0-6: Deployment Safety Script + Guide: created tools/safe-deploy.sh (clean, generate, draft-leakage check, post/draft listing, confirmation prompt, deploy) and docs/deployment-guide.md (preview, drafts workflow, permalink priority, pre-deploy checklist). Dry-run verified: 59 posts listed, 4 drafts excluded, no leakage.
 - [x] **2026-03-09** -- T-P1-1: Series Master Index Page: created source/series/index.md with links to DDIA, SQL, DS series. Added Series menu item to _config.next.yml nav bar.
+- [x] **2026-03-09** -- T-P1-2: DDIA Series Index Page: created source/series/ddia/index.md with 2-paragraph description, Mermaid mindmap (Part I/II/III topic groupings), and ordered list of all 19 posts with post_link tags.

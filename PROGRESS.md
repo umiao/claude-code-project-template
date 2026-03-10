@@ -76,3 +76,10 @@
 - **Sanity check result**: `hexo generate` produces 324 files. Series page at `public/series/index.html` with correct links to `/series/ddia/`, `/series/sql/`, `/series/ds/`. Nav bar shows Series link with book icon. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P1-1 to Completed
+
+## 2026-03-09 -- [T-P1-2] DDIA Series Index Page
+- **What I did**: Created `source/series/ddia/index.md` with series description (2 paragraphs about DDIA), Mermaid mindmap at topic level (Part I/II/III groupings with chapter topics), and ordered list of all 19 posts using `{% post_link %}` tags grouped by book part.
+- **Deliverables**: `source/series/ddia/index.md` (new)
+- **Sanity check result**: `hexo generate` succeeds. All 19 post links resolve to existing HTML files in `public/`. Mermaid block present in generated HTML. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P1-2 to Completed
