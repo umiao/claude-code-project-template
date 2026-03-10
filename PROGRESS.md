@@ -90,3 +90,10 @@
 - **Sanity check result**: `hexo generate` succeeds. All 16 post links resolve to existing HTML files in `public/`. Mermaid block present in generated HTML. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P1-3 to Completed
+
+## 2026-03-09 -- [T-P1-4] Data Science Series Index Page
+- **What I did**: Created `source/series/ds/index.md` with 2-paragraph series description, Mermaid mindmap (5 topic groups: Foundations, Evaluation, Classical Algorithms, Regularization, Ensemble Methods), and ordered list of all 9 DS posts using `{% post_link %}` tags.
+- **Deliverables**: `source/series/ds/index.md` (new)
+- **Sanity check result**: `hexo generate` succeeds (327 files). All 9 post links resolve to existing HTML files in `public/`. Mermaid block present in generated HTML. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P1-4 to Completed
