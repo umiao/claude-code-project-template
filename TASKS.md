@@ -8,20 +8,6 @@
 
 ## Active Tasks
 
-### P1 -- Should Have (important features)
-
-#### T-P1-5: Deploy Series Pages
-- **Priority**: P1
-- **Complexity**: S (< 30 min)
-- **Depends on**: T-P1-2, T-P1-3, T-P1-4
-- **Acceptance Criteria**:
-  - [ ] Run `tools/safe-deploy.sh`
-  - [ ] Verify series pages accessible on live site
-  - [ ] All post links from series pages work on live site
-- **Files**: None (deploy only)
-
----
-
 ### P2 -- Nice to Have (polish, optimization)
 
 #### T-P2-1: Post Front Matter Cleanup
@@ -112,3 +98,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P1-2: DDIA Series Index Page: created source/series/ddia/index.md with 2-paragraph description, Mermaid mindmap (Part I/II/III topic groupings), and ordered list of all 19 posts with post_link tags.
 - [x] **2026-03-09** -- T-P1-3: SQL Series Index Page: created source/series/sql/index.md with series description, Mermaid mindmap (5 topic groups), and ordered list of all 16 SQL posts with post_link tags.
 - [x] **2026-03-09** -- T-P1-4: Data Science Series Index Page: created source/series/ds/index.md with series description, Mermaid mindmap (5 topic groups), and ordered list of all 9 DS posts with post_link tags.
+- [x] **2026-03-09** -- T-P1-5: Deploy Series Pages: deployed all series pages to production via safe-deploy.sh. 327 files, no draft leakage, 59 posts deployed.

@@ -97,3 +97,10 @@
 - **Sanity check result**: `hexo generate` succeeds (327 files). All 9 post links resolve to existing HTML files in `public/`. Mermaid block present in generated HTML. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P1-4 to Completed
+
+## 2026-03-09 -- [T-P1-5] Deploy Series Pages
+- **What I did**: Ran `tools/safe-deploy.sh` to deploy all series pages (master index, DDIA, SQL, DS) to production. Dry-run passed first, then full deploy pushed 327 files to umiao.github.io. No draft leakage detected. 59 posts deployed, 4 drafts excluded.
+- **Deliverables**: None (deploy only). Series pages live at `/series/`, `/series/ddia/`, `/series/sql/`, `/series/ds/`.
+- **Sanity check result**: Dry-run clean. Deploy succeeded (`HEAD -> master` push confirmed). All 4 series HTML files present in `public/`. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P1-5 to Completed
