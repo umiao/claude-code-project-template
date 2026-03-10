@@ -83,3 +83,10 @@
 - **Sanity check result**: `hexo generate` succeeds. All 19 post links resolve to existing HTML files in `public/`. Mermaid block present in generated HTML. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P1-2 to Completed
+
+## 2026-03-09 -- [T-P1-3] SQL Series Index Page
+- **What I did**: Created `source/series/sql/index.md` with 2-paragraph series description, Mermaid mindmap (5 topic groups: Fundamentals, Database Objects, Data Management, Advanced Querying, Optimization), and ordered list of all 16 SQL posts using `{% post_link %}` tags.
+- **Deliverables**: `source/series/sql/index.md` (new)
+- **Sanity check result**: `hexo generate` succeeds. All 16 post links resolve to existing HTML files in `public/`. Mermaid block present in generated HTML. 11/11 pytest pass.
+- **Status**: [DONE]
+- **Request**: Move T-P1-3 to Completed

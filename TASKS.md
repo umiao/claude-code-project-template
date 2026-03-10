@@ -10,20 +10,6 @@
 
 ### P1 -- Should Have (important features)
 
-#### T-P1-3: SQL Series Index Page
-- **Priority**: P1
-- **Complexity**: S (< 30 min)
-- **Depends on**: T-P1-1
-- **Acceptance Criteria**:
-  - [ ] `source/series/sql/index.md` created with:
-    - Series description
-    - Mermaid mindmap of SQL topic areas
-    - Ordered list of all 16 SQL posts with links
-  - [ ] All links work, mindmap renders
-- **Files**: `source/series/sql/index.md` (new)
-
----
-
 #### T-P1-4: Data Science Series Index Page
 - **Priority**: P1
 - **Complexity**: S (< 30 min)
@@ -138,3 +124,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P0-6: Deployment Safety Script + Guide: created tools/safe-deploy.sh (clean, generate, draft-leakage check, post/draft listing, confirmation prompt, deploy) and docs/deployment-guide.md (preview, drafts workflow, permalink priority, pre-deploy checklist). Dry-run verified: 59 posts listed, 4 drafts excluded, no leakage.
 - [x] **2026-03-09** -- T-P1-1: Series Master Index Page: created source/series/index.md with links to DDIA, SQL, DS series. Added Series menu item to _config.next.yml nav bar.
 - [x] **2026-03-09** -- T-P1-2: DDIA Series Index Page: created source/series/ddia/index.md with 2-paragraph description, Mermaid mindmap (Part I/II/III topic groupings), and ordered list of all 19 posts with post_link tags.
+- [x] **2026-03-09** -- T-P1-3: SQL Series Index Page: created source/series/sql/index.md with series description, Mermaid mindmap (5 topic groups), and ordered list of all 16 SQL posts with post_link tags.
