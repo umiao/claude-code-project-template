@@ -118,3 +118,17 @@
 - **Sanity check result**: `hexo generate` produces 329 files. Both sitemap.xml and atom.xml present with correct URLs. 11/11 pytest pass.
 - **Status**: [DONE]
 - **Request**: Move T-P2-2 to Completed
+
+## 2026-03-09 -- [T-P2-3] About Page Restructure
+- **What I did**: Rewrote `source/about/index.md` using info from user's resume. Structured into sections: Bio, Work Experience (eBay MLE, eBay intern, NuNova, UCLA research), Skills, Publications, Contact. Removed outdated content ("year-one MS student", "incoming intern at ebay"). Preserved existing images (selfie.jpg, ucla.jpg, ece.jpg).
+- **Deliverables**: `source/about/index.md`
+- **Sanity check result**: `hexo generate` produces 329 files, about page renders at `public/about/index.html`.
+- **Status**: [DONE]
+- **Request**: Move T-P2-3 to Completed
+
+## 2026-03-10 -- [T-P0-8] Separate Life Category Posts to Sidebar Widget
+- **What I did**: Implemented Life category filtering for yilia theme. Modified `themes/yilia/layout/common/archive.ejs` to filter out Life-category posts from main timeline on homepage only (using `is_home()` guard). Created `themes/yilia/layout/widget/life.ejs` widget to display Life posts in sidebar with thumbnails, titles, and dates. Added 'life' to widgets list in `themes/yilia/_config.yml`.
+- **Deliverables**: `themes/yilia/layout/common/archive.ejs` (modified), `themes/yilia/layout/widget/life.ejs` (new), `themes/yilia/_config.yml` (modified)
+- **Sanity check result**: Switched theme to yilia temporarily for testing. `hexo generate` produces valid HTML. Homepage main timeline excludes Cake Inspiration Gallery post (Life category). Sidebar displays "Life & Hobbies" widget with Cake post. /archives/ page and /categories/Life/ page both still show Life posts. All acceptance criteria verified via curl tests.
+- **Status**: [DONE] Feature implemented for yilia theme. Note: Site currently uses NexT theme (as of task start), so feature is not active until theme is switched to yilia. Theme was reverted to next after testing.
+- **Request**: Move T-P0-8 to Completed

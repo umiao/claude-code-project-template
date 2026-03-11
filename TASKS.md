@@ -8,20 +8,12 @@
 
 ## Active Tasks
 
-### P2 -- Nice to Have (polish, optimization)
-
-#### T-P2-3: About Page Restructure
-- **Priority**: P2
-- **Complexity**: S (< 30 min)
-- **Depends on**: T-P0-4
-- **Acceptance Criteria**:
-  - [ ] `source/about/index.md` restructured into sections: Bio / Work / Skills / Projects
-  - [ ] [NEEDS-INPUT: user to provide current role, title, key info]
-  - [ ] Old outdated content removed ("year-one MS student", "incoming intern at ebay")
-  - [ ] Images still load correctly
-- **Files**: `source/about/index.md`
+<!-- No active tasks remaining -->
 
 ---
+
+#### T-P0-7: 发现的若干问题 1. Cake Inspiration Gallery 展示了全文 而不是传统的load more 导致占据了home的大部分篇幅 需要修正 2. About me的照片都给我压缩的妈妈都不认识了 尊重图形原始比例提高排版可读性 3. 左侧的Tags直接404 需要修正 5. category 同理
+- **Plan**: ready
 
 ## Dependency Graph
 
@@ -56,7 +48,7 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 
 ## Blocked
 <!-- Tasks that can't proceed and why -->
-- T-P2-3 (About Page): [NEEDS-INPUT: user to provide current role/bio details]
+<!-- None -->
 
 ## Completed Tasks
 <!-- Move finished tasks here with [x] and completion date -->
@@ -75,3 +67,5 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P1-5: Deploy Series Pages: deployed all series pages to production via safe-deploy.sh. 327 files, no draft leakage, 59 posts deployed.
 - [x] **2026-03-09** -- T-P2-1: Post Front Matter Cleanup: added description field to all 59 posts, normalized 5 inconsistent tags (DataScience -> Data Science, capitalized investment/options/futures/trading). All posts already had more breaks.
 - [x] **2026-03-09** -- T-P2-2: SEO Basics (Sitemap + RSS): installed hexo-generator-sitemap and hexo-generator-feed, added config to _config.yml, verified sitemap.xml and atom.xml generated with correct URLs.
+- [x] **2026-03-09** -- T-P2-3: About Page Restructure: rewrote source/about/index.md with current bio (MLE at eBay), work experience (eBay MLE, eBay intern, NuNova, UCLA research), updated skills, publications, and contact. Removed outdated content. Images preserved.
+- [x] **2026-03-10** -- T-P0-8: Separate Life Category Posts to Sidebar: implemented for yilia theme. Modified archive.ejs to filter Life posts from homepage main timeline (using is_home() guard and post.categories.findOne()), created life.ejs widget for sidebar, added to widgets config. Tested: Cake post in sidebar only, not in main timeline. /archives/ and /categories/Life/ still show Life posts. Note: Feature implemented for yilia theme; site currently uses NexT theme.

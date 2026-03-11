@@ -4,71 +4,76 @@ date: 2022-04-16 10:45:16
 tags:
 ---
 
-## Who am i
-<div  align="center">    
-	<img src="/about/selfie.jpg" width = "150" height = "80" alt="" align=left />
+<div align="center">
+  <img src="/about/selfie.jpg" width="150" height="80" alt="Shenghui Xu" align="left" />
 </div>
-  
 
->This is **Shenghui Xu** and welcome to my blog. I am currently a year-one MS student with the Electrical Computer Engineering department of **University of California, Los Angeles**. I am now focusing on the track of Signals & Systems and have a GPA of 4.0. I am also an incoming applied researcher intern at **ebay**.
+## Bio
 
+I am **Shenghui Xu**, a Machine Learning Engineer at **eBay** working on Search Science, Ranking & Monetization. I build large-scale ranking and retrieval systems that power eBay Search, from relevance filtering frameworks to LLM-based evaluation pipelines. I hold an M.S. in Electrical & Computer Engineering from **UCLA** (GPA 3.9/4.0).
 
+This blog is where I write about topics I find interesting -- distributed systems, databases, data science, and machine learning.
 
-
-<!-- ![](/about/ucla.jpg) -->
-
-<div  align="center">    
-	<img src="/about/ucla.jpg" width = "150" height = "80" alt="" align=left />
-	<img src="/about/ece.jpg" width = "300" height = "400" alt="" align=right />
+<div align="center">
+  <img src="/about/ucla.jpg" width="150" height="80" alt="UCLA" align="left" />
+  <img src="/about/ece.jpg" width="300" height="400" alt="ECE" align="right" />
 </div>
 <br>
 <br>
 <br>
 
-***
+---
 
+## Work Experience
 
-## Skills and Tools
+**eBay** -- Machine Learning Engineer, Search Science, Ranking & Monetization (Apr 2023 -- Present)
+- Proposed and implemented a Ranking-as-Allocation framework for full-session, context-aware ranking at site scale
+- Designed and launched the first site-wide model-based relevance filtering framework on Best Match (Organic Search)
+- Led end-to-end development of an LLM-based relevance judgment pipeline, reducing evaluation cost by 94%
+- Full-lifecycle ML engineering: feature engineering, embedding services, Hadoop/Spark pipelines, model training & deployment
 
-- Languages
-	- Python / Matlab / R / Java / JavaScript / C++
-	- Bash / CMD / Code Climate
+**eBay** -- Applied Research Intern, eBay Ads Guidance (Jun 2022 -- Sep 2022)
+- Built a CTR prediction system improving estimation accuracy by 19% in CPC Ads
+- Proposed a novel relevance metric integrating business signals and embedding distance, improving retrieval relevance by 40%
 
+**NuNova.ai** -- Software Engineer Intern, AI on Chip / Model Deployment (Sep 2019 -- Jun 2020)
+- Developed AI model deployment verification toolchain for openOPU, an open-source FPGA-based neural network accelerator
+- Implemented Post-Training Quantization pipelines (INT4/INT8/mixed-precision) across VGG, YOLO, BERT, and ViT
 
-- Frameworks
-	- TensorFlow / Torch / Keras / Theano / CUDA / CUDNN
-	- Scikit-learn / nltk / Numpy / Spark (PySpark)
-	- Qt
+**UCLA** -- Graduate Research, AI Compiler & On-Chip Inference (2021 -- 2022)
+- Extended openOPU FPGA inference accelerator research; developed hardware-aware quantization workflows
+- Designed EDA software tooling including Layout Viewer, Waveform Viewer, and automated regression test suites
 
-- Web
-	- HTML/HTML5 / CSS / Node.js
-	- jQuery / Vue.js / quasar
-	- Tornado / Chrome Dev Tools
+---
 
-- Editor & IDE
-	- VIM / Sublime Text / Notepad++ / Lime Text 
-	- Visual Studio / Qtcreator / Pycharm / Eclipse
+## Skills
 
+**Languages:** Python, Scala, C++, SQL, JavaScript, Java, MATLAB, Bash
+**ML / DL:** PyTorch, TensorFlow, Keras, TVM, ONNX, scikit-learn
+**Infrastructure:** Hadoop, Spark, Airflow, Ray, Kafka, Jenkins, Git, Linux, Docker
+**Systems & Serving:** Krylov, Tornado, Vue.js, REST APIs, FastAPI
+**Domains:** Large-scale Ranking & Retrieval, LLM Evaluation, Feature Engineering, A/B Testing, Model Quantization
 
-- Version Control & Deployment
-	- Git / SVN / Github / GitLab / Gitee / Anaconda / npm
+---
 
-- Testing
-	- Jenkins / Lint / Pytest / Docker / Unit Testing
+## Publications
 
-- Data Management
-	- MySQL / MongoDB / Redis / Memcached
-***
+**Industry (eBay):**
+- Utilizing LLMs for Generating Relevance Labels of Query-Item Pairs in E-commerce
+- Balancing Trust and Growth in Marketplace Search
+- Rethinking Ranking Optimization: Balancing Diversity and Revenue through Intent-Aware Objectives
 
-## Projects
+**Academic:**
+- Short-Term Memory Sampling for Spread Measurement in High-Speed Networks -- *INFOCOM 2022*
+- An Efficient Adaptive Noise Correction Framework for Size Measurement over Data Streams -- *ICPADS 2021*
+- Online Anomalous Taxi Trajectory Detection Based on Multidimensional Criteria -- *IJCNN 2021*
+- An Efficient Flow Label Collector Design for High-Speed Networks -- *IEEE Communications Letters, 2021*
+- Performance Analysis of Information Theoretic Learning-Based Cooperative Localization -- *IEEE Communications Letters*
 
-***
+---
 
-## Experiences
+## Contact
 
-***
-
-
-
-
-
+- Email: xushenghui@ucla.edu
+- LinkedIn: [linkedin.com/in/shenghuixu](https://www.linkedin.com/in/shenghuixu)
+- Blog: [umiao.github.io](https://umiao.github.io)
