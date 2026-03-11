@@ -47,6 +47,51 @@
 - Never read/write files without explicit encoding="utf-8"
 <!-- CUSTOMIZE: Add your project-specific prohibitions -->
 
+### Major Change Approval Protocol
+
+**Definition of Major Changes** (require explicit user approval before execution):
+- **Theme switches**: Changing the active Hexo theme in `_config.yml`
+- **Removing functionality**: Deleting features, widgets, or pages that users interact with
+- **Reversing approved decisions**: Undoing changes from completed tasks (e.g., reverting T-P0-1 through T-P0-4 NexT migration)
+- **Deployment target changes**: Modifying publish repository, deployment scripts, or public URLs
+- **Breaking changes to content structure**: Bulk renaming/moving posts, changing permalink format
+
+**Required Process** (4 steps, all mandatory):
+1. **State the proposed change and why**: Clearly describe what will change and the motivation
+2. **List alternatives**: Present at least 2-3 alternative approaches (including "do nothing")
+3. **Show impact**: Explain what will break, what users will see differently, rollback difficulty
+4. **Wait for explicit approval**: Do NOT proceed until user responds with clear confirmation
+
+**What is NOT a major change** (can proceed without approval workflow):
+- Bug fixes within the current theme (e.g., fixing broken links, correcting config typos)
+- Adding requested content (new posts, pages, features explicitly asked for in current task)
+- Non-visible config tweaks (performance tuning, SEO meta tags, analytics)
+- Routine maintenance (dependency updates, linting fixes, test improvements)
+
+**Example Application**:
+```
+User: "switch back to NexT theme"
+
+Correct response:
+"I propose switching the active theme from yilia to NexT to complete the migration
+approved in T-P0-1 through T-P0-4.
+
+Alternatives:
+1. Keep yilia (current state)
+2. Switch to NexT (completes migration)
+3. Evaluate a different theme
+
+Impact:
+- Homepage appearance will change (NexT layout vs yilia layout)
+- Life sidebar widget will need migration (yilia-specific customization)
+- Tags/Categories/About pages use NexT native rendering
+- Rollback: change theme in _config.yml and run hexo generate
+
+May I proceed with option 2 (switch to NexT)?"
+
+[Wait for user approval before executing]
+```
+
 ## Behavior Rules
 - **Fix violations immediately**: When a check you run (lint, emoji scan, tests) discovers
   violations in project files, fix them immediately.

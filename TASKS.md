@@ -15,6 +15,7 @@
 #### T-P0-7: 发现的若干问题 1. Cake Inspiration Gallery 展示了全文 而不是传统的load more 导致占据了home的大部分篇幅 需要修正 2. About me的照片都给我压缩的妈妈都不认识了 尊重图形原始比例提高排版可读性 3. 左侧的Tags直接404 需要修正 5. category 同理
 - **Plan**: ready
 
+
 ## Dependency Graph
 
 ```
@@ -70,3 +71,4 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 - [x] **2026-03-09** -- T-P2-3: About Page Restructure: rewrote source/about/index.md with current bio (MLE at eBay), work experience (eBay MLE, eBay intern, NuNova, UCLA research), updated skills, publications, and contact. Removed outdated content. Images preserved.
 - [x] **2026-03-10** -- T-P0-8: Separate Life Category Posts to Sidebar: implemented for yilia theme. Modified archive.ejs to filter Life posts from homepage main timeline (using is_home() guard and post.categories.findOne()), created life.ejs widget for sidebar, added to widgets config. Tested: Cake post in sidebar only, not in main timeline. /archives/ and /categories/Life/ still show Life posts. Note: Feature implemented for yilia theme; site currently uses NexT theme.
 - [x] **2026-03-11** -- T-P0-9: Activate Life Sidebar Widget + Add Excerpt Break: changed theme from next to yilia in _config.yml (activating Life sidebar widget from T-P0-8), added <!-- more --> tag to Cake-Inspiration-Gallery.md after intro section (line 100). Verified: hexo generate succeeds with 413 files, Cake post filtered from homepage main feed, Life & Hobbies sidebar widget displays with Cake post, full cake gallery content hidden from homepage excerpt.
+- [x] **2026-03-11** -- T-P0-10: Establish Major Change Approval Protocol: Added "Major Change Approval Protocol" section to CLAUDE.md defining major changes (theme switches, removing functionality, reversing approved decisions, deployment target changes) with required 4-step approval process (state change + why, list alternatives, show impact, wait for approval). Added lesson entry to LESSONS.md documenting T-P0-9 theme switch incident and correct communication approach. NexT feasibility research completed: (1) Life sidebar widget - FEASIBLE via custom_file_path.sidebar in _config.next.yml, (2) Homepage Life post filtering - FEASIBLE with Hexo filter plugin in scripts/, (3) Tags/Categories pages - NATIVE support in NexT, (4) About page image aspect ratios - FEASIBLE via markdown/CSS. Conclusion: All yilia-specific features can be replicated in NexT with no blockers.
