@@ -30,6 +30,10 @@
 2. No hardcoded secrets in code
 3. <!-- Add your domain-specific invariants here -->
 
+## Git Conventions
+- **Language**: All commit messages must be in English. No CJK characters.
+- **Enforcement**: 3-layer defense -- PreToolUse hook (`commit_msg_guard.py`), git `commit-msg` hook, CI pipeline.
+
 ## Code Style
 - Use ruff for linting
 - Type checking: mypy
