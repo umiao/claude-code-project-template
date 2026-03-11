@@ -34,7 +34,21 @@
       "WebFetch(domain:gcsservices.careers.microsoft.com)",
       "Bash(wc:*)",
       "Bash(find:*)",
-      "Bash(head:*)"
+      "Bash(head:*)",
+      "Bash(npx hexo:*)",
+      "Bash(mv:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(SRC=\"/c/Users/Shenghui Xu/Desktop/03_09_陈李琪分享的蛋糕图\")",
+      "Bash(DST=\"/c/Users/Shenghui Xu/Desktop/blog_proj/source/_posts/Cake-Inspiration-Gallery\")",
+      "Bash(cp \"$SRC\"/*.png \"$DST/\")",
+      "Read(//c/Users/Shenghui Xu/Desktop/blog_proj/**)",
+      "Bash(cp:*)",
+      "Bash(grep:*)",
+      "Bash(do echo:*)",
+      "Bash(do head:*)",
+      "Bash(cd:*)",
+      "Bash(bash:*)"
     ]
   }
 }

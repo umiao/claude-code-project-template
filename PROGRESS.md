@@ -132,3 +132,10 @@
 - **Sanity check result**: Switched theme to yilia temporarily for testing. `hexo generate` produces valid HTML. Homepage main timeline excludes Cake Inspiration Gallery post (Life category). Sidebar displays "Life & Hobbies" widget with Cake post. /archives/ page and /categories/Life/ page both still show Life posts. All acceptance criteria verified via curl tests.
 - **Status**: [DONE] Feature implemented for yilia theme. Note: Site currently uses NexT theme (as of task start), so feature is not active until theme is switched to yilia. Theme was reverted to next after testing.
 - **Request**: Move T-P0-8 to Completed
+
+## 2026-03-11 -- [T-P0-9] Activate Life Sidebar Widget + Add Excerpt Break to Cake Post
+- **What I did**: Changed theme from `next` to `yilia` in `_config.yml` line 100 (activating the Life sidebar widget infrastructure from T-P0-8). Added `<!-- more -->` tag to `source/_posts/Cake-Inspiration-Gallery.md` after line 100 (after intro paragraph, Quick Nav, and separator, before first cake section) to collapse the 387-line, 57-image post on homepage.
+- **Deliverables**: `_config.yml` (theme: next -> yilia), `source/_posts/Cake-Inspiration-Gallery.md` (added <!-- more --> tag)
+- **Sanity check result**: `hexo clean && hexo generate` succeeds with 413 files, zero errors. Verified in generated `public/index.html`: (1) Cake post NOT in main article feed (grep for article titles shows no Cake post), (2) "cake-gallery" class absent from homepage (full content hidden), (3) "Life & Hobbies" sidebar widget present with Cake post listed. Verified `public/2026/03/09/Cake-Inspiration-Gallery/index.html` full post page renders correctly with all 57 images.
+- **Status**: [DONE]
+- **Request**: Move T-P0-9 to Completed

@@ -99,6 +99,8 @@ A collection of cake inspiration shared by my friend on 2026-03-09. Each image c
 
 ---
 
+<!-- more -->
+
 <div class="cake-section">
 
 ## 1. Character Cakes / IP卡通造型
