@@ -16,6 +16,7 @@
 - **Plan**: ready
 
 
+
 ## Dependency Graph
 
 ```
@@ -54,6 +55,7 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 ## Completed Tasks
 <!-- Move finished tasks here with [x] and completion date -->
 
+- [x] **2026-03-11** -- T-P0-11: Review Last 3 Commits + Apply Fixes: created source/tags/index.md and source/categories/index.md with proper Hexo front matter, updated yilia menu config to add Tags and Categories links, fixed About page image sizing (removed hard-coded width/height, added max-width CSS), created Python-based commit-msg hook to enforce English-only commit messages (stored in tools/ and installed to .git/hooks/), hexo generate verified (tags/categories/about pages render correctly).
 - [x] **2026-03-02** -- Git pre-commit hook for ruff version consistency: pinned ruff==0.1.14, fixed CI lint job, created pre-commit hook (version guard + lint + emoji scan), created setup-hooks.sh installer, updated docs.
 - [x] **2026-03-09** -- T-P0-1: Backup + Baseline Build: created blog-refactor branch, fixed Hexo scripts/ conflict by renaming to tools/, baseline build succeeds (90 post HTML files, zero errors), rollback verified.
 - [x] **2026-03-09** -- T-P0-2: Install NexT Theme: installed hexo-theme-next, created _config.next.yml (Gemini, TOC, reading progress, local search, mermaid, MathJax, code copy, social links, androidstudio highlight), switched theme to next, 90 post HTML files generated.

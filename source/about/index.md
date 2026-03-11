@@ -5,7 +5,7 @@ tags:
 ---
 
 <div align="center">
-  <img src="/about/selfie.jpg" width="150" height="80" alt="Shenghui Xu" align="left" />
+  <img src="/about/selfie.jpg" alt="Shenghui Xu" align="left" style="max-width: 300px; height: auto;" />
 </div>
 
 ## Bio
@@ -15,8 +15,8 @@ I am **Shenghui Xu**, a Machine Learning Engineer at **eBay** working on Search 
 This blog is where I write about topics I find interesting -- distributed systems, databases, data science, and machine learning.
 
 <div align="center">
-  <img src="/about/ucla.jpg" width="150" height="80" alt="UCLA" align="left" />
-  <img src="/about/ece.jpg" width="300" height="400" alt="ECE" align="right" />
+  <img src="/about/ucla.jpg" alt="UCLA" align="left" style="max-width: 300px; height: auto;" />
+  <img src="/about/ece.jpg" alt="ECE" align="right" style="max-width: 400px; height: auto;" />
 </div>
 <br>
 <br>

@@ -1,0 +1,81 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+commit-msg hook to enforce English-only commit messages.
+Rejects commits with CJK (Chinese, Japanese, Korean) characters in the subject or body.
+
+Installation: Copy or symlink this file to .git/hooks/commit-msg
+Windows: Git for Windows provides Python via Git Bash
+Manual install: cp tools/commit-msg-hook .git/hooks/commit-msg && chmod +x .git/hooks/commit-msg
+"""
+
+import sys
+import re
+
+
+def contains_cjk(text: str) -> bool:
+    """
+    Check if text contains CJK (Chinese, Japanese, Korean) characters.
+
+    Unicode ranges checked (Basic Multilingual Plane only for portability):
+    - 4E00-9FFF: CJK Unified Ideographs (Chinese, Japanese, Korean)
+    - 3400-4DBF: CJK Unified Ideographs Extension A
+    - 3040-309F: Hiragana (Japanese)
+    - 30A0-30FF: Katakana (Japanese)
+    - AC00-D7AF: Hangul Syllables (Korean)
+    - F900-FAFF: CJK Compatibility Ideographs
+    - 3100-312F: Bopomofo (Chinese phonetic)
+    - 31A0-31BF: Bopomofo Extended
+    """
+    cjk_pattern = re.compile(
+        r'[\u3040-\u30FF'  # Hiragana + Katakana
+        r'\u3100-\u312F'   # Bopomofo
+        r'\u3130-\u318F'   # Hangul Compatibility Jamo
+        r'\u31A0-\u31BF'   # Bopomofo Extended
+        r'\u3400-\u4DBF'   # CJK Extension A
+        r'\u4E00-\u9FFF'   # CJK Unified Ideographs
+        r'\uAC00-\uD7AF'   # Hangul Syllables
+        r'\uF900-\uFAFF'   # CJK Compatibility
+        r']'
+    )
+    return bool(cjk_pattern.search(text))
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("ERROR: commit-msg hook requires commit message file as argument", file=sys.stderr)
+        sys.exit(1)
+
+    commit_msg_file = sys.argv[1]
+
+    # Read the commit message (UTF-8 encoding)
+    try:
+        with open(commit_msg_file, 'r', encoding='utf-8') as f:
+            commit_msg = f.read()
+    except Exception as e:
+        print(f"ERROR: Failed to read commit message file: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    # Check for CJK characters
+    if contains_cjk(commit_msg):
+        print("=" * 80, file=sys.stderr)
+        print("ERROR: Commit message contains CJK (Chinese/Japanese/Korean) characters.", file=sys.stderr)
+        print("Please use English-only commit messages.", file=sys.stderr)
+        print("=" * 80, file=sys.stderr)
+        print("\nYour commit message:", file=sys.stderr)
+        print("-" * 80, file=sys.stderr)
+        # Handle Windows console encoding issues gracefully
+        try:
+            print(commit_msg, file=sys.stderr)
+        except UnicodeEncodeError:
+            # If can't print Unicode, at least show the error clearly
+            print("[Commit message contains non-ASCII characters]", file=sys.stderr)
+        print("-" * 80, file=sys.stderr)
+        sys.exit(1)
+
+    # All good!
+    sys.exit(0)
+
+
+if __name__ == '__main__':
+    main()
