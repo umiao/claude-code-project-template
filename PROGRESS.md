@@ -153,3 +153,10 @@
 - **Sanity check result**: `hexo clean && hexo generate` produces 394 files, zero errors. Tags/categories/about pages exist. Cake Inspiration Gallery post NOT in homepage post titles (0 matches). Cake post IS in Life sidebar widget (1 match). Cake post page exists at direct URL. NexT v8.27.0 confirmed.
 - **Status**: [DONE]
 - **Request**: Move T-P0-7 to Completed
+
+## 2026-03-11 -- Knowledge System Task Planning
+- **What I did**: Wrote 18 new tasks to TASKS.md across 3 phases: Phase 1 Core Infrastructure (T-P3-1 to T-P3-5: scaffold schema, concept registry, /blog-from-notes skill, review queue tool, /study-review skill), Phase 2 Knowledge Graph & Content (T-P4-1 to T-P4-9: /refine-post skill, DDIA pilot enrichment, batch enrichment, concept index, series nav, related posts, interview hub, cheat sheets, publish drafts), Phase 3 Polish (T-P5-1 to T-P5-4: knowledge map, Anki export, /plan-series skill, quality fixes). Updated dependency graph. Preserved all 15 completed tasks.
+- **Deliverables**: `TASKS.md` (replaced Active Tasks section and dependency graph)
+- **Sanity check result**: Read back TASKS.md -- all 18 tasks present with acceptance criteria, complexity, depends-on fields. Dependency graph consistent with task specs. Completed section intact (15 entries).
+- **Status**: [DONE]
+- **Request**: No change (task planning only, no task IDs to move)
