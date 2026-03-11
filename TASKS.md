@@ -12,11 +12,6 @@
 
 ---
 
-#### T-P0-7: 发现的若干问题 1. Cake Inspiration Gallery 展示了全文 而不是传统的load more 导致占据了home的大部分篇幅 需要修正 2. About me的照片都给我压缩的妈妈都不认识了 尊重图形原始比例提高排版可读性 3. 左侧的Tags直接404 需要修正 5. category 同理
-- **Plan**: ready
-
-
-
 ## Dependency Graph
 
 ```
@@ -55,6 +50,7 @@ T-P2-1 (Front Matter) -- depends on T-P0-6, independent of series
 ## Completed Tasks
 <!-- Move finished tasks here with [x] and completion date -->
 
+- [x] **2026-03-11** -- T-P0-7: Restore NexT theme with Life category support. Switched theme yilia -> next, created scripts/filter-life-homepage.js generator plugin to hide Life posts from homepage, created source/_data/sidebar.njk Life widget for NexT sidebar, added custom_file_path.sidebar to _config.next.yml. Fixed tags/categories 404s, about page image sizing. Build: 394 files, zero errors. Cake post filtered from homepage, visible in sidebar widget and direct URL.
 - [x] **2026-03-11** -- T-P0-11: Review Last 3 Commits + Apply Fixes: created source/tags/index.md and source/categories/index.md with proper Hexo front matter, updated yilia menu config to add Tags and Categories links, fixed About page image sizing (removed hard-coded width/height, added max-width CSS), created Python-based commit-msg hook to enforce English-only commit messages (stored in tools/ and installed to .git/hooks/), hexo generate verified (tags/categories/about pages render correctly).
 - [x] **2026-03-02** -- Git pre-commit hook for ruff version consistency: pinned ruff==0.1.14, fixed CI lint job, created pre-commit hook (version guard + lint + emoji scan), created setup-hooks.sh installer, updated docs.
 - [x] **2026-03-09** -- T-P0-1: Backup + Baseline Build: created blog-refactor branch, fixed Hexo scripts/ conflict by renaming to tools/, baseline build succeeds (90 post HTML files, zero errors), rollback verified.

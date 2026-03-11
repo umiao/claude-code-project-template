@@ -146,3 +146,10 @@
 - **Sanity check result**: `hexo clean && hexo generate` produces 413 files, zero errors. Verified: `public/tags/index.html` and `public/categories/index.html` exist with correct titles. `public/about/index.html` has images with `style="max-width: ...; height: auto;"` (no width/height attributes). commit-msg hook tested with 4 test cases: [PASS] English, [REJECT] Chinese, [REJECT] Japanese, [REJECT] Korean. Hook script uses Python (not bash) for Windows compatibility and proper Unicode handling.
 - **Status**: [DONE] Note: Theme switch question (yilia -> NexT) deferred to separate task per Major Change Approval Protocol.
 - **Request**: Move T-P0-11 to Completed
+
+## 2026-03-11 -- [T-P0-7, T-P0-9] Restore NexT Theme with Life Category Support
+- **What I did**: Switched theme from yilia back to NexT in `_config.yml` (completing the user-approved migration). Created `scripts/filter-life-homepage.js` Hexo generator plugin that overrides the default index generator to exclude Life-category posts from the homepage. Created `source/_data/sidebar.njk` Life sidebar widget for NexT showing Life posts with titles and dates. Added `custom_file_path.sidebar` to `_config.next.yml`. Also included T-P0-11 fixes (tags/categories index pages, about page image sizing, commit-msg hook).
+- **Deliverables**: `_config.yml` (theme: yilia -> next), `scripts/filter-life-homepage.js` (new), `source/_data/sidebar.njk` (new), `_config.next.yml` (modified), `source/tags/index.md` (new), `source/categories/index.md` (new), `source/about/index.md` (modified), `tools/commit-msg-hook` (new)
+- **Sanity check result**: `hexo clean && hexo generate` produces 394 files, zero errors. Tags/categories/about pages exist. Cake Inspiration Gallery post NOT in homepage post titles (0 matches). Cake post IS in Life sidebar widget (1 match). Cake post page exists at direct URL. NexT v8.27.0 confirmed.
+- **Status**: [DONE]
+- **Request**: Move T-P0-7 to Completed
