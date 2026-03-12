@@ -101,28 +101,27 @@ def _summarize_task_oneline(task_block: str) -> str:
     return " ".join(parts)
 
 
-def _get_completed_task_ids(content: str) -> set[str]:
-    """Extract task IDs from the Completed Tasks section for dedup filtering."""
-    section_match = re.search(
-        r"## Completed Tasks\s*\n(.*?)(?=\n## |\Z)", content, re.DOTALL
-    )
-    if not section_match:
-        return set()
-    return set(re.findall(r"(T-\S+)(?=:)", section_match.group(1)))
-
-
 def _get_active_tasks(root: Path, current_task_id: str | None) -> str:
     """Extract tasks from TASKS.md with two-tier detail.
 
     Current task (from session_state.json): FULL details.
     All other tasks: ONE LINE each.
+    Dedup: tasks already in Completed Tasks are filtered out.
     """
     tasks_file = root / "TASKS.md"
     if not tasks_file.exists():
         return "No TASKS.md found."
 
     content = tasks_file.read_text(encoding="utf-8")
-    completed_ids = _get_completed_task_ids(content)
+
+    # Extract completed task IDs for dedup (defense against orphaned specs)
+    completed_ids: set[str] = set()
+    completed_match = re.search(
+        r"## Completed Tasks\s*\n(.*?)(?=\n## |\Z)", content, re.DOTALL
+    )
+    if completed_match:
+        completed_ids = set(re.findall(r"(T-P\d+-\d+)", completed_match.group(1)))
+
     sections: list[str] = []
 
     # Extract section content for In Progress, Active Tasks, Blocked
@@ -152,6 +151,7 @@ def _get_active_tasks(root: Path, current_task_id: str | None) -> str:
             task_id_match = re.match(r"####\s+(T-\S+):", block)
             task_id = task_id_match.group(1) if task_id_match else None
 
+            # Skip orphaned tasks that are already in Completed
             if task_id and task_id in completed_ids:
                 continue
 

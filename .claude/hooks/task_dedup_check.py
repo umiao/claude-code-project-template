@@ -1,75 +1,88 @@
-"""Stop hook: detect task ID overlap between active and completed sections in TASKS.md."""
+"""Stop hook: detect tasks appearing in both Active/In Progress and Completed."""
 import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from hook_utils import check_stop_cache, run_hook, write_stop_cache  # noqa: E402
+from hook_utils import run_hook  # noqa: E402
 
 
-def _extract_section_task_ids(content: str, section_name: str) -> set[str]:
-    """Extract task IDs (T-xxx) from a named section of TASKS.md.
+def _find_project_root() -> Path:
+    """Find the project root by looking for CLAUDE.md."""
+    candidates = [
+        Path.cwd(),
+        Path(__file__).resolve().parent.parent.parent,
+    ]
+    for candidate in candidates:
+        if (candidate / "CLAUDE.md").exists():
+            return candidate
+    return Path.cwd()
+
+
+def _extract_section_task_ids(
+    content: str, section_name: str, *, headers_only: bool = False,
+) -> set[str]:
+    """Extract task IDs (T-P\\d+-\\d+[a-z]?) from a named ## section.
 
     Args:
-        content: Full TASKS.md text.
-        section_name: Section header (e.g. "Active Tasks", "Completed Tasks").
-
-    Returns:
-        Set of task ID strings found in that section.
+        content: Full TASKS.md content.
+        section_name: The ## section name to search in.
+        headers_only: If True, only match task IDs in #### header lines
+            (ignores "Depends on" references).
     """
-    section_match = re.search(
-        rf"## {re.escape(section_name)}\s*\n(.*?)(?=\n## |\Z)", content, re.DOTALL
+    match = re.search(
+        rf"## {re.escape(section_name)}\s*\n(.*?)(?=\n## |\Z)",
+        content,
+        re.DOTALL,
     )
-    if not section_match:
+    if not match:
         return set()
-    return set(re.findall(r"(T-\S+)(?=:)", section_match.group(1)))
+    section_text = match.group(1)
+    if headers_only:
+        # Only match IDs in task definition headers: "#### T-P3-6a: ..."
+        return set(re.findall(
+            r"^#{3,4}\s+(?:\[x\]\s+)?(T-P\d+-\d+[a-z]?):",
+            section_text,
+            re.MULTILINE,
+        ))
+    return set(re.findall(r"(T-P\d+-\d+[a-z]?)", section_text))
 
 
 def main(hook_input: dict) -> None:
-    """Check TASKS.md for task IDs appearing in both active and completed sections.
+    """Block stop if tasks appear in both Active/In Progress and Completed.
 
     Args:
-        hook_input: Parsed JSON dict from stdin.
+        hook_input: Parsed JSON dict from stdin (Stop hook payload).
     """
-    if check_stop_cache("task_dedup"):
-        print(
-            "[TASK DEDUP] No files changed since last pass -- skipping (cached PASS)",
-            file=sys.stderr,
-        )
-        sys.exit(0)
-
-    # Find project root
-    project_root = Path(__file__).resolve().parent.parent.parent
-    tasks_file = project_root / "TASKS.md"
-
+    root = _find_project_root()
+    tasks_file = root / "TASKS.md"
     if not tasks_file.exists():
         sys.exit(0)
 
-    try:
-        content = tasks_file.read_text(encoding="utf-8")
-    except OSError:
-        sys.exit(0)
+    content = tasks_file.read_text(encoding="utf-8")
 
-    # Collect task IDs from active sections
+    # Collect task IDs from active sections (headers only -- ignore dep refs)
     active_ids: set[str] = set()
     for section in ["In Progress", "Active Tasks", "Blocked"]:
-        active_ids |= _extract_section_task_ids(content, section)
+        active_ids |= _extract_section_task_ids(
+            content, section, headers_only=True,
+        )
 
-    completed_ids = _extract_section_task_ids(content, "Completed Tasks")
+    completed_ids = _extract_section_task_ids(
+        content, "Completed Tasks", headers_only=True,
+    )
 
     overlap = active_ids & completed_ids
     if overlap:
         sorted_overlap = sorted(overlap)
         print(
-            f"[TASK DEDUP] Task ID(s) found in BOTH active and completed sections: "
-            f"{', '.join(sorted_overlap)}\n"
-            f"  Each task must appear in exactly one section.\n"
-            f"  Remove the duplicate from either active or completed before stopping.",
+            f"[TASK DEDUP] Found {len(overlap)} task(s) in both Active and "
+            f"Completed sections: {', '.join(sorted_overlap)}. "
+            f"Remove their spec blocks from Active Tasks before stopping.",
             file=sys.stderr,
         )
         sys.exit(2)
 
-    write_stop_cache("task_dedup")
     sys.exit(0)
 
 

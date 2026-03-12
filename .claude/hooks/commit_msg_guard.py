@@ -1,4 +1,4 @@
-"""PreToolUse hook: block git commits containing CJK characters in messages."""
+"""PreToolUse hook: block git commit messages containing CJK characters."""
 import json
 import re
 import sys
@@ -7,18 +7,60 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from hook_utils import run_hook  # noqa: E402
 
-# Matches any CJK Unified Ideographs (common Chinese/Japanese/Korean characters)
-CJK_PATTERN = re.compile(r"[\u4e00-\u9fff\u3400-\u4dbf\uf900-\ufaff]")
-
-# Patterns that extract a commit message from a git commit command
-COMMIT_MSG_FLAGS = re.compile(
-    r"""git\s+commit\s+.*?(?:-m\s+(?:"([^"]*?)"|'([^']*?)'|(\S+)))""",
-    re.DOTALL,
+# CJK character ranges: Unified Ideographs, CJK Punctuation, Hiragana, Katakana, Korean
+_CJK_RE = re.compile(
+    r"[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff\uac00-\ud7af]",
 )
 
 
+def _extract_commit_message(command: str) -> str:
+    """Extract the commit message from a git commit command string.
+
+    Handles:
+    - git commit -m "message"
+    - git commit -m 'message'
+    - git commit -m "$(cat <<'EOF' ... EOF )"  (heredoc)
+
+    Args:
+        command: The full shell command string.
+
+    Returns:
+        The extracted message, or empty string if not found.
+    """
+    # Heredoc pattern: $(cat <<'EOF' ... EOF ) or $(cat <<EOF ... EOF )
+    heredoc_match = re.search(
+        r"\$\(cat\s+<<'?(\w+)'?\s*\n(.*?)\n\s*\1",
+        command,
+        re.DOTALL,
+    )
+    if heredoc_match:
+        return heredoc_match.group(2)
+
+    # Standard -m with double or single quotes
+    # Try double quotes first
+    m_match = re.search(r'''-m\s+"((?:[^"\\]|\\.)*)"''', command)
+    if m_match:
+        return m_match.group(1)
+
+    # Single quotes
+    m_match = re.search(r"""-m\s+'((?:[^'\\]|\\.)*)'""", command)
+    if m_match:
+        return m_match.group(1)
+
+    # Unquoted (single word after -m)
+    m_match = re.search(r"-m\s+(\S+)", command)
+    if m_match:
+        return m_match.group(1)
+
+    return ""
+
+
 def main(hook_input: dict) -> None:
-    """Block git commit commands whose message contains CJK characters."""
+    """Block git commit commands whose message contains CJK characters.
+
+    Args:
+        hook_input: Parsed JSON dict from stdin with tool_name and tool_input.
+    """
     tool_name = hook_input.get("tool_name", "")
     if tool_name != "Bash":
         sys.exit(0)
@@ -26,33 +68,24 @@ def main(hook_input: dict) -> None:
     tool_input = hook_input.get("tool_input", {})
     command = tool_input.get("command", "")
 
-    # Only check commands that look like git commit
-    if "git commit" not in command and "git commit" not in command.replace("  ", " "):
+    # Only check git commit commands
+    if not re.search(r"\bgit\s+commit\b", command):
         sys.exit(0)
 
-    # Extract commit message from -m flag
-    match = COMMIT_MSG_FLAGS.search(command)
-    if not match:
-        # No -m flag found (could be --amend, interactive, etc.) -- allow
+    message = _extract_commit_message(command)
+    if not message:
         sys.exit(0)
 
-    # Get whichever capture group matched
-    msg = match.group(1) or match.group(2) or match.group(3) or ""
-
-    if CJK_PATTERN.search(msg):
+    if _CJK_RE.search(message):
         print(
             json.dumps({
                 "decision": "block",
-                "reason": (
-                    "Commit message contains CJK characters. "
-                    "All commit messages must be in English. "
-                    f"Message: {msg[:80]}"
-                ),
+                "reason": "Commit message contains CJK characters. Use English only.",
             })
         )
         sys.exit(0)
 
-    # No CJK found -- allow
+    # Allow the command
     sys.exit(0)
 
 
