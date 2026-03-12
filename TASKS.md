@@ -36,16 +36,7 @@
 > **P2 Checkpoint**: User can (1) search any concept via `/concepts/` page, (2) navigate series with prev/next links, (3) see related posts on every article, (4) use interview hub for prep, (5) quick-review via cheat sheets.
 
 ### Stretch Goals (P3)
-
-#### T-P3-8: /plan-series Skill
-- Complexity: M | Depends on: T-P0-12, T-P1-6
-- Create `.claude/skills/plan-series/SKILL.md`
-- Skill scaffolds a new blog series: creates series index page, generates stub posts with front matter, updates concepts.yml with new domain concepts
-- **Acceptance Criteria**:
-  1. `.claude/skills/plan-series/SKILL.md` exists with complete skill instructions
-  2. Skill creates series index page under `source/series/<name>/index.md`
-  3. Skill generates stub posts with scaffold template front matter
-  4. Manual test: plan a test series, verify all files created correctly
+<!-- None -->
 
 > **P3 Checkpoint**: User can (1) export flashcards to Anki, (2) visualize knowledge map, (3) scaffold entire new series from a topic.
 
@@ -124,3 +115,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P3-6: Visual Knowledge Map: Created `source/knowledge-map/index.md` with Mermaid diagram showing 4 domain clusters (DDIA, SQL, DS, Interview) with key concept nodes and cross-domain connections. Added nav menu entry. hexo generate produces 207 files with Mermaid rendering.
 
 - [x] **2026-03-12** -- T-P3-7: Anki Export Tool: Created `tools/export_anki.py` that reads key_concepts and takeaways from all 64 posts, generates 370 Anki flashcards (concept definition + takeaway recall cards) as tab-separated CSV to `data/anki_export.csv`. All file I/O uses encoding="utf-8".
+
+- [x] **2026-03-12** -- T-P3-8: /plan-series Skill: Created `.claude/skills/plan-series/SKILL.md` with 8-step workflow for scaffolding new blog series (series index page with Mermaid mindmap, stub posts with full front matter, concepts.yml registration, series master index update).

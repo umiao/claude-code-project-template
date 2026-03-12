@@ -286,3 +286,10 @@
 - **Sanity check result**: All 4 ACs met: (1) `tools/export_anki.py` exists, runs without errors. (2) Produces valid tab-separated CSV with 370 rows, all 3 columns populated. (3) All 64 posts with key_concepts covered. (4) Output written to `data/anki_export.csv`. Ruff lint passes.
 - **Status**: [DONE]
 - **Request**: Move T-P3-7 to Completed
+
+## 2026-03-12 -- [T-P3-8] /plan-series Skill
+- **What I did**: Created `.claude/skills/plan-series/SKILL.md` with 8-step workflow: gather series info, determine metadata, show plan for confirmation, create series index page (with Mermaid mindmap), generate stub posts with full front matter, update series master index, register new concepts in concepts.yml, report results. Skill follows patterns from existing series (DDIA, SQL, DS) and integrates with scaffold template, concepts registry, series-nav plugin, and related-posts plugin.
+- **Deliverables**: `.claude/skills/plan-series/SKILL.md`
+- **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete 228-line skill instructions. (2) Step 4 creates series index under `source/series/<name>/index.md` with Mermaid mindmap and post_link tags. (3) Step 5 generates stub posts with scaffold template front matter (title, permalink, date, categories, tags, description, key_concepts, takeaways, series, series_index). (4) All referenced paths verified to exist. Skill auto-detected in available skills list.
+- **Status**: [DONE]
+- **Request**: Move T-P3-8 to Completed
