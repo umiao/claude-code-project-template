@@ -37,7 +37,42 @@ def sync_hooks(target: Path, *, check: bool = False) -> bool:
         else:
             shutil.copy2(src_file, dst_file)
             print(f"  copied: {src_file.name}")
+
+    # Remove orphan files in target that no longer exist in shared
+    shared_names = {f.name for f in src.iterdir() if f.is_file()}
+    for target_file in sorted(dst.iterdir()):
+        if target_file.is_dir():  # skip __pycache__, local/
+            continue
+        if target_file.name not in shared_names:
+            changed = True
+            if check:
+                print(f"  hooks: {target_file.name} orphaned (not in shared)")
+            else:
+                target_file.unlink()
+                print(f"  removed orphan: {target_file.name}")
+
     return changed
+
+
+def sync_settings(target: Path, *, check: bool = False) -> bool:
+    """Copy shared settings_base.json to target/.claude/settings.json.
+
+    Returns True if changes were made (or would be made in check mode).
+    """
+    src = SHARED_DIR / "settings_base.json"
+    dst = target / ".claude" / "settings.json"
+    if not src.exists():
+        print(f"  [SKIP] {src} not found")
+        return False
+    if dst.exists() and file_hash(src) == file_hash(dst):
+        return False
+    if check:
+        print("  settings.json: differs from settings_base.json")
+        return True
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    print("  copied: settings.json")
+    return True
 
 
 def compose_claude_md(target: Path, *, check: bool = False) -> bool:
@@ -82,6 +117,7 @@ def main() -> None:
     parser.add_argument("--target", required=True, type=Path, help="Target project dir")
     parser.add_argument("--check", action="store_true", help="Dry-run: report staleness")
     parser.add_argument("--hooks-only", action="store_true", help="Only sync hooks")
+    parser.add_argument("--settings-only", action="store_true", help="Only sync settings.json")
     parser.add_argument("--claude-md-only", action="store_true", help="Only compose CLAUDE.md")
     args = parser.parse_args()
 
@@ -89,14 +125,24 @@ def main() -> None:
         print(f"Error: {args.target} is not a directory", file=sys.stderr)
         sys.exit(1)
 
-    do_hooks = not args.claude_md_only
-    do_md = not args.hooks_only
+    only_flags = [args.hooks_only, args.settings_only, args.claude_md_only]
+    any_only = any(only_flags)
+    do_hooks = args.hooks_only or not any_only
+    do_settings = args.settings_only or not any_only
+    do_md = args.claude_md_only or not any_only
 
     any_changed = False
 
     if do_hooks:
         print(f"Hooks -> {args.target}")
         if sync_hooks(args.target, check=args.check):
+            any_changed = True
+        else:
+            print("  up to date")
+
+    if do_settings:
+        print(f"Settings -> {args.target}")
+        if sync_settings(args.target, check=args.check):
             any_changed = True
         else:
             print("  up to date")
