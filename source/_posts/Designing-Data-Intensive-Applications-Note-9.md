@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on Data Flow and Message Passing."
+key_concepts:
+  - Message Queues
+  - Encoding and Schema Evolution
+  - Fault Tolerance
+takeaways:
+  - Prefer REST over RPC for public APIs due to simpler debugging and broader tooling support
+  - Use asynchronous message passing for decoupling producers and consumers
+  - Design RPC interfaces with idempotent operations to handle network retries safely
+  - Apply the actor model for concurrent distributed systems to avoid shared-state complexity
+series: DDIA
+series_index: 9
 ---
 Discussion on Data Flow and Message Passing.
 {% asset_img cover.png DDIA Chapter 9 cover: Data Flow and Message Passing %}

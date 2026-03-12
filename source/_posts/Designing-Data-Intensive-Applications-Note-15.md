@@ -8,6 +8,19 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on transaction related topics."
+key_concepts:
+  - ACID
+  - BASE
+  - Transaction Isolation
+  - Serializability
+  - Two-Phase Commit
+takeaways:
+  - Use snapshot isolation (MVCC) as the default isolation level for most read-heavy workloads
+  - Prevent lost updates with atomic compare-and-set operations rather than application-level read-modify-write
+  - Apply serializable snapshot isolation (SSI) when you need serializability without the performance cost of 2PL
+  - Watch for write skew and phantom reads which are not prevented by snapshot isolation alone
+series: DDIA
+series_index: 15
 ---
 Discussion on transaction related topics.
 {% asset_img cover.png DDIA Chapter 15 cover: Transactions %}

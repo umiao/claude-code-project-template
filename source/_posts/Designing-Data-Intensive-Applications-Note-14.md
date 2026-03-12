@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on partition related topics."
+key_concepts:
+  - Partitioning
+  - Database Indexes
+  - Replication
+takeaways:
+  - Partition by hash of key to distribute load evenly and avoid hot spots
+  - Use compound primary keys to enable efficient range queries within a single partition
+  - Choose between document-partitioned (local) and term-partitioned (global) secondary indexes based on read/write patterns
+  - Prefer dynamic partitioning over fixed partitioning when data volume is unpredictable
+series: DDIA
+series_index: 14
 ---
 Discussion on partition related topics.
 {% asset_img cover.png DDIA Chapter 14 cover: Partitioning and Sharding %}

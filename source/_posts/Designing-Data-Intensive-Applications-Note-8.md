@@ -8,6 +8,16 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on Encoding and Schema."
+key_concepts:
+  - Encoding and Schema Evolution
+  - Fault Tolerance
+takeaways:
+  - Maintain backward and forward compatibility when evolving schemas for rolling upgrades
+  - Use binary encoding formats like Protocol Buffers or Avro over JSON for performance-critical data
+  - Leverage Avro's writer/reader schema resolution for flexible schema evolution
+  - Never remove required fields or reuse deleted field numbers in Protocol Buffers
+series: DDIA
+series_index: 8
 ---
 Discussion on Encoding and Schema.
 {% asset_img cover.png DDIA Chapter 8 cover: Encoding, Schema Evolution and Compatibility %}

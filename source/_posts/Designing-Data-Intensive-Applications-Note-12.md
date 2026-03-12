@@ -8,6 +8,18 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on replication lag problems and multi-leader replication."
+key_concepts:
+  - Eventual Consistency
+  - Multi-Leader Replication
+  - Consistency
+  - Replication
+takeaways:
+  - Implement read-after-write consistency by routing user reads to the leader for recently modified data
+  - Use monotonic reads to prevent users from seeing data go backward in time
+  - Apply conflict avoidance strategies before resorting to conflict resolution in multi-leader setups
+  - Consider CRDTs for automatic conflict resolution when multi-leader replication is unavoidable
+series: DDIA
+series_index: 12
 ---
 Discussion on replication lag problems and multi-leader replication.
 {% asset_img cover.png DDIA Chapter 12 cover: Replication Lag and Multi-Leader Replication %}

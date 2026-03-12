@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Topics about scalability, load & press. Definition, metrics and mitigation."
+key_concepts:
+  - Scalability
+  - Load Balancing
+  - Caching Strategies
+takeaways:
+  - Describe load with specific metrics like requests per second, read/write ratio, and cache hit rate
+  - Use percentiles (p50, p95, p99) rather than averages to measure response time
+  - Choose fan-out-on-write vs fan-out-on-read based on your read/write ratio
+  - Consider head-of-line blocking and queueing delays when diagnosing latency
+series: DDIA
+series_index: 2
 ---
 Topics about scalability, load & press. Definition, metrics and mitigation.
 {% asset_img cover.png DDIA Chapter 2 cover: Scalability, Load and Performance Metrics %}

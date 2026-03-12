@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on Storage structures."
+key_concepts:
+  - LSM-Tree
+  - B-Tree
+  - Database Indexes
+takeaways:
+  - Use LSM-trees for write-heavy workloads and B-trees for read-heavy workloads
+  - Understand write amplification tradeoffs when choosing storage engines
+  - Apply log segmentation and compaction to manage append-only storage growth
+  - Use write-ahead logs to ensure crash recovery for both LSM-trees and B-trees
+series: DDIA
+series_index: 5
 ---
 Discussion on Storage structures.
 {% asset_img cover.png DDIA Chapter 5 cover: Storage Structures and Retrieval %}

@@ -8,6 +8,19 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on distributed system goal and Replication implementations."
+key_concepts:
+  - Replication
+  - Leader-Based Replication
+  - Consistency
+  - Split Brain
+  - Fault Tolerance
+takeaways:
+  - Use semi-synchronous replication to balance durability and availability
+  - Automate follower setup using consistent snapshots and replication log positions
+  - Guard against split brain during failover by ensuring only one node acts as leader
+  - Choose chain replication (CRAQ) when strong consistency with high throughput is needed
+series: DDIA
+series_index: 10
 ---
 Discussion on distributed system goal and Replication implementations.
 {% asset_img cover.png DDIA Chapter 10 cover: Distributed Systems and Replication %}

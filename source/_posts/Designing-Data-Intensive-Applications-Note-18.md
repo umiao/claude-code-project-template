@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on challenges with batch processing jobs."
+key_concepts:
+  - Batch Processing
+  - MapReduce
+  - Fault Tolerance
+takeaways:
+  - Use map-side joins (broadcast or partitioned hash join) when one input is small enough to fit in memory
+  - Prefer modern dataflow engines like Spark over MapReduce to avoid unnecessary materialization overhead
+  - Design batch jobs to be deterministic so failed tasks can be safely retried without side effects
+  - Apply the Unix philosophy of composable single-purpose tools to batch processing pipeline design
+series: DDIA
+series_index: 18
 ---
 Discussion on challenges with batch processing jobs.
 {% asset_img cover.png DDIA Chapter 18 cover: Batch Processing %}

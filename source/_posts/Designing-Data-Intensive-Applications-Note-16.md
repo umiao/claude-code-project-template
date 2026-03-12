@@ -8,6 +8,18 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on challenges with distributed systems."
+key_concepts:
+  - Fault Tolerance
+  - Consistency
+  - Split Brain
+  - CAP Theorem
+takeaways:
+  - Use fencing tokens to prevent split-brain scenarios when a leader's lease expires
+  - Prefer logical clocks over wall clocks for ordering events in distributed systems
+  - Design for partial failures by assuming any network message can be lost, delayed, or duplicated
+  - Apply the Phi Accrual failure detector for adaptive timeout-based node failure detection
+series: DDIA
+series_index: 16
 ---
 Discussion on challenges with distributed systems.
 {% asset_img cover.png DDIA Chapter 16 cover: Challenges in Distributed Systems %}

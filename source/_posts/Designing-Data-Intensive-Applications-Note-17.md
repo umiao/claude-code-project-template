@@ -8,6 +8,19 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on challenges with consensus."
+key_concepts:
+  - Consensus
+  - Linearizability
+  - CAP Theorem
+  - Two-Phase Commit
+  - Distributed Transactions
+takeaways:
+  - Distinguish linearizability (recency guarantee) from serializability (transaction isolation)
+  - Use total order broadcast as a building block for implementing consensus and linearizable storage
+  - Avoid two-phase commit when possible due to coordinator single-point-of-failure risk
+  - Apply consensus algorithms like Raft or Paxos through proven libraries rather than implementing from scratch
+series: DDIA
+series_index: 17
 ---
 Discussion on challenges with consensus.
 {% asset_img cover.png DDIA Chapter 17 cover: Consensus and Linearizability %}

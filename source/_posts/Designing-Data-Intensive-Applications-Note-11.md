@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on implementation and optimization of replication log."
+key_concepts:
+  - Replication
+  - Leader-Based Replication
+  - Change Data Capture
+takeaways:
+  - Prefer logical (row-based) replication over WAL shipping to decouple from storage engine internals
+  - Use logical replication to enable zero-downtime database version upgrades via follower-then-failover
+  - Apply change data capture when feeding data warehouses or building custom secondary indexes
+  - Reserve trigger-based replication for cases needing application-level conflict resolution or subset replication
+series: DDIA
+series_index: 11
 ---
 Discussion on implementation and optimization of replication log.
 {% asset_img cover.png DDIA Chapter 11 cover: Replication Log Implementation and Optimization %}

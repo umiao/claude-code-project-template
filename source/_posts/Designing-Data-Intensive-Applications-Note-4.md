@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on data model and query language."
+key_concepts:
+  - Data Models
+  - MapReduce
+  - Database Indexes
+takeaways:
+  - Choose relational models for many-to-many relationships and document models for self-contained records
+  - Prefer declarative query languages over imperative code for data access
+  - Use graph models when relationships between entities are as important as the entities themselves
+  - Store IDs instead of plain text to enable consistent updates and localization
+series: DDIA
+series_index: 4
 ---
 Discussion on data model and query language.
 {% asset_img cover.png DDIA Chapter 4 cover: Data Models and Query Languages %}

@@ -8,6 +8,18 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on leaderless replication."
+key_concepts:
+  - Leaderless Replication
+  - Eventual Consistency
+  - Consistency
+  - Replication
+takeaways:
+  - Set quorum parameters w + r > n to guarantee reading the most recent write in leaderless systems
+  - Use read repair for frequently accessed data and anti-entropy for background consistency
+  - Apply version vectors to track causality and detect concurrent writes across replicas
+  - Prefer last-write-wins only when data loss from concurrent writes is acceptable
+series: DDIA
+series_index: 13
 ---
 Discussion on leaderless replication.
 {% asset_img cover.png DDIA Chapter 13 cover: Leaderless Replication %}

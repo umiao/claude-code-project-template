@@ -31,16 +31,6 @@
 
 > **P1 Checkpoint**: User can (1) create new posts from notes via `/blog-from-notes`, (2) run daily review sessions via `/study-review`.
 
-#### T-P1-9: Enrich DDIA Series (Pilot)
-- Complexity: M | Depends on: T-P1-7
-- Use `/refine-post` to add `key_concepts`, `takeaways`, `series: DDIA`, `series_index` to all 19 DDIA posts
-- This is the pilot batch: validate concept index output and front matter quality before proceeding to other series
-- **Acceptance Criteria**:
-  1. All 19 DDIA posts have `key_concepts` (non-empty list), `takeaways`, `series: DDIA`, `series_index` (1-19)
-  2. All key_concepts values exist in `data/concepts.yml` (or concepts.yml updated to include new ones)
-  3. `hexo generate` succeeds with no errors
-  4. Spot-check 3 posts: concepts and takeaways are accurate and meaningful
-
 #### T-P1-10: Enrich SQL + DS + Remaining Posts
 - Complexity: L | Depends on: T-P1-9
 - Use `/refine-post` on 16 SQL posts, 9 DS posts, and ~11 remaining posts
@@ -203,3 +193,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P1-8: /study-review Skill (Basic): Created `.claude/skills/study-review/SKILL.md` with 7-step workflow integrating review_queue.py (show+mark). Generates 5 question types (definition, application, comparison, connection, recall detail). Supports single post, sequential "all" mode, and special commands (skip/show/stop/stats).
 
 - [x] **2026-03-12** -- T-P1-11: Blog Quality Fixes: Enabled Open Graph + Twitter Cards in `_config.next.yml`, set search preload to true, created `source/404.md` custom error page, fixed placeholder/wrong alt text across ~45 posts (replaced generic "ML_note", "SQL Note of blur!", "apple", "Note" with descriptive alt text). Verified: `hexo generate` succeeds, OG+Twitter meta tags in HTML, 404.html generated.
+
+- [x] **2026-03-12** -- T-P1-9: Enrich DDIA Series (Pilot): Added key_concepts, takeaways, series: DDIA, series_index to all 19 DDIA posts. Added 10 new DDIA concepts to concepts.yml. Spot-checked 3 posts for accuracy. hexo generate succeeds.

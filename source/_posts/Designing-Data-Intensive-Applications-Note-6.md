@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on Indexes and Multi-Column Index solution (R-Tree)."
+key_concepts:
+  - Database Indexes
+  - B-Tree
+  - LSM-Tree
+takeaways:
+  - Use clustered indexes when frequently querying by primary key to avoid extra heap file lookups
+  - Apply multi-column concatenated indexes for queries filtering on multiple fields in order
+  - Use R-trees for geospatial queries where standard B-tree indexes cannot handle multi-dimensional data
+  - Consider in-memory databases like Redis when dataset fits in RAM for significant performance gains
+series: DDIA
+series_index: 6
 ---
 Discussion on Indexes and Multi-Column Index solution (R-Tree).
 {% asset_img cover.png DDIA Chapter 6 cover: Indexes and Multi-Column Index with R-Trees %}

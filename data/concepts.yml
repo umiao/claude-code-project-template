@@ -112,6 +112,73 @@
     - Multi-Node Transactions
   domain: DDIA
 
+- name: Scalability
+  aliases:
+    - System Scalability
+    - Scaling
+  domain: DDIA
+
+- name: Fault Tolerance
+  aliases:
+    - Resilience
+    - Failure Handling
+  domain: DDIA
+
+- name: Data Models
+  aliases:
+    - Data Modeling
+    - Relational Model
+    - Document Model
+    - Graph Model
+  domain: DDIA
+
+- name: LSM-Tree
+  aliases:
+    - Log-Structured Merge-Tree
+    - LSM Tree
+  domain: DDIA
+
+- name: B-Tree
+  aliases:
+    - B+ Tree
+    - B Tree Index
+  domain: DDIA
+
+- name: Data Warehousing
+  aliases:
+    - OLAP
+    - Data Warehouse
+    - Online Analytical Processing
+  domain: DDIA
+
+- name: Encoding and Schema Evolution
+  aliases:
+    - Schema Evolution
+    - Data Encoding
+    - Serialization Formats
+  domain: DDIA
+
+- name: Transaction Isolation
+  aliases:
+    - Isolation Levels
+    - Read Committed
+    - Snapshot Isolation
+    - MVCC
+  domain: DDIA
+
+- name: Serializability
+  aliases:
+    - Serializable Isolation
+    - Serial Execution
+    - SSI
+  domain: DDIA
+
+- name: Change Data Capture
+  aliases:
+    - CDC
+    - Event Sourcing
+  domain: DDIA
+
 # SQL: Database Query Language and Concepts
 - name: SQL Joins
   aliases:

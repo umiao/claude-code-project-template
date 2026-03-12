@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Introduction to designing data intensive applications, a.k.a data systems, providing high-level ideas about what it is and why it is needed."
+key_concepts:
+  - Fault Tolerance
+  - Scalability
+  - Replication
+takeaways:
+  - Distinguish between faults and failures when designing resilient systems
+  - Use redundancy at every level (hardware, software, process) to tolerate faults
+  - Minimize opportunities for human error through good abstractions and sandbox environments
+  - Design systems around three pillars: reliability, scalability, and maintainability
+series: DDIA
+series_index: 1
 ---
 Introduction to designing data intensive applications, a.k.a data systems, providing high-level ideas about what it is and why it is needed.
 {% asset_img cover.png DDIA Chapter 1 cover: Reliable, Scalable, and Maintainable Applications %}

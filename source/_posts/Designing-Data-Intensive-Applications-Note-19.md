@@ -8,6 +8,18 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on challenges with stream processing."
+key_concepts:
+  - Stream Processing
+  - Change Data Capture
+  - Message Queues
+  - Fault Tolerance
+takeaways:
+  - Use log-based message brokers like Kafka when consumers need to replay messages or maintain ordering
+  - Apply change data capture to keep derived data systems in sync with the source database
+  - Choose the right window type (tumbling, hopping, sliding, session) based on your aggregation semantics
+  - Achieve exactly-once semantics through idempotent operations rather than relying on transaction guarantees
+series: DDIA
+series_index: 19
 ---
 Discussion on challenges with stream processing.
 {% asset_img cover.png DDIA Chapter 19 cover: Stream Processing %}

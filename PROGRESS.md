@@ -223,3 +223,10 @@
 - **Sanity check result**: All 4 ACs met: (1) OG meta tags (og:type, og:title, og:url, og:site_name, og:description, og:locale, og:image) and Twitter Card tags (twitter:card=summary_large_image, twitter:image) present in generated HTML, (2) search preload set to true with search.json generated, (3) public/404.html exists after hexo generate, (4) No generic placeholder alt text remaining (grep confirms zero matches for old patterns).
 - **Status**: [DONE]
 - **Request**: Move T-P1-11 to Completed
+
+## 2026-03-12 -- [T-P1-9] Enrich DDIA Series (Pilot)
+- **What I did**: Added `key_concepts`, `takeaways`, `series: DDIA`, and `series_index` (1-19) to all 19 DDIA posts. Each post got 3-5 canonical concepts from `data/concepts.yml` and 4 actionable takeaways derived from actual content. Added 10 new DDIA-domain concepts to `concepts.yml`: Scalability, Fault Tolerance, Data Models, LSM-Tree, B-Tree, Data Warehousing, Encoding and Schema Evolution, Transaction Isolation, Serializability, Change Data Capture.
+- **Deliverables**: 19 DDIA post .md files (front matter enriched), `data/concepts.yml` (10 new concepts added)
+- **Sanity check result**: All 4 ACs met: (1) All 19 posts have key_concepts (non-empty), takeaways, series: DDIA, series_index 1-19. (2) All key_concepts values exist in concepts.yml. (3) `hexo generate` succeeds with no errors (25 files generated). (4) Spot-checked Note-5 (LSM-Tree/B-Tree), Note-13 (Leaderless Replication), Note-17 (Consensus/Linearizability) -- concepts and takeaways are accurate and meaningful.
+- **Status**: [DONE]
+- **Request**: Move T-P1-9 to Completed

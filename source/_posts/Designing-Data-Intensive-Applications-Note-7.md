@@ -8,6 +8,17 @@ tags:
 - Data System
 - Designing Data-Intensive-Applications
 description: "Discussion on techniques related to data warehouse / OLAP."
+key_concepts:
+  - Data Warehousing
+  - ACID
+  - Database Indexes
+takeaways:
+  - Separate OLTP and OLAP workloads into different systems to avoid performance interference
+  - Use column-oriented storage for analytical queries that scan many rows but few columns
+  - Apply bitmap encoding and run-length encoding to compress column data efficiently
+  - Design star schemas with fact tables and dimension tables for analytical data modeling
+series: DDIA
+series_index: 7
 ---
 Discussion on techniques related to data warehouse / OLAP.
 {% asset_img cover.png DDIA Chapter 7 cover: Data Warehousing and OLAP %}
