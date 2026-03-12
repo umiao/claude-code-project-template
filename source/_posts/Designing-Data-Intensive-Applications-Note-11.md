@@ -10,7 +10,7 @@ tags:
 description: "Discussion on implementation and optimization of replication log."
 ---
 Discussion on implementation and optimization of replication log.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 11 cover: Replication Log Implementation and Optimization %}
 <!-- more -->
 
 

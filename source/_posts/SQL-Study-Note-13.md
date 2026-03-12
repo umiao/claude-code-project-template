@@ -11,7 +11,7 @@ description: "Window function is also known as Online Analytical Processing func
 ---
 
 Window function is also known as **Online Analytical Processing function (LAP)**, which is able to conduct realtime processing and analyzing on the database data. 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 13 cover: Window Functions %}
 
 <!-- more -->
 
@@ -46,7 +46,7 @@ Considering that we have a column A with value of $\\{3,3,3,7\\}$ and we would g
 **Result**: $\\{1,2,3,4\\}$
 
 Example of these three functions shown below:
-{% asset_img 1.jpg SQL Note of blur! %}
+{% asset_img 1.jpg Comparison of RANK, DENSE_RANK, and ROW_NUMBER window functions %}
 
 ## Summary
 1. It should be noted that, the window function operates on the intermediate result after **WHERE / GROUP BY**. Thus, it should be written in the **SELECT** clause.
@@ -113,7 +113,7 @@ However, if you want to get **cumulative** result rather than a **constant** res
 
 It should be noted that the **WINDOW** keyword can apply an alia to a window, so that it can be referred for multiple times.
 The expected result is shown below:
-{% asset_img 2.png SQL Note of blur! %}
+{% asset_img 2.png Expected result of cumulative SUM, AVG, MAX, MIN using aggregate window functions %}
 
 # **Sliding** Window
 The range of **Sliding Window** can be specified either by **ROWS** or by **RANGE**.
@@ -159,8 +159,8 @@ Use `Optimize-> make_tmp_tables_info` to decide if a temporary table is required
 
 c. Stack calling:  `unit->first_select()->join->exec()->evaluate_join_record()->sub_select_op() 
 ->QEP_tmp_table::put_record()->end_write_wf()`
-{% asset_img buf1.jpg SQL Note of blur! %}
-{% asset_img buf2.jpg SQL Note of blur! %}
+{% asset_img buf1.jpg MySQL 8.0 window function execution stack call diagram %}
+{% asset_img buf2.jpg MySQL 8.0 window function frame buffer processing flow %}
 
 ## Code example:
 `SUM(A+FLOOR(B)) OVER (ROWS 2 FOLLOWING)`

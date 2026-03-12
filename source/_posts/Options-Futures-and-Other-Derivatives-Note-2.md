@@ -11,7 +11,7 @@ tags:
 description: "Discussing different types of traders."
 ---
 Discussing different types of traders.
-{% asset_img cover.jpg apple %}
+{% asset_img cover.jpg Options Futures and Derivatives Note 2 cover: types of traders - hedgers, speculators %}
 <!-- more -->
 
 # Types of traders

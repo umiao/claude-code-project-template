@@ -11,7 +11,7 @@ description: "Strange questions you would expected to meet only in interviews of
 ---
 Strange questions you would expected to meet only in interviews of financial / trading firms LOL!
 
-{% asset_img cover.png SQL Note of blur! %}
+{% asset_img cover.png Brainteaser collection cover: math and logic puzzles for finance interviews %}
 <!-- more -->
 
 ## 1 - Screwy pirates
@@ -85,7 +85,7 @@ your administrative assistant wrote down A's birthday without asking any questio
 ***Solution***: Split the $12$ balls into groups of $4$, and measure the first $2$ groups. If it balances, the defective ball is in the rest group. If not, that ball is within the prior $2$ groups...
 The detailed strategy is shown in the following image:
 
-{% asset_img ball.png SQL Note of blur! %}
+{% asset_img ball.png Decision tree strategy for finding the defective ball in 3 weighings %}
 
 ## 8 - Trailing zeros
 ***Question***: How many trailing zeros are there in $100!$ (factorial of $100$)? 

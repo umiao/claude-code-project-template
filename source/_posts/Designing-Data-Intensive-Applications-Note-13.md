@@ -10,7 +10,7 @@ tags:
 description: "Discussion on leaderless replication."
 ---
 Discussion on leaderless replication.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 13 cover: Leaderless Replication %}
 <!-- more -->
 
 Some data storage systems take a different approach, abandoning the concept of a leader and allowing **any** replica to directly accept writes from clients.

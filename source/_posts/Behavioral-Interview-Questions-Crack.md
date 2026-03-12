@@ -20,7 +20,7 @@ takeaways:
 - Address conflicts constructively with data-driven approaches
 ---
 Discuss the most common behavioral interview questions and how to utilize LLM tools for preparation.
-{% asset_img cover.jpg ML_note %}
+{% asset_img cover.jpg Behavioral Interview Questions cover: STAR strategy for structured responses %}
 <!-- more -->
 
 # Collecting Potential Questions:

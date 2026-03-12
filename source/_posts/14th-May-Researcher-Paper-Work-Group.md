@@ -8,7 +8,7 @@ tags:
 description: "Notes from a research paper discussion group covering robust selection, stream processing, and UCB procedures."
 ---
 Discussion on challenges with stream processing.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png Research Paper Work Group cover: robust selection and UCB procedure discussion %}
 <!-- more -->
 
 ### Upper-Confidence-Bound Procedure for Robust Selection of the Best

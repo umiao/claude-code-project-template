@@ -75,7 +75,7 @@ We would have $$ \hat Y_{mis}(i) = B((A^TA)^{-1}A^T Y_{obs}(i)) $$.
 
 This is just a pseudo-inverse, $A$ should be full-ranked/
 
-{% asset_img matrix.png Note %}
+{% asset_img matrix.png LLS imputation pseudo-inverse matrix decomposition for missing traffic data %}
 
 # MCMC-based imputation method [<sup>6, 7</sup>](#6)
 
@@ -110,7 +110,7 @@ $$ \Phi ^{k+1} = \arg \max_{\Phi} Q(\Phi | \Phi ^k)  $$
 Conditional expectation $E[Y_{mis} | Y_{obs}, \Phi]$ can be difficult to calculate and can approximate with MCMC with DA.
 
 # Dataset Intended to Use: 
-{% asset_img dataset.png Note %}
+{% asset_img dataset.png Traffic sensor dataset used for missing value imputation evaluation %}
 
 # Comparison
 

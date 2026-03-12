@@ -10,7 +10,7 @@ tags:
 description: "SQL Views for storing and reusing query results as virtual tables."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 4 cover: SQL Views as virtual tables %}
 
 # View
 

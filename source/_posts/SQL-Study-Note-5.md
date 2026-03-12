@@ -10,7 +10,7 @@ tags:
 description: "SQL stored procedures and user-defined functions for encapsulating reusable query logic."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 5 cover: Stored Procedures and User-Defined Functions %}
 
 # Stored Procedure
 

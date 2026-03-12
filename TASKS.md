@@ -51,18 +51,6 @@
   3. All key_concepts values exist in `data/concepts.yml`
   4. `hexo generate` succeeds with no errors
 
-#### T-P1-11: Blog Quality Fixes
-- Complexity: S | Depends on: none
-- Enable Open Graph + Twitter Cards in `_config.next.yml`
-- Fix search config (`preload: true`)
-- Create custom `source/404.md`
-- Fix wrong `asset_img` alt text across posts
-- **Acceptance Criteria**:
-  1. Open Graph and Twitter Card meta tags present in generated HTML
-  2. Local search works with preload enabled
-  3. `public/404.html` exists after `hexo generate`
-  4. No empty or placeholder alt text in post images
-
 ### Nice to Have (P2)
 
 #### T-P2-4: Concept Index Generator Plugin
@@ -213,3 +201,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P1-7: /refine-post Skill: Created `.claude/skills/refine-post/SKILL.md` with 8-step workflow (locate post, read/analyze, concept lookup against concepts.yml, build updated front matter with merge strategy, fix image alt text, show diff for confirmation, write updated post, flag new concepts). Handles partial front matter without overwriting existing values.
 
 - [x] **2026-03-12** -- T-P1-8: /study-review Skill (Basic): Created `.claude/skills/study-review/SKILL.md` with 7-step workflow integrating review_queue.py (show+mark). Generates 5 question types (definition, application, comparison, connection, recall detail). Supports single post, sequential "all" mode, and special commands (skip/show/stop/stats).
+
+- [x] **2026-03-12** -- T-P1-11: Blog Quality Fixes: Enabled Open Graph + Twitter Cards in `_config.next.yml`, set search preload to true, created `source/404.md` custom error page, fixed placeholder/wrong alt text across ~45 posts (replaced generic "ML_note", "SQL Note of blur!", "apple", "Note" with descriptive alt text). Verified: `hexo generate` succeeds, OG+Twitter meta tags in HTML, 404.html generated.

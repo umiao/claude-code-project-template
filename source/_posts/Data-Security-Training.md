@@ -12,7 +12,7 @@ tags:
 description: "Notes and revisits of data & cyber security training session."
 ---
 Notes and revisits of data & cyber security training session.
-{% asset_img cover.jpg ML_note %}
+{% asset_img cover.jpg Data and Cyber Security Training cover: SQL injection and security threats %}
 <!-- more -->
 
 ## SQL Injection

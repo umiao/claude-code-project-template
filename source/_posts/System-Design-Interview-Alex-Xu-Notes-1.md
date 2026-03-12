@@ -24,7 +24,7 @@ takeaways:
 - Separate database from web server as first scaling step
 ---
 Learning note of Alex Xu's system design interview book.
-{% asset_img cover.jpg ML_note %}
+{% asset_img cover.jpg System Design Interview Notes 1 cover: scaling from zero to millions of users %}
 <!-- more -->
 
 # SCALE FROM ZERO TO MILLIONS OF USERS 

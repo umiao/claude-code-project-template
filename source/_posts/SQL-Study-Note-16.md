@@ -10,7 +10,7 @@ tags:
 description: "The setting of query conditions, together with table creating can be further optimized."
 ---
 The setting of query conditions, together with table creating can be further optimized.
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 16 cover: Optimizing Query Conditions and Table Creation %}
 <!-- more -->
 
 

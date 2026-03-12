@@ -12,7 +12,7 @@ description: "The essence of L1 and L2 regularization (with corresponding L1 / L
 The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the **projection** of a vector to the domain of **positive** real number. They can both be viewed as metrics of distance. 
 
 <!-- more -->
-{% asset_img reg.jpg ML_note %}
+{% asset_img reg.jpg DS Study Note 7 cover: L1 and L2 regularization %}
 # Summary
 1. L1 normalization would make many parameters become **zero** (equivalent of removing these parameters) due to the property of sparsification.
 2. L2 normalization is easier to calculate and avoid the issue of discussion on the absolute value function.
@@ -22,7 +22,7 @@ The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the *
 Whenever we apply **Gradient Descend** algorithm for parameter optimization, we need to find the gradient (derivative) and use the result for parameter update:
 $$ \theta = \theta - \alpha \frac{\partial}{\partial \theta} J(\theta) $$
 Here, $\theta$ stands for the model parameters, $\alpha$ stands for the learning rate and $J$ stands for the objective / loss function.
-{% asset_img 2.jpg ML_note %}
+{% asset_img 2.jpg L1 and L2 norm functions and their derivatives for gradient descent %}
 The function and derivative of L1 / L2 norm is shown in the above image. We can tell that $$ \frac{dL_1(w)}{dw} = sgn(w)  \\\\ \frac{dL_2(w)}{dw} =w $$
 
 It is easy to find that, whenever the gradient is computed and used for update, the gradient of L1 function (if not equals zero), can only be $1$ or $-1$. Thus, for some parameters, they would head towards $0$ with steady pace (this is the cause of **sparsity**). 

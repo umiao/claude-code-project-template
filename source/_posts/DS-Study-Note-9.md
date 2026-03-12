@@ -17,7 +17,7 @@ description: "Study notes on Gradient Boosting Machine Tree models including GBM
 The idea is to train multiple serial **weak** learner, while the objective of each learner is to fit the **negative** gradient of the loss function of the previous cumulative model. 
 Thus, after this weak learner is attached, the loss of the new cumulative model shall be maximally reduced. Also, each base (weak) learner can be linearly combined with different weights (so that those learners with higher performance would contribute more to the result). A common implementation of the base learner is Tree Model (*e.g.*, Decision Tree).
 
-{% asset_img theory.jpg ML_note %}
+{% asset_img theory.jpg DS Study Note 9 cover: Gradient Boosting Machine Tree theory %}
 
 # Primary Feature
 The primary feature of GBM (Gradient Bossting Machine) is that, it conduct **Gradient Descent** in the space of function, instead of the space of model parameters (e.g., Neural Network calculates the gradient of current loss to the model parameters for update).
@@ -109,13 +109,13 @@ We can tell that the objective function $f(w_j) = G_jw_j + \frac{1}{2}(H_j + \la
 **Histogram Algorithm** is proposed to substitute the **pre-sorted algorithm** of **XGBoost**. The pre-sorted algorithm would first sort the samples according to their feature values, then find the optimal split point from all the possible feature values. Thus, for each feature, the number of candidate split points is proportional to the **number of samples**.
 
 At the same time, **Histogram Algorithm** would discretize the continuous feature values into a constant number (*e.g.*, 255) of bins. Thus, the candidate split points would reduce to **(num_bins - 1)** from **(num_unique_values - 1)**.
-{% asset_img hist.png ML_note %}
+{% asset_img hist.png LightGBM histogram algorithm discretizing feature values into bins %}
 
 With this manner, instead of storing the feature values with `float_32`, we can now use `uint_8` to store the index of bucket (with hash algorithm). At the same time, there comes the tradeoff of **losing accuracy** to **raise efficiency** 
 - (However, single Decision Tree itself is a weak model, it is not that important for the split points to be accurate. Coarse split points may have the **regularization** effect and the result can **stay robust** under Gradient Boosting framework.).
 ### Acceleration of Histogram via finding difference
 The histogram of a leaf can be found by solving the difference of its father node's histogram and its brother's histogram. **LightGBM** can solve the histogram of a leaf node (with small sample number) and quickly find the histogram of its brother.
-{% asset_img hist2.jpg ML_note %}
+{% asset_img hist2.jpg LightGBM histogram acceleration via difference of sibling leaf histograms %}
 
 It should be noted that **XGB** and **LightGBM** only consider non-zero values.
 

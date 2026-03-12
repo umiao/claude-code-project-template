@@ -10,7 +10,7 @@ tags:
 description: "Introduction to designing data intensive applications, a.k.a data systems, providing high-level ideas about what it is and why it is needed."
 ---
 Introduction to designing data intensive applications, a.k.a data systems, providing high-level ideas about what it is and why it is needed.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 1 cover: Reliable, Scalable, and Maintainable Applications %}
 <!-- more -->
 
 # Key Concepts

@@ -10,7 +10,7 @@ tags:
 description: "Discussion on challenges with distributed systems."
 ---
 Discussion on challenges with distributed systems.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 16 cover: Challenges in Distributed Systems %}
 <!-- more -->
 
 ### Faults and Partial Failure

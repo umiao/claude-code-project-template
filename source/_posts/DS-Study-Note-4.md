@@ -9,7 +9,7 @@ tags:
 description: "Metrics are used for model training and evaluation. It reveals a model's performance on a given dataset."
 ---
 
-{% asset_img metric.png ML_note %}
+{% asset_img metric.png DS Study Note 4 cover: Machine Learning Evaluation Metrics %}
 
 Metrics are used for model training and evaluation. It reveals a model's performance on a given dataset.
 <!-- more -->
@@ -58,7 +58,7 @@ In order to compare the performance of two models, we can use the **area** under
 Thus, we use the **Break-Event Point** to reach a balance between the Recall and Precision.
 It is calculated by the **x-coordinate of the intersection point** of the **PR Curve** and function $y=x$.
 Ideally, we want both the Precision and Recall to be **as high as possible**.
-{% asset_img pr.jpg ML_note %}
+{% asset_img pr.jpg PR Curve showing the tradeoff between Precision and Recall rates %}
 
 
 # F1-Score
@@ -96,4 +96,4 @@ These two values stand for the ratio of **correctly classified positive samples*
 - This corresponds to the area **above the ROC Curve** and thus should be **minimized**.
 - $AUC = 1- L_{rank}$
 - Similarly, we can assign **different weights** to different types of mistakes a classifer made and draw the **cost curve**. We can find the weighted sum and for each point, draw the curve of **expected cost** (line determined by $(0, FPR)$ and $(1, FNR)$. Then we find the lower bound of all such lines, the area under this curve stands for the cost.
-{% asset_img cost.png ML_note %}
+{% asset_img cost.png Cost curve showing expected cost with weighted classification error %}

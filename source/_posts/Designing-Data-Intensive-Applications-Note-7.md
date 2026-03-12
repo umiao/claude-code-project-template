@@ -10,7 +10,7 @@ tags:
 description: "Discussion on techniques related to data warehouse / OLAP."
 ---
 Discussion on techniques related to data warehouse / OLAP.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 7 cover: Data Warehousing and OLAP %}
 <!-- more -->
 
 ### Transaction:
@@ -67,7 +67,7 @@ Note that the column-oriented storage layout relies on each column file containi
 
 In the following example, we have 18 rows and 6 possible column values, so we can use 1 bit to store the **occurrence** of a certain value. It is possible to be further reduced by **run-length encoding**.   It is especially efficent when we want to do **boolean computation** on a few values.
 
-{% asset_img 1.png ML_note %}
+{% asset_img 1.png Bitmap encoding example for column compression in column-oriented storage %}
 
 - **Sort Order**: In column storage, the order may not matter, but we can force certain (meaningful) column to be ordered and use it as **indexing mechanism**.   
 This can also help **compressing** the column, as we can use **run_length** encoding for sorted column.    
@@ -110,6 +110,6 @@ This comes with higher **write cost**, making it not often used in OLTP database
 They are more valuable in **heavy-read** data warehouses.
 - **Data Cube / OLAP Cube**: a grid of aggregates grouped by different dimensions.
 
-{% asset_img 2.png ML_note %}
+{% asset_img 2.png OLAP data cube showing aggregates grouped by multiple dimensions %}
 
 

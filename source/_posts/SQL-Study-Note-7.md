@@ -10,7 +10,7 @@ tags:
 description: "SQL transactions and ACID principles for ensuring data integrity."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 7 cover: Transactions and ACID Principles %}
 
 # Transactions
 

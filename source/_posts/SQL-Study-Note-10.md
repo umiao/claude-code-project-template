@@ -9,7 +9,7 @@ tags:
 - Data Science
 description: "Index can be used to find the row (line) numbers corresponding to the value being queried. Index is added to certain columns and is stored in memory (RAM) fo..."
 ---
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 10 cover: Database Indexes %}
 
 **Index** can be used to find the row (line) numbers corresponding to the value being queried. Index is added to certain columns and is stored in memory (RAM) for most times.
 <!-- more -->

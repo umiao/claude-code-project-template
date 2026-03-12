@@ -10,7 +10,7 @@ tags:
 description: "Discussion on challenges with stream processing."
 ---
 Discussion on challenges with stream processing.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 19 cover: Stream Processing %}
 <!-- more -->
 
 ### Stream Processing

@@ -10,7 +10,7 @@ tags:
 description: "Discussion on Indexes and Multi-Column Index solution (R-Tree)."
 ---
 Discussion on Indexes and Multi-Column Index solution (R-Tree).
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 6 cover: Indexes and Multi-Column Index with R-Trees %}
 <!-- more -->
 
 
@@ -49,7 +49,7 @@ E.g., In MySQL’s **InnoDB** engine, the **primary key** of a table is always a
 ### R-Tree (R for Rectangle):
 - An generalization of B-tree to **high-dim** space. Used **Minimal Bounding Rectangle** (MBR) for space dividing. That is to say, just like segment tree, we want a spatial “rectangle tree” so that given a node, we can get the sub-nodes / leaves belonging to that region. This tree can be **multi-way**.
 
-{% asset_img 1.png ML_note %}
+{% asset_img 1.png R-Tree structure showing Minimal Bounding Rectangles for spatial indexing %}
 
 - **Structure of leaf nodes**: leaf nodes are saved as tuples of `(l, tuple-identifier)`. Where `tuple-identifer` is a n-dim vector (can be realized as a single record / data point) and `l` is a n-dim rectangle which can exactly include all the datapoints belonging to this leaf node.
 - **Stucture of non-leaf nodes**: `(l, child-pointer)`, where `l` is the n-dim rectangle, and `child-point points` to the child node(s).

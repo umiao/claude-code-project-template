@@ -10,7 +10,7 @@ description: "Overfitting is a modeling error in statistics that occurs when a f
 ---
 
 >Overfitting is a modeling error in statistics that occurs when a function is too closely aligned to a limited set of data points. ---- Definition ranked 1st in Google 
-{% asset_img over.jpg ML_note %}
+{% asset_img over.jpg DS Study Note 1 cover: Overfitting, Decomposition, and Regularization %}
 <!-- more -->
 
 # Definition

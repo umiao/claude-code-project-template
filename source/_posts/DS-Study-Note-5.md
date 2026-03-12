@@ -10,7 +10,7 @@ tags:
 description: "SVM is a machine learning model which aims at finding a Decision Boundary with a subset of the training set. The SVM is a non-probabilistic binary classifier."
 ---
 SVM is a machine learning model which aims at finding a Decision Boundary with a subset of the training set. The SVM is a non-probabilistic binary classifier.
-{% asset_img svm.png ML_note %}
+{% asset_img svm.png DS Study Note 5 cover: Support Vector Machine classification %}
 <!-- more -->
 
 # Linear Separable
@@ -65,7 +65,7 @@ The dual optimization problem after transformation: $$\min_w  \max_\lambda L(w, 
 Find derivatives: $\frac{\partial L}{\partial w}=w - \sum_{i=1}^n \lambda_i x_iy_i=0$,
 $\frac{\partial L}{\partial b}=\sum_{i=1}^n \lambda_i y_i=0$ to get $\sum_{i=1}^n \lambda_i x_iy_i=w$, $\sum_{i=1}^n \lambda_i y_i=0$.
 Substitue into function:
-{% asset_img f1.png ML_note %}, that is, 
+{% asset_img f1.png SVM dual problem substitution formula derivation %}, that is, 
 $$ \min_{w,b}L(w,b,\lambda)=\sum_{j=1}^n\lambda_i - \frac{1}{2} \sum_{i=1}^n\sum_{j=1}^n \lambda_i\lambda_jy_iy_j(x_i \cdot x_j) $$
 3. We can tell that the above question is a quadratic programming problem and its scale is proportional to the number of training samples. It can be solved with **Sequential Minial Optimization (SMO)** algorithm. It optimizes one parameter a time and fixed the others.
 	- We just mentioned that SMO algorithm optimize **only one** parameter a time. However, we have a constraint $\sum_{i=1}^n \lambda_i y_i=0$ which must be satisfied. Thus, we update **two** parameters a time to solve this issue. With two selected parameters $\lambda_i$ and $\lambda_j$, we fix the other parameters and we have $$\lambda_i y_i + \lambda_j y_j = c, \lambda_i \ge 0, \lambda_j \ge 0, c= -\sum_{k \ne i,j}\lambda_ky_k $$ Then we can have $\lambda_j = \frac{c-\lambda_iy_i}{y_j}$ so that we can replace $\lambda_j$ with expression of $\lambda_i$, find the partial derivative for $\lambda_i$ and update the two paramteres, keep iterating until converge.
@@ -92,7 +92,7 @@ The essence of kernel function $K$ is to map vectors from low-dim Hilbert Space 
 $$K(x,z)=\phi(x) \cdot \phi(z)$$
 Prerequisite: The Gram matrix formed by the set of all the points of the function is **semi-positive definite**. (a.k.a. complete inner product space)
 
-{% asset_img ker.jpg ML_note %}
+{% asset_img ker.jpg Kernel function mapping data from low-dimensional to high-dimensional space %}
 
 The introduction of kernel function is to solve the case of linear unseparable. It is costly to map samples to high-dimensional space before calculating dot product, thus kernel function can realize effectively calculating the dot product result of high-dimensional space, in low-dimensional space.
 ## Types of kernel functions

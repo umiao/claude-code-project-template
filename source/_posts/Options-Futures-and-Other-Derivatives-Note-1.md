@@ -11,7 +11,7 @@ tags:
 description: "Learning note of \"Options Futures and Other Derivatives\", 11th Edition."
 ---
 Learning note of "Options Futures and Other Derivatives", 11th Edition.
-{% asset_img cover.jpg apple %}
+{% asset_img cover.jpg Options Futures and Derivatives Note 1 cover: introduction to derivatives exchanges %}
 <!-- more -->
 
 # Introduction

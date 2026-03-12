@@ -10,7 +10,7 @@ tags:
 description: "Discussion on challenges with consensus."
 ---
 Discussion on challenges with consensus.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 17 cover: Consensus and Linearizability %}
 <!-- more -->
 
 **Consensus**: Get all nodes to agree on something, e.g., the election of new leader. If two nodes both believe that they are the leader, that situation is called **split brain** which can be prevented by consensus.

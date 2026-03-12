@@ -10,7 +10,7 @@ tags:
 description: "Thorough analysis and learning notes on Git version control based on official Git documentation."
 ---
 Thorough analysis and learning note based on git documentation (https://git-scm.com/book/en/v2).
-{% asset_img cover.jpg ML_note %}
+{% asset_img cover.jpg Introduction to Git cover: version control concepts %}
 <!-- more -->
 
 - **Patches set**: the differences between files / versions; can be used to recreate files
@@ -31,7 +31,7 @@ Git generally only adds data. committed changes are hard to lost.
 
 These states lead us to main sections of git project: **working tree**, **staging area**, **git directory**.
 
-{% asset_img 1.jpg ML_note %}
+{% asset_img 1.jpg Git three-area model: working tree, staging area, and git directory %}
 
 ---
 Installation: refer to this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).

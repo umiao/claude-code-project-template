@@ -10,7 +10,7 @@ tags:
 description: "SQL data manipulation syntax including INSERT, UPDATE, and DELETE operations with table attributes."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 2 cover: UPDATE, DELETE, and INSERT syntax %}
 
 # The update / delete / insert syntax
 <!-- more -->

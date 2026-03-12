@@ -216,3 +216,10 @@
 - **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete instructions, (2) Integrates with review_queue.py show+mark commands, (3) Generates 5 question types (exceeds minimum of 3), (4) Verified review_queue.py init/show work -- 64 posts tracked, 60 due for review. Skill auto-detected by Claude Code (appears in skills list as "study-review").
 - **Status**: [DONE]
 - **Request**: Move T-P1-8 to Completed
+
+## 2026-03-12 -- [T-P1-11] Blog Quality Fixes
+- **What I did**: Enabled Open Graph and Twitter Cards (`summary_large_image`) in `_config.next.yml` with proper NexT theme config structure. Set local search `preload: true`. Created `source/404.md` with navigation links. Fixed wrong/placeholder `asset_img` alt text across ~45 posts: replaced generic strings ("ML_note", "SQL Note of blur!", "apple", "Note", "vocab") with descriptive alt text based on post content and surrounding context. Cover images got topic-appropriate descriptions; inline diagrams got context-aware descriptions.
+- **Deliverables**: `_config.next.yml` (modified), `source/404.md` (new), 45 post .md files (alt text fixes)
+- **Sanity check result**: All 4 ACs met: (1) OG meta tags (og:type, og:title, og:url, og:site_name, og:description, og:locale, og:image) and Twitter Card tags (twitter:card=summary_large_image, twitter:image) present in generated HTML, (2) search preload set to true with search.json generated, (3) public/404.html exists after hexo generate, (4) No generic placeholder alt text remaining (grep confirms zero matches for old patterns).
+- **Status**: [DONE]
+- **Request**: Move T-P1-11 to Completed

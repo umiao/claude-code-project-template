@@ -8,7 +8,7 @@ tags:
 description: "Have a glance on the NLP tasks and techniques. Will be discussed in a more detailed manner."
 ---
 Have a glance on the NLP tasks and techniques. Will be discussed in a more detailed manner.
-{% asset_img rm.png SQL Note of blur! %}
+{% asset_img rm.png NLP study roadmap cover: overview of NLP tasks and techniques %}
 <!-- more -->
 # General Roadmap for NLP Study
 
@@ -77,7 +77,7 @@ graph LR;
 
 # By the way
 Other roadmaps of the ML / Statistical topics would be placed here (from [reddit](https://www.reddit.com/r/MachineLearning/comments/d8jheo/p_natural_language_processing_roadmap_and_keyword/)):
-{% asset_img 1.png SQL Note of blur! %}
-{% asset_img 2.png SQL Note of blur! %}
-{% asset_img 3.png SQL Note of blur! %}
-{% asset_img 4.png SQL Note of blur! %}
+{% asset_img 1.png NLP roadmap from reddit: part 1 of 4 %}
+{% asset_img 2.png NLP roadmap from reddit: part 2 of 4 %}
+{% asset_img 3.png NLP roadmap from reddit: part 3 of 4 %}
+{% asset_img 4.png NLP roadmap from reddit: part 4 of 4 %}

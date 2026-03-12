@@ -10,7 +10,7 @@ tags:
 description: "As an engineer working in the industry, English is a very important and basic tool...Also, if we think like a machine, it would be then very natural for us t..."
 ---
 As an engineer working in the industry, English is a very important and basic tool...Also, if we think like a machine, it would be then very natural for us to study English Vocab in its frequency order.. A weird idea, right?
-{% asset_img cover.jpg vocab %}
+{% asset_img cover.jpg English vocabulary study by word frequency cover %}
 <!-- more -->
 <h1>English Words (not familiar to me) (in descending order of frequency)</h1>
 This post is based on this dataset [link](https://www.kaggle.com/datasets/rtatman/english-word-frequency) shared by Kaggle.

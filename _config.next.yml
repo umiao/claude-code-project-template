@@ -138,7 +138,7 @@ local_search:
   enable: true
   top_n_per_article: 3
   unescape: false
-  preload: false
+  preload: true
 
 # ---------------------------------------------------------------
 # Image Zoom
@@ -157,6 +157,14 @@ vendors:
 # ---------------------------------------------------------------
 custom_file_path:
   sidebar: source/_data/sidebar.njk
+
+# ---------------------------------------------------------------
+# Open Graph / Twitter Cards
+# ---------------------------------------------------------------
+open_graph:
+  enable: true
+  options:
+    twitter_card: summary_large_image
 
 # ---------------------------------------------------------------
 # Animation Settings

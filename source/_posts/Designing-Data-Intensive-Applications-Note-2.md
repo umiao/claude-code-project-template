@@ -10,7 +10,7 @@ tags:
 description: "Topics about scalability, load & press. Definition, metrics and mitigation."
 ---
 Topics about scalability, load & press. Definition, metrics and mitigation.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 2 cover: Scalability, Load and Performance Metrics %}
 <!-- more -->
 
 # Scalability 

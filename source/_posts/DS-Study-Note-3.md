@@ -9,7 +9,7 @@ tags:
 description: "Dimension curse stands for the troubles you would meet when processing high-dimensional data. E.g., computation of similarity, distance, neighbour or any met..."
 ---
 
-{% asset_img over.png ML_note %}
+{% asset_img over.png DS Study Note 3 cover: Curse of Dimensionality %}
 # Definition 
 **Dimension curse** stands for the troubles you would meet when processing **high-dimensional** data. *E.g.*, computation of **similarity, distance, neighbour or any metric based processing.**
 <!-- more -->
@@ -33,7 +33,7 @@ As the dimension (of vector representation) grows, the data becomes more and mor
 - Distance under *different dimension and space* **CANNOT** be compared with each other.
 
 # Combinational explosion
-{% asset_img dif.jpg ML_note %}
+{% asset_img dif.jpg Combinational explosion: search space growing exponentially with dimension %}
 - As the dimensionality increases, a larger percentage of the training data resides in the **corners** of the feature space. 
 - It is also much more difficult to traverse the increasing search space as the size of the search space **grows exponentially**, as shown in the above image.
 - A complex search space may correspond to the same configuration (object / training / testing sample) in the low-dimensional case, resulting in **overfitting**.

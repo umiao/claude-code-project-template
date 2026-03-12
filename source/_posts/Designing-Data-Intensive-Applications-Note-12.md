@@ -10,7 +10,7 @@ tags:
 description: "Discussion on replication lag problems and multi-leader replication."
 ---
 Discussion on replication lag problems and multi-leader replication.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 12 cover: Replication Lag and Multi-Leader Replication %}
 <!-- more -->
 
 

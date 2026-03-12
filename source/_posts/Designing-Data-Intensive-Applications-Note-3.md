@@ -10,7 +10,7 @@ tags:
 description: "Discussion on maintainability, evolvability and operability."
 ---
 Discussion on maintainability, evolvability and operability.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 3 cover: Maintainability, Evolvability and Operability %}
 <!-- more -->
 
 # Maintainability

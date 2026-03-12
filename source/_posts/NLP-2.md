@@ -9,7 +9,7 @@ description: "Review the major NLP tasks as well as methods (in terms of text cl
 ---
 
 Review the major NLP tasks as well as methods (in terms of text classification).
-{% asset_img cover.png SQL Note of blur! %}
+{% asset_img cover.png NLP-2 cover: Survey on Text Classification methods %}
 <!-- more -->
 
 # Abstract
@@ -17,7 +17,7 @@ The methods discussed in this survey are proposed between 1961-2021.
 1. **Traditional model**: Preprocess and mannually extract features from the documents.
 2. **Deep learning model**: Learns and implements the feature extraction (as non-linear transformation). Better preserve the sequential structure and contextual info.
 
-{% asset_img flowchart.png SQL Note of blur! %}
+{% asset_img flowchart.png Text classification pipeline flowchart from preprocessing to classification %}
 
 # Traditional models
 ## 1 - **Preprocessing**: 
@@ -42,7 +42,7 @@ mapping array of the sentence.
 - **word2vec**: 
 	Use local context information to obtain (fixed-length, real value) word vectors. Two essential models: **CBOW** and **Skip-gram**. The former is to predict the current word on the premise that the context of the current word is known. The latter is to predict the context when the current word is known. 
 	The two manners:
-	{% asset_img w2v.png SQL Note of blur! %}
+	{% asset_img w2v.png Word2Vec CBOW and Skip-gram model architectures %}
 - **GloVe: Global Vectors for Word Representation**: Construct the co-occurrence matrix of words based on the corpus. Learn the word vector based on the co-occurrence matrix and **GloVe** model (fit the co-occurrence frequency by dot-product of vectors to measure the relevance).
 
 
@@ -54,7 +54,7 @@ Finally, the represented text (vector) is fed into the classifier according to s
 Express the conditional dependencies among features in graphs, such as the Bayesian network. It is a combination of probability theory and graph theory.
 
 - **Naïve Bayes (NB)** : Assumption: when the target value has been given, the conditions between text $T = [T_1,T_2, . . . ,T_n]$ are independent. It uses the prior probability to calculate the posterior probability: $P(y|T_1, ..., T_n)=\frac{p(y)\prod_{j=1}^np(T_j|y)}{\prod_{j=1}^n p(T_j)}$. The sturcture would be quite simple (though the assumption is not actual) and would be shown below:
-{% asset_img nb.png SQL Note of blur! %}
+{% asset_img nb.png Naive Bayes classifier structure for text classification %}
 
 - **Naive Bayes Transfer Classification (NBTC)**: Use **EM Algorithm** to settle the different distribution between the training set and the target set (by obtaining a locally optimal posterior hypothesis on the target set). 
 - By assuming the distribution of variables, **Bernoulli NB, Gaussian NB and Multinomial NB** can be implemented.
@@ -97,24 +97,24 @@ Mainstream methods include **Multi-Layer Perceptron (MLP), Recursive Nerual Netw
 
 - **RNN**: Usually used to learn a (latent) semantic vector representative automatically (each input word would be viewed as a leaf node of the entire tree like model structure. Finally, all nodes are combined into a parent node to represent the entire input text for prediction). It can also deal with input with variable length.
 - It should be noted that it is a biased model as the **following inputs profit over the former** and decreasing the semantic efficiency (**LSTM** is proposed to partially alleivated this issue). It can also be realized in a bi-directional manner.
-{% asset_img rnn.png SQL Note of blur! %}
+{% asset_img rnn.png Recurrent Neural Network architecture for text classification %}
 
 - **CNN**: It can be implemented both in **character level** and **word level**. It can also combined with pyramid structure, residual network, etc.
 
 - **Self-attention / Transformer / Bert**: There are alread a lot of materials on this topic.
-{% asset_img attention.png SQL Note of blur! %}
+{% asset_img attention.png Self-attention and Transformer architecture for NLP %}
 
 - **Pre-trained Model**: Including models like **Embedding from Language Model (ELMo), OpenAI GPT, BERT**, etc.
 We can clearly tell that ELMo is **LSTM** based while GPT and BERT are **Transformer** based.
 
 These methods comeup with larget training time, training data and resources. A typical setting is like over 200K training sets and 1.5B training data, batch size over 8K.
-{% asset_img bert.png SQL Note of blur! %}
+{% asset_img bert.png Pre-trained language models ELMo, GPT, and BERT comparison %}
 
 We also have other models like **BART** (Seq2Seq based denoising autoencoder, introducing noise to the document and use Seq2Seq model to reconstruct) and **SpanBERT** (improved implementation of BERT, like mask a continuous paragraph, rather than word leveled. Span Boundary Objective (SBO) is added to predict span by the token next to the span boundary, and the NSP pre-training task is removed).
 
 ## GNN (Graph Neural Networks) based method
 Just put a image here:
-{% asset_img gnn.png SQL Note of blur! %}
+{% asset_img gnn.png Graph Neural Network based text classification method %}
 
 
 

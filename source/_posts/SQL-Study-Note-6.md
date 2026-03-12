@@ -10,7 +10,7 @@ tags:
 description: "SQL triggers and scheduled events for automating database operations."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 6 cover: Triggers and Scheduled Events %}
 
 # Trigger
 

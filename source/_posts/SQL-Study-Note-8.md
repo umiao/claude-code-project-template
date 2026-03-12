@@ -10,7 +10,7 @@ tags:
 description: "MySQL data types including VARCHAR, TEXT, and best practices for type selection."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 8 cover: MySQL Data Types %}
 
 # Data Type of MySQL
 

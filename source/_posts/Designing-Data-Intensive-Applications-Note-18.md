@@ -10,7 +10,7 @@ tags:
 description: "Discussion on challenges with batch processing jobs."
 ---
 Discussion on challenges with batch processing jobs.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 18 cover: Batch Processing %}
 <!-- more -->
 
 ### Unix Tools (Pipe)

@@ -10,7 +10,7 @@ tags:
 description: "Discussion on Encoding and Schema."
 ---
 Discussion on Encoding and Schema.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 8 cover: Encoding, Schema Evolution and Compatibility %}
 <!-- more -->
 
 ### Encoding and Evaluation:
@@ -49,11 +49,11 @@ Meanwhile, csv does not have schema at all, and you may need to deal with comple
 ### Thrift and Protocal Buffers:
 - **Apache Thrift** and **Protocol Buffers** (**protobuf**) are binary encoding libraries that are based on the same principle, and a schema is required to define the type, field name and whether is optional.
 
-{% asset_img 1.png ML_note %}
+{% asset_img 1.png Apache Thrift and Protocol Buffers schema definition example %}
 
 - Thrift has 2 binary encoding formats: **BinaryProtocol** and **CompactProtocol**.
-{% asset_img 2.png ML_note %}
-{% asset_img 3.png ML_note %}
+{% asset_img 2.png Thrift BinaryProtocol binary encoding layout %}
+{% asset_img 3.png Thrift CompactProtocol binary encoding layout %}
 
 - Note that if a field is specified as required, this is only checked in **run-time**.
 - **Variable-length integers**: rather than using a full eight bytes to store integer, we can instead encode in 2 bytes (units) and use the **top bit** of each byte to indicate if there are more bytes to come.
@@ -84,7 +84,7 @@ Thrift has a dedicated **list** data type.
 - Based on **Protocol Buffer** and **thrift**.
 - 2 schema languages: (**Avro IDL**) intended for human editing, the other based on JSON and easier to be read by machine.
 
-{% asset_img 4.png ML_note %}
+{% asset_img 4.png Avro schema definition and binary encoding example %}
 
 - No tag number / field to identify type. 
 - Integers based on **variable length encoding**. This means that the binary data can only be decoded correctly if the code reading the data is using exactly the same schema as the code write the data. 

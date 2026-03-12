@@ -24,7 +24,7 @@ takeaways:
 
 
 This post covers common software / cyber-security threats and preventions. Including SQL Injection, Cross-Site Scripting (XSS), OS Command Injection, Weak Session Token Generation and Missing Function Level Access Control.
-{% asset_img cover.jpg ML_note %}
+{% asset_img cover.jpg Software Security Engineer guide cover: common threats and prevention strategies %}
 <!-- more -->
 
 

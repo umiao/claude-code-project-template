@@ -10,7 +10,7 @@ tags:
 description: "SQL syntax basics covering SELECT, WHERE, JOIN, and fundamental database query operations."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 1 cover: Syntax Basics %}
 
 # Overview
 

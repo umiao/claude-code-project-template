@@ -10,7 +10,7 @@ tags:
 description: "Discussion on data model and query language."
 ---
 Discussion on data model and query language.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 4 cover: Data Models and Query Languages %}
 <!-- more -->
 
 
@@ -138,9 +138,9 @@ This idea is beyond document database, also applicable to relational DB.
 
 ### Cypher Query Language:
 Demos an example of **creation** of a property graph:
-{% asset_img 1.png ML_note %}    
+{% asset_img 1.png Cypher property graph creation example %}
 Example of **query**:
-{% asset_img 2.png ML_note %}
+{% asset_img 2.png Cypher query example for graph traversal %}
 
 - Such query effectively specify an **endpoint** / **destination vertex**, and we want to find a **path** to get there. 
 - We first declare a person should have a “born_in” edge, then we want to keep tracking “within” edge to reach certain country / address vertex.
@@ -155,13 +155,13 @@ This just like `(in_vertex, directional_edge, out_vertex)`
 ### SPARQL 
 A query language for triple-stores using the RDF (**Resource Description Framework**) data model. 
 It looks like:
-{% asset_img 3.png ML_note %}
+{% asset_img 3.png SPARQL query example for RDF triple-stores %}
 
 
 ### Datalog
 Similar triple-stores languages, write as `predicate(subject, object).`
 See example of decalration as well as query below:
-{% asset_img 4.png ML_note %}
+{% asset_img 4.png Datalog declaration and recursive query example %}
 
 It can also recursively find a person who born in USA and lives in Europe.
 Note that in above example, rule “within_recursive” can derive **itself**. (You can view the first line of row as “tail recursive”)

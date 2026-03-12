@@ -10,7 +10,7 @@ tags:
 description: "SQL built-in functions and aggregate functions including COUNT, MAX, MIN, AVG, and SUM."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 3 cover: Functions and Aggregate Functions %}
 
 # Function and the Aggregate Function
 <!-- more -->

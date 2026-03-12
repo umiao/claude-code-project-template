@@ -10,7 +10,7 @@ tags:
 description: "Discussion on Storage structures."
 ---
 Discussion on Storage structures.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 5 cover: Storage Structures and Retrieval %}
 <!-- more -->
 
 
@@ -54,7 +54,7 @@ Also we can avoid **fragmented** data file.
 - **Maintenance**: it is possible to maintain SSTables in disk (using **B-Trees**) but it is easier using memory (called **memtable**) with **red-black trees** / **AVL trees**.
 
 
-{% asset_img 1.png ML_note %}
+{% asset_img 1.png Diagram of SSTable and LSM-Tree structure with memtable %}
 
 --- 
 
@@ -104,7 +104,7 @@ The mentioned full-textr search engine actually stores all links related to a ke
 - To add new key, find the page whose range **encompasses** the new key and add it to the page. If there is not enough space, split the page into 2 **half-full** pages. 
 - This ensures that the tree is **balanced**, has a depth of $O(\log n)$. Most database can fit in a depth of 3 – 4. (A four-level tree of 4 KB pages with a branching factor of 500 can store up to 256 TB)
 
-{% asset_img 2.png ML_note %}
+{% asset_img 2.png OLAP data cube / materialized aggregate grid diagram %}
 
 - **Comparing with LSM-Tree**: B-Tree’s rewrite is **in-place** and can be viewed as happening at **hardware level**, rather than on log level.
 #### Robustness

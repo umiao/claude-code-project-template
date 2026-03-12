@@ -12,7 +12,7 @@ description: "It is meaningful and believed to be possible to discover the patte
 It is meaningful and believed to be possible to discover the pattern of the missing parts of the time series data. Such patterns may vary in different scenarios and sources and may be related with physical devices and configurations.
 <!-- more -->
 # Algorithms for pattern detection 
-{% asset_img img.jpg Note %}
+{% asset_img img.jpg Distribution comparison of imputed values versus known patterns in time series %}
 In the above image, we can find out the distribution and comparison between the imputed values VS the known patterns.
 
 
@@ -57,7 +57,7 @@ and understand the shape and features of missing data periods.
 
 Here $x$ and $y$ may represent the start and end time of a missing part.
 
-{% asset_img pat.png Note %}
+{% asset_img pat.png KDE visualization of missing data patterns with start and end time scatter diagram %}
 The mined patterns would be like the visualization results shown above. We can find the common parts shared by the periodical data and view the rest parts as random noise.
 
 # References

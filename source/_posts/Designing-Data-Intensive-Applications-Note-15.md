@@ -10,7 +10,7 @@ tags:
 description: "Discussion on transaction related topics."
 ---
 Discussion on transaction related topics.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 15 cover: Transactions %}
 <!-- more -->
 
 A lot of things may go wrong (database software and hardware / application / network / clients racing / dirty data / concurrency), and that is why we need **transactions**: To group reads and writes together into a logical unit(**commit**), succeeds or fails (**abort**, **rollback**) as one.

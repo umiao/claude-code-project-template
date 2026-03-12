@@ -10,7 +10,7 @@ tags:
 description: "The optimization of SQL script can be extremely important, just as the importance of algorithm theory & analysis to programming."
 ---
 The optimization of SQL script can be extremely important, just as the importance of algorithm theory & analysis to programming.
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 14 cover: Query Optimization - Always Use Index %}
 
 <!-- more -->
 # Introduction

@@ -12,7 +12,7 @@ description: "Other issues which deserve attention when writing SELECT clause."
 
 Other issues which deserve attention when writing SELECT clause.
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 15 cover: Optimizing SELECT and Data Manipulation %}
 <!-- more -->
 # Optimize the SELECT
 ## Avoid SELECT *

@@ -10,7 +10,7 @@ tags:
 description: "Data modeling pipeline, database constraints, and normalization forms for relational databases."
 ---
 
-{% asset_img sql.jpg SQL Note of blur! %}
+{% asset_img sql.jpg SQL Study Note 9 cover: Data Modeling, Constraints, and Normalization %}
 
 # Data Modelling Pipeline
 1. Understand the requirements; 

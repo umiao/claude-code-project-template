@@ -10,7 +10,7 @@ tags:
 description: "Discussion on distributed system goal and Replication implementations."
 ---
 Discussion on distributed system goal and Replication implementations.
-{% asset_img cover.png ML_note %}
+{% asset_img cover.png DDIA Chapter 10 cover: Distributed Systems and Replication %}
 <!-- more -->
 
 Distributed System:
