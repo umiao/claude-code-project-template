@@ -29,17 +29,6 @@
 
 ### Should Have (P1)
 
-#### T-P1-8: /study-review Skill (Basic)
-- Complexity: M | Depends on: T-P0-14
-- Create `.claude/skills/study-review/SKILL.md`
-- Skill runs `tools/review_queue.py show` to find due posts, reads each due post, generates quiz questions (key concept recall, application questions), presents to user, user self-rates (0-5), skill calls `mark` to update queue
-- Basic version: generates questions from full post content (enhanced later with key_concepts front matter)
-- **Acceptance Criteria**:
-  1. `.claude/skills/study-review/SKILL.md` exists with complete skill instructions
-  2. Skill integrates with review_queue.py (show + mark commands)
-  3. Skill generates at least 3 question types (definition, application, comparison)
-  4. Manual test: init queue, invoke `/study-review`, complete one review cycle
-
 > **P1 Checkpoint**: User can (1) create new posts from notes via `/blog-from-notes`, (2) run daily review sessions via `/study-review`.
 
 #### T-P1-9: Enrich DDIA Series (Pilot)
@@ -222,3 +211,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P1-6: /blog-from-notes Skill: Created `.claude/skills/blog-from-notes/SKILL.md` with 7-step workflow (locate input, analyze content, generate front matter, format body, show draft for confirmation, write post, flag new concepts). Skill references `scaffolds/post.md` template and `data/concepts.yml` for concept tagging. Created `docs/raw-input/` directory with README and sample input file for testing.
 
 - [x] **2026-03-12** -- T-P1-7: /refine-post Skill: Created `.claude/skills/refine-post/SKILL.md` with 8-step workflow (locate post, read/analyze, concept lookup against concepts.yml, build updated front matter with merge strategy, fix image alt text, show diff for confirmation, write updated post, flag new concepts). Handles partial front matter without overwriting existing values.
+
+- [x] **2026-03-12** -- T-P1-8: /study-review Skill (Basic): Created `.claude/skills/study-review/SKILL.md` with 7-step workflow integrating review_queue.py (show+mark). Generates 5 question types (definition, application, comparison, connection, recall detail). Supports single post, sequential "all" mode, and special commands (skip/show/stop/stats).

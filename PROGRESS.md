@@ -209,3 +209,10 @@
 - **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete instructions (158 lines), (2) Step 3 validates concepts against concepts.yml with canonical name matching and [NEW:] warnings for unrecognized concepts, (3) Step 6 shows structured diff with yes/no/edit confirmation before writing, (4) Verified skill would correctly handle DDIA post: detects series from title pattern, extracts series_index from "Note-N", identifies relevant concepts, flags generic "ML_note" alt text. Skill auto-detected by Claude Code (appears in skills list as "refine-post").
 - **Status**: [DONE]
 - **Request**: Move T-P1-7 to Completed
+
+## 2026-03-12 -- [T-P1-8] /study-review Skill (Basic)
+- **What I did**: Created `.claude/skills/study-review/SKILL.md` with complete 7-step workflow: (1) Check review queue status via `tools/review_queue.py show`, (2) Select post for review (single or sequential "all" mode), (3) Read and analyze post content/front matter, (4) Generate 5-7 quiz questions across 5 types (Definition Recall, Application/Scenario, Comparison/Trade-off, Connection/Synthesis, Recall Detail), (5) Present questions one-at-a-time with self-rating (0-5), (6) Record results via `tools/review_queue.py mark`, (7) Continue or finish with session summary. Includes special commands (skip, show, stop, stats).
+- **Deliverables**: `.claude/skills/study-review/SKILL.md` (new, 156 lines)
+- **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete instructions, (2) Integrates with review_queue.py show+mark commands, (3) Generates 5 question types (exceeds minimum of 3), (4) Verified review_queue.py init/show work -- 64 posts tracked, 60 due for review. Skill auto-detected by Claude Code (appears in skills list as "study-review").
+- **Status**: [DONE]
+- **Request**: Move T-P1-8 to Completed
