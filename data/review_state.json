@@ -1,0 +1,482 @@
+{
+  "14th-May-Researcher-Paper-Work-Group": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "da6d21f36ed907580a4224deeccf7f8c"
+  },
+  "Basics-About-Linux-Vim-Usage": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "dc59c38bf87814b43a06e41b8647ab67"
+  },
+  "brainteaser_1": {
+    "last_reviewed": "2026-03-12",
+    "interval": 13,
+    "easiness": 2.28,
+    "repetitions": 3,
+    "next_due": "2026-03-25",
+    "content_hash": "fd18c58896c0d019afd6797d32c35fa6"
+  },
+  "Cake-Inspiration-Gallery": {
+    "last_reviewed": "2026-03-12",
+    "interval": 1,
+    "easiness": 2.6,
+    "repetitions": 1,
+    "next_due": "2026-03-13",
+    "content_hash": "189d1f8974856b88f28a4a78309e07f1"
+  },
+  "Data-Security-Training": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "a41db36655ecd930e7eb9e4ef47cc4d1"
+  },
+  "Designing-Data-Intensive-Applications-Note-1": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "2c99185e36ce9825adda9f174352c71f"
+  },
+  "Designing-Data-Intensive-Applications-Note-10": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "cc60cf1e05772fb055af5529593b9610"
+  },
+  "Designing-Data-Intensive-Applications-Note-11": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "54fb971d0f1cb5e1e4993d64a635322a"
+  },
+  "Designing-Data-Intensive-Applications-Note-12": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "4a6c1b7568974d439af950cf1ffd5dfd"
+  },
+  "Designing-Data-Intensive-Applications-Note-13": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "2edccfc870574d1da979bea770947c72"
+  },
+  "Designing-Data-Intensive-Applications-Note-14": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "d269e48129eb835b72d63cc008af2430"
+  },
+  "Designing-Data-Intensive-Applications-Note-15": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "67d73b587c1ed74db84dbe3e0bb28060"
+  },
+  "Designing-Data-Intensive-Applications-Note-16": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "9657ba7e8c8e8d1804a1bacd3c84be75"
+  },
+  "Designing-Data-Intensive-Applications-Note-17": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "5633c0dc7389100399a8e8fd7afc71c4"
+  },
+  "Designing-Data-Intensive-Applications-Note-18": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "2f86aee2ff5c5c9d5f4625b8425ec55f"
+  },
+  "Designing-Data-Intensive-Applications-Note-19": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "54bbe9dcb290f440d6761109f2ae0e8f"
+  },
+  "Designing-Data-Intensive-Applications-Note-2": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "4145fb99ba65af31b90076b6a88d47bc"
+  },
+  "Designing-Data-Intensive-Applications-Note-3": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "53f688fa64db06e3cde45174bb1a047b"
+  },
+  "Designing-Data-Intensive-Applications-Note-4": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "804008e21da2d812768a2de1c62b8956"
+  },
+  "Designing-Data-Intensive-Applications-Note-5": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "3fd45519684c3ec871d739a072a299d9"
+  },
+  "Designing-Data-Intensive-Applications-Note-6": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "e52fe77bf6685f80e64a1f25af5fe456"
+  },
+  "Designing-Data-Intensive-Applications-Note-7": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "a16d14048d55ec12d1dfa4f25f1d382f"
+  },
+  "Designing-Data-Intensive-Applications-Note-8": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "65e744325573ed355eabeab389d6b502"
+  },
+  "Designing-Data-Intensive-Applications-Note-9": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "220c2a680e30b983260c2527abebcbb7"
+  },
+  "DS-Study-Note-1": {
+    "last_reviewed": "2026-03-12",
+    "interval": 1,
+    "easiness": 2.5,
+    "repetitions": 1,
+    "next_due": "2026-03-13",
+    "content_hash": "8cc1ee8c3aadb418b0d53238d2bbed99"
+  },
+  "DS-Study-Note-2": {
+    "last_reviewed": "2026-03-12",
+    "interval": 1,
+    "easiness": 2.6,
+    "repetitions": 1,
+    "next_due": "2026-03-13",
+    "content_hash": "b7d80d2d1cc6d7616c9434bff1c340b1"
+  },
+  "DS-Study-Note-3": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "60f9abb199a9d652460d96b64ff1a7fd"
+  },
+  "DS-Study-Note-4": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "223750bd193c6bde1f82ca381c505305"
+  },
+  "DS-Study-Note-5": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "eae975cec926cd88c4a6ea1c958ae603"
+  },
+  "DS-Study-Note-6": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "e2d014a25549e2f0f2b66331a6804ae1"
+  },
+  "DS-Study-Note-7": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "79c2b41f35dca92f5c8f07655bace232"
+  },
+  "DS-Study-Note-8": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "c2f557684594ee596670aea941f360fe"
+  },
+  "DS-Study-Note-9": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "4eac0379493ce0e2f2e725fda1f22771"
+  },
+  "Introduction-to-Git": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "0205574ab8713ba71eaedf674428b020"
+  },
+  "Learn-English-Vocabulary-by-Frequency": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "5312474ef5833e36dadf27e2ec901743"
+  },
+  "Make-Full-Use-of-Apple-Watch": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "5f544b9b0620fcaf86e13210e70cab09"
+  },
+  "Missing-Value-Imputation-in-Traffic-Data": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "8d500e8fdd758497b5dc0629d52dfc06"
+  },
+  "Missing-Values-Patterns-in-Time-Series-Data": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "0e170676e054cb27f81f86f41979b89c"
+  },
+  "Name-of-Every-Keyboard-s-Key": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "b8f47098d96aa4d51a14faa7255ed9df"
+  },
+  "NLP-1": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "db840b8efd9e4713430bcba04e73b9bb"
+  },
+  "NLP-2": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "ecd57262f7daab03be605fa493f4ffee"
+  },
+  "Object-Oriented-Design": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "71fefddc4794ce64d694b5daea2d79d0"
+  },
+  "Options-Futures-and-Other-Derivatives-Note-1": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "174a777eb7eb253b8e9ef1569b297e52"
+  },
+  "Options-Futures-and-Other-Derivatives-Note-2": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "6127fe4183ece017a4394981fff2fc88"
+  },
+  "SQL-Study-Note-1": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "20163b31e4284b39f17685482f4bb107"
+  },
+  "SQL-Study-Note-10": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "0ea04fc54561369ae78785a674dc1c46"
+  },
+  "SQL-Study-Note-11": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "5b95324830eabcbe446431467d168282"
+  },
+  "SQL-Study-Note-12": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "4811a090f3eecfce593cef4e8a762367"
+  },
+  "SQL-Study-Note-13": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "6f2a4f91c942fe0582792fa526ea429b"
+  },
+  "SQL-Study-Note-14": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "b3dcaf1842c83c03a525b5f70b9c7c50"
+  },
+  "SQL-Study-Note-15": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "3feb0049d9465d468b6fdce12aa6d8bd"
+  },
+  "SQL-Study-Note-16": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "0665f390f20aa4367943eb2e8fb5f073"
+  },
+  "SQL-Study-Note-2": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "c3784c63d8b66ad4acca5c2186f3821f"
+  },
+  "SQL-Study-Note-3": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "514875c286926f9c7bf74da413a3e3b7"
+  },
+  "SQL-Study-Note-4": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "707a4b4461397b5fe2db3cc2b5680e7d"
+  },
+  "SQL-Study-Note-5": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "1cbc585e0d3cfe7d2e04d3bbf3432d6f"
+  },
+  "SQL-Study-Note-6": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "632c1caf787c9cd0d10c8516a9f566fe"
+  },
+  "SQL-Study-Note-7": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "dc4def75dcc97c6dae975aa72e21683c"
+  },
+  "SQL-Study-Note-8": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "11f4a4d5d9a53ec5aa1f0b06b9f00090"
+  },
+  "SQL-Study-Note-9": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "408ef401929a022aafc1d15a61fcfd07"
+  }
+}
