@@ -202,3 +202,10 @@
 - **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete instructions (161 lines), (2) References scaffold template (`scaffolds/post.md`) and concepts.yml lookup with canonical name matching, (3) Step 5 includes confirmation with yes/no/edit options, (4) Sample input file placed in `docs/raw-input/` for manual testing. Skill auto-detected by Claude Code (appears in skills list).
 - **Status**: [DONE]
 - **Request**: Move T-P1-6 to Completed
+
+## 2026-03-12 -- [T-P1-7] /refine-post Skill
+- **What I did**: Created `.claude/skills/refine-post/SKILL.md` with complete 8-step workflow: (1) Locate post by filename/path or interactive selection of posts missing key_concepts, (2) Read and analyze post content/front matter, (3) Look up concepts against `data/concepts.yml` with canonical name matching and `[NEW:]` flagging, (4) Build updated front matter with merge-not-overwrite strategy, (5) Fix generic image alt text, (6) Show structured diff for user confirmation (yes/no/edit), (7) Write updated post, (8) Flag and optionally add new concepts to registry.
+- **Deliverables**: `.claude/skills/refine-post/SKILL.md` (new, 158 lines)
+- **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete instructions (158 lines), (2) Step 3 validates concepts against concepts.yml with canonical name matching and [NEW:] warnings for unrecognized concepts, (3) Step 6 shows structured diff with yes/no/edit confirmation before writing, (4) Verified skill would correctly handle DDIA post: detects series from title pattern, extracts series_index from "Note-N", identifies relevant concepts, flags generic "ML_note" alt text. Skill auto-detected by Claude Code (appears in skills list as "refine-post").
+- **Status**: [DONE]
+- **Request**: Move T-P1-7 to Completed

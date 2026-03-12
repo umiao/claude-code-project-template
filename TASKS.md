@@ -29,17 +29,6 @@
 
 ### Should Have (P1)
 
-#### T-P1-7: /refine-post Skill
-- Complexity: M | Depends on: T-P0-12, T-P0-13
-- Create `.claude/skills/refine-post/SKILL.md`
-- Skill reads a specified post, adds/updates `key_concepts` (validated against `data/concepts.yml`), `takeaways`, `series`/`series_index`, fixes image alt text, and shows a diff for user confirmation before writing
-- Must handle posts that already have partial front matter (merge, don't overwrite)
-- **Acceptance Criteria**:
-  1. `.claude/skills/refine-post/SKILL.md` exists with complete skill instructions
-  2. Skill validates concepts against concepts.yml (warns on unrecognized concepts)
-  3. Skill shows diff before applying changes
-  4. Manual test: run on one DDIA post, verify front matter is enriched correctly
-
 #### T-P1-8: /study-review Skill (Basic)
 - Complexity: M | Depends on: T-P0-14
 - Create `.claude/skills/study-review/SKILL.md`
@@ -231,3 +220,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-11** -- T-P0-10: Establish Major Change Approval Protocol: Added "Major Change Approval Protocol" section to CLAUDE.md defining major changes (theme switches, removing functionality, reversing approved decisions, deployment target changes) with required 4-step approval process (state change + why, list alternatives, show impact, wait for approval). Added lesson entry to LESSONS.md documenting T-P0-9 theme switch incident and correct communication approach. NexT feasibility research completed: (1) Life sidebar widget - FEASIBLE via custom_file_path.sidebar in _config.next.yml, (2) Homepage Life post filtering - FEASIBLE with Hexo filter plugin in scripts/, (3) Tags/Categories pages - NATIVE support in NexT, (4) About page image aspect ratios - FEASIBLE via markdown/CSS. Conclusion: All yilia-specific features can be replicated in NexT with no blockers.
 
 - [x] **2026-03-12** -- T-P1-6: /blog-from-notes Skill: Created `.claude/skills/blog-from-notes/SKILL.md` with 7-step workflow (locate input, analyze content, generate front matter, format body, show draft for confirmation, write post, flag new concepts). Skill references `scaffolds/post.md` template and `data/concepts.yml` for concept tagging. Created `docs/raw-input/` directory with README and sample input file for testing.
+
+- [x] **2026-03-12** -- T-P1-7: /refine-post Skill: Created `.claude/skills/refine-post/SKILL.md` with 8-step workflow (locate post, read/analyze, concept lookup against concepts.yml, build updated front matter with merge strategy, fix image alt text, show diff for confirmation, write updated post, flag new concepts). Handles partial front matter without overwriting existing values.
