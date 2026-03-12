@@ -20,10 +20,19 @@ from hook_utils import run_hook  # noqa: E402
 _PROGRESS_ENTRY_RE = re.compile(r"(?=^## \d{4}-\d{2}-\d{2})", re.MULTILINE)
 
 # Regex matching completed task lines in TASKS.md (#### [x] T-P...: or - T-P...:)
+# Stop block before: next #### header, next ## section, oneliner entry (- [x] or - T-P), or EOF
 _COMPLETED_BLOCK_RE = re.compile(
-    r"^####\s+\[x\]\s+T-P\d+-\d+:.+?(?=\n####|\n##|\Z)", re.MULTILINE | re.DOTALL
+    r"^####\s+\[x\]\s+T-P\d+-\d+:.+?(?=\n####|\n##|\n- (?:\[x\]|T-P)|\Z)",
+    re.MULTILINE | re.DOTALL,
 )
-_COMPLETED_ONELINER_RE = re.compile(r"^- T-P\d+-\d+:.+$", re.MULTILINE)
+# Match all common completed task oneliner formats:
+#   - T-P0-1: Title
+#   - [x] T-P0-1: Title
+#   - [x] **2026-03-12** -- T-P0-1: Title
+_COMPLETED_ONELINER_RE = re.compile(
+    r"^- (?:\[x\]\s+)?(?:\*\*\d{4}-\d{2}-\d{2}\*\*\s+--\s+)?T-P\d+-\d+:.+$",
+    re.MULTILINE,
+)
 
 
 def _find_project_root() -> Path:
@@ -220,7 +229,11 @@ def archive_completed_tasks(root: Path, max_completed: int = 20, keep_completed:
     # Strip old header, keep entries
     if existing_archive:
         # Find first entry line
-        first_entry = re.search(r"^(?:####|\- T-P)", existing_archive, re.MULTILINE)
+        first_entry = re.search(
+            r"^(?:####\s+\[x\]\s+T-P\d+-\d+|- (?:\[x\]\s+)?(?:\*\*\d{4}-\d{2}-\d{2}\*\*\s+--\s+)?T-P\d+-\d+):",
+            existing_archive,
+            re.MULTILINE,
+        )
         existing_body = existing_archive[first_entry.start() :] if first_entry else ""
     else:
         existing_body = ""

@@ -8,6 +8,20 @@ tags:
 - Interview
 - Alex Xu
 - System Design
+description: Part 1 of comprehensive notes from Alex Xu's System Design Interview book, covering chapters 1-9 on scaling, databases, and core system design concepts.
+key_concepts:
+- Scaling from zero to millions of users
+- DNS and request flow architecture
+- Relational vs Non-relational databases
+- When to use NoSQL databases
+- Web and mobile application traffic sources
+series: System Design Interview - Alex Xu
+series_index: 1
+takeaways:
+- DNS is typically a paid third-party service, not self-hosted
+- NoSQL databases excel for super-low latency, unstructured data, and serialization needs
+- Non-relational databases generally don't support join operations
+- Separate database from web server as first scaling step
 ---
 Learning note of Alex Xu's system design interview book.
 {% asset_img cover.jpg ML_note %}

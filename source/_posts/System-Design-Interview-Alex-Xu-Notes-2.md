@@ -8,6 +8,21 @@ tags:
 - Interview
 - Alex Xu
 - System Design
+description: Part 2 of comprehensive notes from Alex Xu's System Design Interview book, covering chapters 10-16 including notification systems and distributed architectures.
+key_concepts:
+- Notification system design (push, SMS, email)
+- iOS and Android push notification services
+- Message queues for decoupling components
+- System reliability and data loss prevention
+- Deduplication in distributed systems
+series: System Design Interview - Alex Xu
+series_index: 2
+takeaways:
+- Use message queues to decouple system components for independent scaling
+- Implement notification logs and retry mechanisms to prevent data loss
+- Avoid single points of failure by distributing databases and caches
+- Notification templates reduce errors and save development time
+- Third-party service extensibility is critical for global deployment
 ---
 Learning note of Alex Xu's system design interview book.
 {% asset_img cover.jpg ML_note %}

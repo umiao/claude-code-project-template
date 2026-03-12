@@ -112,6 +112,10 @@ May I proceed with option 2 (switch to NexT)?"
 - **Always use `#### T-PX-NN: Title` format for task headers** in TASKS.md Active Tasks
   and In Progress sections. Do not use bold (`**T-PX-NN: Title**`), h3 (`###`), or other
   formats. The `####` prefix is required for hook-based parsing and validation.
+- **Completed task format**: Use one of these two formats in the Completed Tasks section:
+  - Block: `#### [x] T-PX-NN: Title -- YYYY-MM-DD` (multi-line with details)
+  - Oneliner: `- [x] **YYYY-MM-DD** -- T-PX-NN: Title. Summary...`
+  Both formats are recognized by archival hooks. Do not invent other formats.
 
 ## Behavior Rules
 - **Fix violations immediately**: When a check you run (lint, emoji scan, tests) discovers
