@@ -37,17 +37,6 @@
 
 ### Stretch Goals (P3)
 
-#### T-P3-7: Anki Export Tool
-- Complexity: M | Depends on: T-P1-10
-- Create `tools/export_anki.py` that reads `key_concepts` + `takeaways` from all posts
-- Generates Anki-compatible CSV (front: concept/question, back: takeaway/answer)
-- All file I/O must use `encoding="utf-8"`
-- **Acceptance Criteria**:
-  1. `tools/export_anki.py` exists, runs without errors
-  2. Produces valid CSV importable by Anki (tested with sample)
-  3. Covers all posts with key_concepts front matter
-  4. Output file written to `data/anki_export.csv`
-
 #### T-P3-8: /plan-series Skill
 - Complexity: M | Depends on: T-P0-12, T-P1-6
 - Create `.claude/skills/plan-series/SKILL.md`
@@ -133,3 +122,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P2-8: Cheat Sheets: Created 3 cheat sheet pages (`source/cheatsheet/ddia.md`, `sql.md`, `ds.md`) condensing all 19 DDIA, 16 SQL, and 9 DS posts into quick-reference format with comparison tables, key formulas, and decision guides. Added index page and nav entry.
 
 - [x] **2026-03-12** -- T-P3-6: Visual Knowledge Map: Created `source/knowledge-map/index.md` with Mermaid diagram showing 4 domain clusters (DDIA, SQL, DS, Interview) with key concept nodes and cross-domain connections. Added nav menu entry. hexo generate produces 207 files with Mermaid rendering.
+
+- [x] **2026-03-12** -- T-P3-7: Anki Export Tool: Created `tools/export_anki.py` that reads key_concepts and takeaways from all 64 posts, generates 370 Anki flashcards (concept definition + takeaway recall cards) as tab-separated CSV to `data/anki_export.csv`. All file I/O uses encoding="utf-8".

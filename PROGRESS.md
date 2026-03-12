@@ -279,3 +279,10 @@
 - **Sanity check result**: All 4 ACs met: (1) `source/knowledge-map/index.md` exists with Mermaid diagram. (2) Mermaid renders in Hexo (script tags and `<pre class="mermaid">` in HTML). (3) All 4 domain clusters represented with key concept nodes. (4) `hexo generate` produces `public/knowledge-map/index.html` (207 files, 0 errors).
 - **Status**: [DONE]
 - **Request**: Move T-P3-6 to Completed
+
+## 2026-03-12 -- [T-P3-7] Anki Export Tool
+- **What I did**: Created `tools/export_anki.py` that parses YAML front matter from all blog posts, extracts `key_concepts` and `takeaways`, and generates Anki-compatible flashcards. Two card types: concept definition cards (front: "What is X?", back: relevant takeaways) and takeaway recall cards (front: question from takeaway, back: full takeaway + source). Tags include card type, series, and post tags. Output is tab-separated CSV with 3 columns (front, back, tags).
+- **Deliverables**: `tools/export_anki.py`, `data/anki_export.csv`
+- **Sanity check result**: All 4 ACs met: (1) `tools/export_anki.py` exists, runs without errors. (2) Produces valid tab-separated CSV with 370 rows, all 3 columns populated. (3) All 64 posts with key_concepts covered. (4) Output written to `data/anki_export.csv`. Ruff lint passes.
+- **Status**: [DONE]
+- **Request**: Move T-P3-7 to Completed
