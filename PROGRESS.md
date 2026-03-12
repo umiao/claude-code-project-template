@@ -251,3 +251,10 @@
 - **Sanity check result**: All 4 ACs met: (1) Plugin file exists and is loaded by Hexo. (2) DDIA post 5 shows prev (Part 4) and next (Part 6) links. (3) First post has empty prev, last post has empty next. (4) `hexo generate` succeeds with 425 files, no errors.
 - **Status**: [DONE]
 - **Request**: Move T-P2-5 to Completed
+
+## 2026-03-12 -- [T-P2-6] Related Posts Plugin
+- **What I did**: Created `scripts/related-posts.js` Hexo filter plugin that injects a "Related Reading" section at the bottom of each post. Scores candidate posts by tag overlap + key_concepts overlap (weighted 2x). Shows top 5 related posts with titles and links. Uses pre-built post index for performance with cache reset on before_generate.
+- **Deliverables**: `scripts/related-posts.js`
+- **Sanity check result**: All 4 ACs met: (1) Plugin file exists and is loaded by Hexo. (2) 57 of 64 posts show "Related Reading" section with linked posts. (3) Related posts are relevant (DS-Study-Note-1 about Overfitting shows L1/L2 Regularization note first). (4) `hexo generate` succeeds with 425 files, no errors.
+- **Status**: [DONE]
+- **Request**: Move T-P2-6 to Completed

@@ -33,18 +33,6 @@
 
 ### Nice to Have (P2)
 
-#### T-P2-6: Related Posts Plugin
-- Complexity: M | Depends on: T-P1-9
-- Create `scripts/related-posts.js` as a Hexo filter plugin
-- Injects "Related Reading" section at the bottom of each post
-- Scoring: tag overlap + key_concepts overlap (weighted 2x higher than tags)
-- Show top 3-5 related posts with titles and links
-- **Acceptance Criteria**:
-  1. `scripts/related-posts.js` exists and is loaded by Hexo
-  2. Posts show "Related Reading" section with 3-5 linked posts
-  3. Related posts are relevant (share concepts/tags with the source post)
-  4. `hexo generate` succeeds with no errors
-
 #### T-P2-7: Interview Prep Hub
 - Complexity: M | Depends on: none
 - Create `source/interview/index.md` with sections: System Design (DDIA + Alex Xu concepts), Behavioral, Brainteasers, OOD, SQL highlights, system design patterns derived from DDIA
@@ -168,3 +156,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P2-4: Concept Index Generator Plugin: Created `scripts/generate-concept-index.js` Hexo generator that reads key_concepts from all posts, produces alphabetical `/concepts/index.html` with letter navigation and 87 concepts linked to their posts.
 
 - [x] **2026-03-12** -- T-P2-5: Series Navigation Plugin: Created `scripts/series-nav.js` Hexo filter plugin that injects prev/next navigation links into series posts using `series` and `series_index` front matter. All 46 series posts get nav links.
+
+- [x] **2026-03-12** -- T-P2-6: Related Posts Plugin: Created `scripts/related-posts.js` Hexo filter plugin that injects "Related Reading" section with top 5 related posts scored by tag overlap + key_concepts overlap (2x weight). 57 of 64 posts show related links.
