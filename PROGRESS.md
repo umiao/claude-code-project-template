@@ -272,3 +272,10 @@
 - **Sanity check result**: All 4 ACs met: (1) All 3 cheat sheet files exist under `source/cheatsheet/`. (2) Each covers all posts in its series (19 DDIA, 16 SQL, 9 DS). (3) Contains comparison tables and quick-reference content (136+116+150 table rows). (4) `hexo generate` produces all HTML pages (206 files, 0 errors).
 - **Status**: [DONE]
 - **Request**: Move T-P2-8 to Completed
+
+## 2026-03-12 -- [T-P3-6] Visual Knowledge Map
+- **What I did**: Created `source/knowledge-map/index.md` with a Mermaid graph showing 4 domain clusters (DDIA with 20 nodes covering storage/replication/transactions/consensus/processing, SQL with 18 nodes covering queries/schema/performance, DS with 25 nodes covering supervised/unsupervised/NLP/fundamentals, Interview with 13 nodes covering system design/OOD/behavioral). Added cross-domain dashed edges connecting related concepts (partitioning-sharding, CAP theorem, indexes-storage engines, etc.). Added "knowledge-map" nav entry to `_config.next.yml`.
+- **Deliverables**: `source/knowledge-map/index.md`, `_config.next.yml` (nav update)
+- **Sanity check result**: All 4 ACs met: (1) `source/knowledge-map/index.md` exists with Mermaid diagram. (2) Mermaid renders in Hexo (script tags and `<pre class="mermaid">` in HTML). (3) All 4 domain clusters represented with key concept nodes. (4) `hexo generate` produces `public/knowledge-map/index.html` (207 files, 0 errors).
+- **Status**: [DONE]
+- **Request**: Move T-P3-6 to Completed

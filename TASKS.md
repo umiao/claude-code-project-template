@@ -37,16 +37,6 @@
 
 ### Stretch Goals (P3)
 
-#### T-P3-6: Visual Knowledge Map
-- Complexity: M | Depends on: T-P1-10
-- Create `source/knowledge-map/index.md` with clustered Mermaid subgraphs
-- Subgraphs for: DDIA, SQL, DS, Interview -- showing concept relationships
-- **Acceptance Criteria**:
-  1. `source/knowledge-map/index.md` exists with Mermaid diagram
-  2. Diagram renders correctly in Hexo (Mermaid already enabled in NexT config)
-  3. All 4 domain clusters represented with key concept nodes
-  4. `hexo generate` produces `public/knowledge-map/index.html`
-
 #### T-P3-7: Anki Export Tool
 - Complexity: M | Depends on: T-P1-10
 - Create `tools/export_anki.py` that reads `key_concepts` + `takeaways` from all posts
@@ -141,3 +131,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P2-7: Interview Prep Hub: Created `source/interview/index.md` with 7 sections (System Design DDIA, Alex Xu, SQL, DS/ML, Behavioral, OOD, Brainteasers). Added nav menu entry. Page has 13 tables, 87 links, and a 1-week study plan.
 
 - [x] **2026-03-12** -- T-P2-8: Cheat Sheets: Created 3 cheat sheet pages (`source/cheatsheet/ddia.md`, `sql.md`, `ds.md`) condensing all 19 DDIA, 16 SQL, and 9 DS posts into quick-reference format with comparison tables, key formulas, and decision guides. Added index page and nav entry.
+
+- [x] **2026-03-12** -- T-P3-6: Visual Knowledge Map: Created `source/knowledge-map/index.md` with Mermaid diagram showing 4 domain clusters (DDIA, SQL, DS, Interview) with key concept nodes and cross-domain connections. Added nav menu entry. hexo generate produces 207 files with Mermaid rendering.

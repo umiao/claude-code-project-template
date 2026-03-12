@@ -21,6 +21,7 @@ menu:
   archives: /archives/ || fa fa-archive
   interview: /interview/ || fa fa-briefcase
   cheatsheets: /cheatsheet/ || fa fa-file-alt
+  knowledge-map: /knowledge-map/ || fa fa-project-diagram
 
 menu_settings:
   icons: true
