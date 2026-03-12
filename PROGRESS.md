@@ -195,3 +195,10 @@
 - **Sanity check result**: All 4 acceptance criteria met: (1) `source/_drafts/` is empty (only . and .. remain), (2) All 4 posts have complete front matter (key_concepts lists, takeaways lists, categories, tags, description, series info where applicable), (3) `hexo generate` succeeded with 214 files generated in 1.52s, post count increased from 60 to 64 .md files, all 4 new posts have index.html files in public/, (4) No draft leakage (all posts intentionally public in _posts/).
 - **Status**: [DONE]
 - **Request**: Move T-P0-15 to Completed
+
+## 2026-03-12 -- [T-P1-6] /blog-from-notes Skill
+- **What I did**: Created `.claude/skills/blog-from-notes/SKILL.md` with complete 7-step workflow: (1) Locate input from `docs/raw-input/` or arbitrary path, (2) Analyze content for topic/domain/series, (3) Generate front matter using `scaffolds/post.md` template with `data/concepts.yml` concept lookup, (4) Format post body with excerpt break, (5) Show draft preview with confirmation prompt (yes/no/edit), (6) Write post file, (7) Flag new concepts not in registry. Created `docs/raw-input/` directory with README and sample input file.
+- **Deliverables**: `.claude/skills/blog-from-notes/SKILL.md` (new), `docs/raw-input/README.md` (new), `docs/raw-input/sample-docker-basics.md` (new, sample input for testing)
+- **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete instructions (161 lines), (2) References scaffold template (`scaffolds/post.md`) and concepts.yml lookup with canonical name matching, (3) Step 5 includes confirmation with yes/no/edit options, (4) Sample input file placed in `docs/raw-input/` for manual testing. Skill auto-detected by Claude Code (appears in skills list).
+- **Status**: [DONE]
+- **Request**: Move T-P1-6 to Completed

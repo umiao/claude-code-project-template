@@ -29,17 +29,6 @@
 
 ### Should Have (P1)
 
-#### T-P1-6: /blog-from-notes Skill
-- Complexity: L | Depends on: T-P0-12, T-P0-13
-- Create `.claude/skills/blog-from-notes/SKILL.md`
-- Skill reads raw material from `docs/raw-input/`, generates a formatted Hexo post using the scaffold template from T-P0-12, looks up `data/concepts.yml` for concept tagging, and shows draft for user confirmation before writing
-- Include instructions for: reading input files, mapping content to front matter fields, selecting appropriate categories/tags, generating `key_concepts` from concepts.yml matches
-- **Acceptance Criteria**:
-  1. `.claude/skills/blog-from-notes/SKILL.md` exists with complete skill instructions
-  2. Skill references scaffold template fields and concepts.yml lookup
-  3. Skill includes confirmation step before writing the post file
-  4. Manual test: place a sample `.md` in `docs/raw-input/`, invoke `/blog-from-notes`, verify output post has correct front matter
-
 #### T-P1-7: /refine-post Skill
 - Complexity: M | Depends on: T-P0-12, T-P0-13
 - Create `.claude/skills/refine-post/SKILL.md`
@@ -240,3 +229,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-11** -- T-P0-9: Activate Life Sidebar Widget + Add Excerpt Break: changed theme from next to yilia in _config.yml (activating Life sidebar widget from T-P0-8), added <!-- more --> tag to Cake-Inspiration-Gallery.md after intro section (line 100). Verified: hexo generate succeeds with 413 files, Cake post filtered from homepage main feed, Life & Hobbies sidebar widget displays with Cake post, full cake gallery content hidden from homepage excerpt.
 
 - [x] **2026-03-11** -- T-P0-10: Establish Major Change Approval Protocol: Added "Major Change Approval Protocol" section to CLAUDE.md defining major changes (theme switches, removing functionality, reversing approved decisions, deployment target changes) with required 4-step approval process (state change + why, list alternatives, show impact, wait for approval). Added lesson entry to LESSONS.md documenting T-P0-9 theme switch incident and correct communication approach. NexT feasibility research completed: (1) Life sidebar widget - FEASIBLE via custom_file_path.sidebar in _config.next.yml, (2) Homepage Life post filtering - FEASIBLE with Hexo filter plugin in scripts/, (3) Tags/Categories pages - NATIVE support in NexT, (4) About page image aspect ratios - FEASIBLE via markdown/CSS. Conclusion: All yilia-specific features can be replicated in NexT with no blockers.
+
+- [x] **2026-03-12** -- T-P1-6: /blog-from-notes Skill: Created `.claude/skills/blog-from-notes/SKILL.md` with 7-step workflow (locate input, analyze content, generate front matter, format body, show draft for confirmation, write post, flag new concepts). Skill references `scaffolds/post.md` template and `data/concepts.yml` for concept tagging. Created `docs/raw-input/` directory with README and sample input file for testing.
