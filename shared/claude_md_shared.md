@@ -41,6 +41,9 @@
   Use the Priority field inside the task spec for categorization instead.
 - **Never create #### task headers without T-PX-NN IDs** in Active Tasks or
   In Progress sections of TASKS.md. Assign the next sequential ID.
+- **Always use `#### T-PX-NN: Title` format for task headers** in TASKS.md Active Tasks
+  and In Progress sections. Do not use bold (`**T-PX-NN: Title**`), h3 (`###`), or other
+  formats. The `####` prefix is required for hook-based parsing and validation.
 
 ## Behavior Rules
 - **Fix violations immediately**: When a check you run (lint, emoji scan, tests) discovers
