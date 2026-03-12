@@ -9,6 +9,14 @@ tags:
 - Trading
 - Investment
 description: "Discussing different types of traders."
+key_concepts:
+  - Financial Derivatives
+  - Trading Strategies
+takeaways:
+  - Hedgers use derivatives to reduce existing risk exposure from price movements
+  - Speculators take directional bets on price movements to profit from market predictions
+  - Arbitrageurs lock in risk-free profits by exploiting price discrepancies across markets
+  - Understanding trader motivations is essential for analyzing market behavior and derivative pricing
 ---
 Discussing different types of traders.
 {% asset_img cover.jpg Options Futures and Derivatives Note 2 cover: types of traders - hedgers, speculators %}

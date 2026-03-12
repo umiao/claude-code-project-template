@@ -10,11 +10,11 @@ tags:
 - System Design
 description: Part 1 of comprehensive notes from Alex Xu's System Design Interview book, covering chapters 1-9 on scaling, databases, and core system design concepts.
 key_concepts:
-- Scaling from zero to millions of users
-- DNS and request flow architecture
-- Relational vs Non-relational databases
-- When to use NoSQL databases
-- Web and mobile application traffic sources
+  - Scalability Patterns
+  - System Design Patterns
+  - Caching Strategies
+  - Load Balancing
+  - Database Sharding
 series: System Design Interview - Alex Xu
 series_index: 1
 takeaways:

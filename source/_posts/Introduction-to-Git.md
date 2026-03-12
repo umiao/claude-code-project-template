@@ -8,6 +8,13 @@ tags:
 - Data System
 - Version Control
 description: "Thorough analysis and learning notes on Git version control based on official Git documentation."
+key_concepts:
+  - Git Version Control
+takeaways:
+  - Git stores snapshots of the entire project state, not diffs between file versions
+  - The three-area model (working directory, staging area, repository) gives precise control over commits
+  - Rebase creates linear history while merge preserves branch topology; choose based on collaboration needs
+  - Reflog tracks all HEAD movements and enables recovery of seemingly lost commits
 ---
 Thorough analysis and learning note based on git documentation (https://git-scm.com/book/en/v2).
 {% asset_img cover.jpg Introduction to Git cover: version control concepts %}

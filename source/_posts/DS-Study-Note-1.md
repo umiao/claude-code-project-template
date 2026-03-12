@@ -7,6 +7,16 @@ tags:
 - Data Science
 - Machine Learning
 description: "Overfitting is a modeling error in statistics that occurs when a function is too closely aligned to a limited set of data points. ---- Definition ranked 1st ..."
+key_concepts:
+  - Overfitting
+  - Regularization
+series: Data Science
+series_index: 1
+takeaways:
+  - Overfitting occurs when a model memorizes training data noise instead of learning general patterns
+  - Common solutions include regularization, dropout, early stopping, and reducing model complexity
+  - L1 regularization promotes sparsity by driving some weights to zero; L2 shrinks all weights evenly
+  - Small datasets and distribution mismatch between train and test sets are primary overfitting causes
 ---
 
 >Overfitting is a modeling error in statistics that occurs when a function is too closely aligned to a limited set of data points. ---- Definition ranked 1st in Google 

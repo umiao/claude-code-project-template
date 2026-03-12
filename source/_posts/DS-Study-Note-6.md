@@ -8,6 +8,16 @@ tags:
 - Machine Learning
 - Naive Bayes
 description: "Naïve Bayesian Classifier: is a typical learning based method which make hypothesis on the distribution of prediction target."
+key_concepts:
+  - Naive Bayes
+  - Classification
+series: Data Science
+series_index: 6
+takeaways:
+  - Naive Bayes assumes feature independence which simplifies computation but rarely holds in practice
+  - Laplace smoothing prevents zero probabilities when a feature value is absent from training data
+  - Gaussian Naive Bayes handles continuous features by modeling each as a normal distribution
+  - EM algorithm iteratively estimates parameters for mixture models when data has latent variables
 ---
 
 **Naïve Bayesian Classifier**: is a typical learning based method which make hypothesis on the distribution of prediction target.

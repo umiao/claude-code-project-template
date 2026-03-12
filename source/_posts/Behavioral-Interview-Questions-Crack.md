@@ -9,10 +9,7 @@ tags:
 - Interview
 description: A guide to mastering behavioral interview questions using LLM tools and the STAR strategy for structured responses.
 key_concepts:
-- STAR strategy for behavioral interviews
-- Using LLMs for interview preparation
-- Teamwork and collaboration scenarios
-- Problem-solving and conflict resolution
+  - STAR Method
 takeaways:
 - Use LLMs to generate, polish, and get feedback on behavioral responses
 - Apply STAR (Situation, Task, Action, Result) strategy for structured answers

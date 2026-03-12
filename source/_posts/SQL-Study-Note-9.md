@@ -8,6 +8,16 @@ tags:
 - SQL 
 - Data Science
 description: "Data modeling pipeline, database constraints, and normalization forms for relational databases."
+key_concepts:
+  - Normalization
+  - Foreign Keys
+series: SQL
+series_index: 9
+takeaways:
+  - Follow the conceptual to logical to physical pipeline when designing database schemas
+  - Foreign key constraints with CASCADE or SET NULL automate referential integrity maintenance
+  - First Normal Form requires atomic values; 2NF eliminates partial dependencies; 3NF eliminates transitive dependencies
+  - Choose the appropriate update strategy (restrict, cascade, set null) based on business rules
 ---
 
 {% asset_img sql.jpg SQL Study Note 9 cover: Data Modeling, Constraints, and Normalization %}

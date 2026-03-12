@@ -8,6 +8,18 @@ tags:
 - SQL 
 - Data Science
 description: "SQL built-in functions and aggregate functions including COUNT, MAX, MIN, AVG, and SUM."
+key_concepts:
+  - Aggregate Functions
+  - GROUP BY
+  - HAVING Clause
+  - Subqueries
+series: SQL
+series_index: 3
+takeaways:
+  - Use GROUP BY with aggregate functions to summarize data across categories
+  - HAVING filters groups after aggregation while WHERE filters rows before
+  - Correlated subqueries reference outer query columns and execute once per outer row
+  - EXISTS is often more efficient than IN for checking related records
 ---
 
 {% asset_img sql.jpg SQL Study Note 3 cover: Functions and Aggregate Functions %}

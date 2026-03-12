@@ -8,6 +8,14 @@ tags:
 - Object Oriented Design
 - Software Engineering
 description: "Important principles as well as solution to concrete interview questions."
+key_concepts:
+  - SOLID Principles
+  - Object-Oriented Design
+takeaways:
+  - SOLID principles (SRP, OCP, LSP, ISP, DIP) provide guidelines for maintainable class design
+  - Design patterns like Observer, Singleton, and State solve recurring structural problems
+  - Start OOD interviews by identifying core objects, their relationships, and responsibilities
+  - Favor composition over inheritance and program to interfaces for flexible, testable designs
 ---
 
 Important principles as well as solution to concrete interview questions.

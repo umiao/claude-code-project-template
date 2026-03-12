@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "Most data science practitioners would not be granted the privilege of managing the database system (not even the privilege to update / delete), so..."
+key_concepts:
+  - SQL User Management
+series: SQL
+series_index: 11
+takeaways:
+  - Create database users with specific host restrictions to limit access scope
+  - Grant minimum necessary privileges following the principle of least privilege
+  - Use REVOKE to remove privileges when roles or responsibilities change
+  - Password expiration policies enforce regular credential rotation for security
 ---
 {% asset_img sql.jpg SQL Study Note 11 cover: User and Privilege Management %}
 

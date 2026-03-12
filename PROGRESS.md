@@ -230,3 +230,10 @@
 - **Sanity check result**: All 4 ACs met: (1) All 19 posts have key_concepts (non-empty), takeaways, series: DDIA, series_index 1-19. (2) All key_concepts values exist in concepts.yml. (3) `hexo generate` succeeds with no errors (25 files generated). (4) Spot-checked Note-5 (LSM-Tree/B-Tree), Note-13 (Leaderless Replication), Note-17 (Consensus/Linearizability) -- concepts and takeaways are accurate and meaningful.
 - **Status**: [DONE]
 - **Request**: Move T-P1-9 to Completed
+
+## 2026-03-12 -- [T-P1-10] Enrich SQL + DS + Remaining Posts
+- **What I did**: Added `key_concepts`, `takeaways`, and series metadata to all 41 remaining posts (16 SQL, 9 DS, 16 miscellaneous). SQL posts got `series: SQL` with `series_index` 1-16; DS posts got `series: Data Science` with `series_index` 1-9. Fixed 4 previously-enriched posts (Behavioral, Security, System Design x2) whose key_concepts used descriptive strings instead of canonical concept names. Added 29 new concepts to `concepts.yml` across 5 domains: SQL (5), DS (10), Interview (3), General (11).
+- **Deliverables**: 45 post .md files (front matter enriched), `data/concepts.yml` (29 new concepts), 4 previously-enriched posts fixed
+- **Sanity check result**: All 4 ACs met: (1) All 64 posts have non-empty key_concepts and takeaways. (2) SQL posts have series: SQL with series_index 1-16; DS posts have series: Data Science with series_index 1-9. (3) Python validation confirms all key_concepts values exist in concepts.yml (0 errors across 64 posts). (4) `hexo generate` succeeds with 54 files, no errors or warnings.
+- **Status**: [DONE]
+- **Request**: Move T-P1-10 to Completed

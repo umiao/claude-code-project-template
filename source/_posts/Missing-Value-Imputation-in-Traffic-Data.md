@@ -7,6 +7,13 @@ tags:
 - UCLA 
 - Data Science
 description: "Lost of sensor-generated data can be very common. The methods of imputation can be coarsely categorized into: 1. Prediction methods; 2. Interpolation methods..."
+key_concepts:
+  - Missing Data Imputation
+takeaways:
+  - Imputation methods fall into three categories: prediction, interpolation, and statistical learning
+  - ARIMA-based methods work well for temporally correlated traffic data with seasonal patterns
+  - k-NN imputation leverages spatial and temporal neighbors for local pattern-based estimation
+  - PPCA and MCMC provide principled probabilistic frameworks for handling missing data uncertainty
 ---
 
 > Lost of sensor-generated data can be very common. The methods of imputation can be coarsely categorized into: 1. Prediction methods; 2. Interpolation methods; 3. Statistical Learning methods.

@@ -8,6 +8,16 @@ tags:
 - SQL 
 - Data Science
 description: "The optimization of SQL script can be extremely important, just as the importance of algorithm theory & analysis to programming."
+key_concepts:
+  - Query Optimization
+  - Database Indexes
+series: SQL
+series_index: 14
+takeaways:
+  - Avoid functions or type conversions on indexed columns in WHERE clauses as they prevent index usage
+  - Use composite indexes following leftmost prefix matching for multi-column queries
+  - Replace OR conditions with UNION or IN to enable index utilization
+  - Query hints (USE/IGNORE/FORCE INDEX) can override the optimizer when it makes poor choices
 ---
 The optimization of SQL script can be extremely important, just as the importance of algorithm theory & analysis to programming.
 {% asset_img sql.jpg SQL Study Note 14 cover: Query Optimization - Always Use Index %}

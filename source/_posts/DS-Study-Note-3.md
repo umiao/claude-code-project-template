@@ -7,6 +7,16 @@ tags:
 - Data Science
 - Machine Learning
 description: "Dimension curse stands for the troubles you would meet when processing high-dimensional data. E.g., computation of similarity, distance, neighbour or any met..."
+key_concepts:
+  - Curse of Dimensionality
+  - Dimensionality Reduction
+series: Data Science
+series_index: 3
+takeaways:
+  - In high-dimensional spaces distances between points converge making similarity metrics unreliable
+  - The number of samples needed grows exponentially with dimensions (combinatorial explosion)
+  - Hubness causes certain points to become nearest neighbors of disproportionately many others
+  - Dimensionality reduction techniques like PCA and CNNs mitigate the curse at the cost of interpretability
 ---
 
 {% asset_img over.png DS Study Note 3 cover: Curse of Dimensionality %}

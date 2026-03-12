@@ -2,7 +2,7 @@
 # Each concept has:
 #   - name: canonical name
 #   - aliases: list of alternative names/terms (can be empty)
-#   - domain: one of DDIA/SQL/DS/Interview
+#   - domain: one of DDIA/SQL/DS/Interview/General
 
 # DDIA: Distributed Systems and Data-Intensive Applications
 - name: Consistency
@@ -180,6 +180,47 @@
   domain: DDIA
 
 # SQL: Database Query Language and Concepts
+- name: SQL Query Basics
+  aliases:
+    - SELECT Statement
+    - WHERE Clause
+    - ORDER BY
+    - LIKE
+    - DISTINCT
+  domain: SQL
+
+- name: SQL DML Operations
+  aliases:
+    - INSERT
+    - UPDATE
+    - DELETE
+    - Data Manipulation Language
+  domain: SQL
+
+- name: SQL Data Types
+  aliases:
+    - MySQL Data Types
+    - VARCHAR
+    - TEXT
+    - JSON
+    - BLOB
+  domain: SQL
+
+- name: Triggers
+  aliases:
+    - Database Triggers
+    - SQL Triggers
+    - SQL Events
+  domain: SQL
+
+- name: SQL User Management
+  aliases:
+    - Privileges
+    - GRANT
+    - REVOKE
+    - Database Access Control
+  domain: SQL
+
 - name: SQL Joins
   aliases:
     - Joins
@@ -274,6 +315,78 @@
   domain: SQL
 
 # DS: Data Science and Machine Learning
+- name: Support Vector Machine
+  aliases:
+    - SVM
+    - Maximum Margin Classifier
+    - Kernel Methods
+  domain: DS
+
+- name: Naive Bayes
+  aliases:
+    - Naive Bayesian Classifier
+    - Bayesian Classification
+  domain: DS
+
+- name: Gradient Boosting
+  aliases:
+    - GBM
+    - XGBoost
+    - LightGBM
+    - Boosting
+  domain: DS
+
+- name: Evaluation Metrics
+  aliases:
+    - Precision
+    - Recall
+    - F1 Score
+    - ROC Curve
+    - AUC
+  domain: DS
+
+- name: Curse of Dimensionality
+  aliases:
+    - Dimensionality Curse
+    - High-Dimensional Data
+  domain: DS
+
+- name: Natural Language Processing
+  aliases:
+    - NLP
+    - Text Processing
+    - Language Understanding
+  domain: DS
+
+- name: Text Classification
+  aliases:
+    - Document Classification
+    - Sentiment Analysis
+    - Text Categorization
+  domain: DS
+
+- name: Word Embeddings
+  aliases:
+    - Word2Vec
+    - GloVe
+    - Distributed Representations
+  domain: DS
+
+- name: Transformer Architecture
+  aliases:
+    - BERT
+    - GPT
+    - Self-Attention
+    - Pre-trained Language Models
+  domain: DS
+
+- name: Missing Data Imputation
+  aliases:
+    - Imputation Methods
+    - Missing Values
+    - Data Recovery
+  domain: DS
+
 - name: Linear Regression
   aliases:
     - Regression
@@ -373,6 +486,29 @@
   domain: DS
 
 # Interview: System Design and Behavioral Frameworks
+- name: SOLID Principles
+  aliases:
+    - Single Responsibility
+    - Open-Closed Principle
+    - Liskov Substitution
+    - Interface Segregation
+    - Dependency Inversion
+  domain: Interview
+
+- name: Object-Oriented Design
+  aliases:
+    - OOD
+    - Class Design
+    - Design Patterns in OOD
+  domain: Interview
+
+- name: Brainteaser Problems
+  aliases:
+    - Logic Puzzles
+    - Mathematical Puzzles
+    - Quantitative Reasoning
+  domain: Interview
+
 - name: System Design Patterns
   aliases:
     - Design Patterns
@@ -451,3 +587,81 @@
     - Circuit Breaker
     - Fault Tolerance Pattern
   domain: Interview
+
+# General: Tools, Productivity, and Cross-Domain Topics
+- name: Git Version Control
+  aliases:
+    - Git
+    - Version Control
+    - VCS
+    - Branching and Merging
+  domain: General
+
+- name: Linux Command Line
+  aliases:
+    - CLI
+    - Bash
+    - Shell Commands
+    - Terminal
+  domain: General
+
+- name: Vim Editor
+  aliases:
+    - Vi
+    - Modal Editing
+    - Text Editor
+  domain: General
+
+- name: Data Security
+  aliases:
+    - Cybersecurity
+    - Information Security
+    - Web Security
+  domain: General
+
+- name: Financial Derivatives
+  aliases:
+    - Options
+    - Futures
+    - Forwards
+    - Derivatives Trading
+  domain: General
+
+- name: Trading Strategies
+  aliases:
+    - Hedging
+    - Speculation
+    - Arbitrage
+  domain: General
+
+- name: Multi-Armed Bandit
+  aliases:
+    - MAB
+    - UCB
+    - Bandit Problem
+    - Exploration vs Exploitation
+  domain: General
+
+- name: Productivity Tools
+  aliases:
+    - Workflow Optimization
+    - Device Utilization
+  domain: General
+
+- name: Vocabulary Building
+  aliases:
+    - English Vocabulary
+    - Word Frequency Learning
+  domain: General
+
+- name: Technical Communication
+  aliases:
+    - Programming Terminology
+    - Keyboard Shortcuts
+  domain: General
+
+- name: Baking and Cake Design
+  aliases:
+    - Cake Decoration
+    - Pastry Arts
+  domain: General

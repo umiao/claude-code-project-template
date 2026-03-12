@@ -6,6 +6,16 @@ categories:
 tags:
 - NLP
 description: "Review the major NLP tasks as well as methods (in terms of text classification)."
+key_concepts:
+  - Text Classification
+  - Word Embeddings
+  - Transformer Architecture
+  - Natural Language Processing
+takeaways:
+  - Text classification evolved from BOW and TF-IDF features to learned embeddings and transformers
+  - Word2Vec and GloVe capture semantic relationships by mapping words to dense vector spaces
+  - Pre-trained language models (BERT, GPT) achieve state-of-the-art results through transfer learning
+  - Traditional classifiers (SVM, Naive Bayes) remain competitive with proper feature engineering
 ---
 
 Review the major NLP tasks as well as methods (in terms of text classification).

@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "SQL transactions and ACID principles for ensuring data integrity."
+key_concepts:
+  - SQL Transactions
+series: SQL
+series_index: 7
+takeaways:
+  - ACID properties (Atomicity, Consistency, Isolation, Durability) guarantee reliable transactions
+  - Higher isolation levels provide more consistency but reduce concurrency and performance
+  - Use ROLLBACK to undo all changes in a transaction when any step fails
+  - Read Uncommitted is fastest but risks dirty reads; Serializable is safest but slowest
 ---
 
 {% asset_img sql.jpg SQL Study Note 7 cover: Transactions and ACID Principles %}

@@ -8,6 +8,16 @@ tags:
 - SQL 
 - Data Science
 description: "SQL syntax basics covering SELECT, WHERE, JOIN, and fundamental database query operations."
+key_concepts:
+  - SQL Query Basics
+  - SQL Joins
+series: SQL
+series_index: 1
+takeaways:
+  - Master SELECT with WHERE, DISTINCT, and logical operators as the foundation of all SQL queries
+  - Use appropriate JOIN types (INNER, OUTER, SELF) based on whether you need matching or all rows
+  - LIKE and REGEXP provide flexible pattern matching for string filtering
+  - UNION combines result sets from multiple queries while removing duplicates by default
 ---
 
 {% asset_img sql.jpg SQL Study Note 1 cover: Syntax Basics %}

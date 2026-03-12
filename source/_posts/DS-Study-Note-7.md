@@ -8,6 +8,15 @@ tags:
 - Machine Learning
 - Regularization
 description: "The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the projection of a vector to the domain of positive real number. They can both be..."
+key_concepts:
+  - Regularization
+series: Data Science
+series_index: 7
+takeaways:
+  - L1 regularization produces sparse models by driving parameters exactly to zero with constant gradient
+  - L2 regularization shrinks parameters toward zero gradually but never reaches exactly zero
+  - L1 may have multiple optimal solutions while L2 guarantees a unique optimum
+  - The regularization strength hyperparameter controls the tradeoff between fitting data and model simplicity
 ---
 The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the **projection** of a vector to the domain of **positive** real number. They can both be viewed as metrics of distance. 
 

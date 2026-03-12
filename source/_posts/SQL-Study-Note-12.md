@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "Common Table Expression (CTE) is viewed as a better way to realize the functionality of subquery."
+key_concepts:
+  - Common Table Expressions
+series: SQL
+series_index: 12
+takeaways:
+  - CTEs improve query readability by naming temporary result sets that can be referenced multiple times
+  - Recursive CTEs enable traversal of hierarchical data and sequence generation
+  - UNION removes duplicates (slower) while UNION ALL keeps all rows (faster)
+  - Always apply ORDER BY and LIMIT to the final UNION result, not individual SELECT statements
 ---
 
 **Common Table Expression (CTE)** is viewed as a better way to realize the functionality of subquery.

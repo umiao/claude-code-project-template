@@ -31,16 +31,6 @@
 
 > **P1 Checkpoint**: User can (1) create new posts from notes via `/blog-from-notes`, (2) run daily review sessions via `/study-review`.
 
-#### T-P1-10: Enrich SQL + DS + Remaining Posts
-- Complexity: L | Depends on: T-P1-9
-- Use `/refine-post` on 16 SQL posts, 9 DS posts, and ~11 remaining posts
-- Apply same quality bar as DDIA pilot
-- **Acceptance Criteria**:
-  1. All 47 published posts have `key_concepts` (non-empty) and `takeaways`
-  2. SQL posts have `series: SQL`, DS posts have `series: Data Science`, with correct `series_index`
-  3. All key_concepts values exist in `data/concepts.yml`
-  4. `hexo generate` succeeds with no errors
-
 ### Nice to Have (P2)
 
 #### T-P2-4: Concept Index Generator Plugin
@@ -195,3 +185,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P1-11: Blog Quality Fixes: Enabled Open Graph + Twitter Cards in `_config.next.yml`, set search preload to true, created `source/404.md` custom error page, fixed placeholder/wrong alt text across ~45 posts (replaced generic "ML_note", "SQL Note of blur!", "apple", "Note" with descriptive alt text). Verified: `hexo generate` succeeds, OG+Twitter meta tags in HTML, 404.html generated.
 
 - [x] **2026-03-12** -- T-P1-9: Enrich DDIA Series (Pilot): Added key_concepts, takeaways, series: DDIA, series_index to all 19 DDIA posts. Added 10 new DDIA concepts to concepts.yml. Spot-checked 3 posts for accuracy. hexo generate succeeds.
+
+- [x] **2026-03-12** -- T-P1-10: Enrich SQL + DS + Remaining Posts: Added key_concepts, takeaways, and series metadata to all 41 remaining posts (16 SQL, 9 DS, 16 misc). Added 29 new concepts to concepts.yml (SQL, DS, Interview, General domains). Fixed 4 previously-enriched posts. All 64 posts validated. hexo generate succeeds.

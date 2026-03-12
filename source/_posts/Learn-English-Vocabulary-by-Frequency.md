@@ -8,6 +8,13 @@ tags:
 - Vocabulary
 - Word Frequency
 description: "As an engineer working in the industry, English is a very important and basic tool...Also, if we think like a machine, it would be then very natural for us t..."
+key_concepts:
+  - Vocabulary Building
+takeaways:
+  - Learning words by frequency rank maximizes the utility of each word memorized
+  - Word frequency data from large corpora provides an empirical basis for vocabulary prioritization
+  - Active recall through interactive study methods is more effective than passive reading
+  - Technical and domain-specific vocabulary builds on a foundation of high-frequency general words
 ---
 As an engineer working in the industry, English is a very important and basic tool...Also, if we think like a machine, it would be then very natural for us to study English Vocab in its frequency order.. A weird idea, right?
 {% asset_img cover.jpg English vocabulary study by word frequency cover %}

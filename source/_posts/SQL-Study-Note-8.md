@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "MySQL data types including VARCHAR, TEXT, and best practices for type selection."
+key_concepts:
+  - SQL Data Types
+series: SQL
+series_index: 8
+takeaways:
+  - Choose the smallest data type that accommodates your data to optimize storage and performance
+  - Use DECIMAL for financial calculations where floating-point precision errors are unacceptable
+  - JSON type in MySQL enables flexible schema storage with extraction and modification functions
+  - Avoid ENUM as it creates maintenance burden when values need to change
 ---
 
 {% asset_img sql.jpg SQL Study Note 8 cover: MySQL Data Types %}

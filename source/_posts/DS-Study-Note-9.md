@@ -9,6 +9,16 @@ tags:
 - GBM
 - XGBoost
 description: "Study notes on Gradient Boosting Machine Tree models including GBM and XGBoost algorithms."
+key_concepts:
+  - Gradient Boosting
+  - Ensemble Methods
+series: Data Science
+series_index: 9
+takeaways:
+  - GBM fits each new tree to the negative gradient (residuals) of the loss function from previous iterations
+  - XGBoost improves on GBM with second-order Taylor expansion, regularization, and parallel block processing
+  - LightGBM uses leaf-wise growth and histogram binning for faster training on large datasets
+  - Boosting is more prone to overfitting than bagging but typically achieves higher accuracy when tuned well
 ---
 
 # Gradient Boosting Machine Tree

@@ -9,6 +9,14 @@ tags:
 - Vim
 - CLI
 description: "For a Software Engineer / Researcher, Linux and Vim should be the basic of basics (as important parts of CLI, Command Line Interface). In this post, we have ..."
+key_concepts:
+  - Linux Command Line
+  - Vim Editor
+takeaways:
+  - Linux file system follows a hierarchical tree structure rooted at / with standard directories
+  - Vim operates in distinct modes (Normal, Insert, Command) each optimized for different editing tasks
+  - Master essential CLI commands (ls, cd, grep, find, chmod) for efficient file and process management
+  - Shell variables and environment configuration customize the command-line experience
 ---
 For a Software Engineer / Researcher, Linux and Vim should be the basic of basics (as important parts of CLI, Command Line Interface). In this post, we have discussed some basic knowledge as well as useful tips.
 {% asset_img cover.jpg Linux and Vim usage guide cover: command line interface basics %}

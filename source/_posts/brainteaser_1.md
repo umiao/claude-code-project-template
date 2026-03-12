@@ -8,6 +8,13 @@ tags:
 - Brainteasers
 - Math
 description: "Strange questions you would expected to meet only in interviews of financial / trading firms LOL!"
+key_concepts:
+  - Brainteaser Problems
+takeaways:
+  - Backward induction solves sequential decision problems by reasoning from the final state
+  - Game theory concepts like Nash equilibrium appear in pirate and tiger/sheep puzzles
+  - Information-theoretic reasoning determines minimum measurements needed for weighing problems
+  - Symmetry arguments simplify probability problems by identifying equivalent positions
 ---
 Strange questions you would expected to meet only in interviews of financial / trading firms LOL!
 

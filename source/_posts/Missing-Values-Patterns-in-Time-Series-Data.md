@@ -7,6 +7,13 @@ tags:
 - UCLA 
 - Data Science
 description: "It is meaningful and believed to be possible to discover the pattern of the missing parts of the time series data. Such patterns may vary in different scenar..."
+key_concepts:
+  - Missing Data Imputation
+takeaways:
+  - Missing data mechanisms (MAR, MCAR, MNAR) determine which imputation methods are appropriate
+  - Kernel Density Estimation reveals temporal patterns in when and where data goes missing
+  - Feature engineering on missingness patterns can itself be predictive for downstream modeling
+  - Understanding why data is missing is as important as filling in the gaps
 ---
 
 It is meaningful and believed to be possible to discover the pattern of the missing parts of the time series data. Such patterns may vary in different scenarios and sources and may be related with physical devices and configurations.

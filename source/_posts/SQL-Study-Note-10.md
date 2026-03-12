@@ -8,6 +8,16 @@ tags:
 - SQL 
 - Data Science
 description: "Index can be used to find the row (line) numbers corresponding to the value being queried. Index is added to certain columns and is stored in memory (RAM) fo..."
+key_concepts:
+  - Database Indexes
+  - Query Optimization
+series: SQL
+series_index: 10
+takeaways:
+  - Indexes accelerate reads but add overhead to writes and storage; index selectively
+  - Use EXPLAIN to analyze query execution plans and identify performance bottlenecks
+  - Composite index column order matters; queries must use the leftmost prefix to benefit
+  - Full-text indexes with MATCH AGAINST enable efficient text search across large datasets
 ---
 {% asset_img sql.jpg SQL Study Note 10 cover: Database Indexes %}
 

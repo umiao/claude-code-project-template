@@ -7,6 +7,16 @@ tags:
 - Data Science
 - Machine Learning
 description: "Metrics are used for model training and evaluation. It reveals a model's performance on a given dataset."
+key_concepts:
+  - Evaluation Metrics
+  - Classification
+series: Data Science
+series_index: 4
+takeaways:
+  - Accuracy alone is misleading for imbalanced datasets; use precision, recall, and F1 instead
+  - ROC curves plot true positive rate vs false positive rate; AUC summarizes overall classifier quality
+  - Macro-F1 treats all classes equally while micro-F1 weights by class frequency
+  - Cost curves help choose classifiers when different types of errors have different business costs
 ---
 
 {% asset_img metric.png DS Study Note 4 cover: Machine Learning Evaluation Metrics %}

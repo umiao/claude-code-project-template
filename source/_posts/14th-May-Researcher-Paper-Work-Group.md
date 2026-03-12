@@ -6,6 +6,14 @@ categories:
 tags:
 - Research
 description: "Notes from a research paper discussion group covering robust selection, stream processing, and UCB procedures."
+key_concepts:
+  - Multi-Armed Bandit
+series: null
+takeaways:
+  - UCB procedures balance exploration and exploitation for selecting optimal simulation models
+  - Robust selection methods handle input uncertainty by accounting for ambiguous distribution parameters
+  - Multi-armed bandit techniques extend beyond online learning to simulation optimization
+  - Paper discussion groups accelerate understanding of complex methodological papers
 ---
 Discussion on challenges with stream processing.
 {% asset_img cover.png Research Paper Work Group cover: robust selection and UCB procedure discussion %}

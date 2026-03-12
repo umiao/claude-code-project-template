@@ -8,6 +8,13 @@ tags:
 - Keyboard
 - Term
 description: "For better communication during teamwork / paircoding / code review... It is vital to keep every keyboard's key's name in mind."
+key_concepts:
+  - Technical Communication
+takeaways:
+  - Knowing proper key names (tilde, backtick, ampersand) prevents miscommunication during pair programming
+  - Special keys like ESC, Tab, and modifier keys have specific technical names that differ from symbols
+  - English and Chinese naming conventions for keyboard keys differ and both are useful to know
+  - Clear technical vocabulary is essential for effective code review and remote collaboration
 ---
 For better communication during teamwork / paircoding / code review... It is vital to keep every keyboard's key's name in mind.
 {% asset_img cover.jpg Keyboard keys reference cover: names of every key on a keyboard %}

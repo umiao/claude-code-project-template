@@ -10,11 +10,7 @@ tags:
 - Certificate
 description: Essential security concepts covering common threats like SQL Injection, XSS, and OS Command Injection with practical prevention strategies.
 key_concepts:
-- SQL Injection and parameterized queries
-- Cross-Site Scripting (XSS) prevention
-- OS Command Injection mitigation
-- Weak session token generation risks
-- Function level access control
+  - Data Security
 takeaways:
 - Always use parameterized queries instead of string concatenation for SQL
 - Apply allowlist validation on all user input

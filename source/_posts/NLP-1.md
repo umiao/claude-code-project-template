@@ -6,6 +6,13 @@ categories:
 tags:
 - NLP
 description: "Have a glance on the NLP tasks and techniques. Will be discussed in a more detailed manner."
+key_concepts:
+  - Natural Language Processing
+takeaways:
+  - NLP builds on foundations of linear algebra, probability, and statistics
+  - Core NLP tasks span lexical, syntactic, and semantic levels of language analysis
+  - Applications range from document classification and search to dialogue systems and knowledge graphs
+  - Understanding the NLP task taxonomy helps navigate the field and choose appropriate techniques
 ---
 Have a glance on the NLP tasks and techniques. Will be discussed in a more detailed manner.
 {% asset_img rm.png NLP study roadmap cover: overview of NLP tasks and techniques %}

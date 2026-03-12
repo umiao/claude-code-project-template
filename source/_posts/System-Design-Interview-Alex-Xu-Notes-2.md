@@ -10,11 +10,9 @@ tags:
 - System Design
 description: Part 2 of comprehensive notes from Alex Xu's System Design Interview book, covering chapters 10-16 including notification systems and distributed architectures.
 key_concepts:
-- Notification system design (push, SMS, email)
-- iOS and Android push notification services
-- Message queues for decoupling components
-- System reliability and data loss prevention
-- Deduplication in distributed systems
+  - Message Queues
+  - System Design Patterns
+  - Scalability Patterns
 series: System Design Interview - Alex Xu
 series_index: 2
 takeaways:

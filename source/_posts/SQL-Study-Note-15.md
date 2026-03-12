@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "Other issues which deserve attention when writing SELECT clause."
+key_concepts:
+  - Query Optimization
+series: SQL
+series_index: 15
+takeaways:
+  - Avoid SELECT * in production queries; specify only needed columns to reduce data transfer
+  - Use batch INSERT operations instead of single-row inserts for bulk data loading
+  - HAVING filters after aggregation and is slower than WHERE which filters before
+  - ORDER BY RAND() forces a full table scan; use application-level randomization instead
 ---
 
 Other issues which deserve attention when writing SELECT clause.

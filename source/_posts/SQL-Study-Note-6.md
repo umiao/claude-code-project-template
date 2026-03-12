@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "SQL triggers and scheduled events for automating database operations."
+key_concepts:
+  - Triggers
+series: SQL
+series_index: 6
+takeaways:
+  - Triggers automatically execute logic before or after INSERT, UPDATE, or DELETE operations
+  - Use NEW and OLD keywords to access the changing row data within triggers
+  - Scheduled events automate recurring database maintenance tasks at defined intervals
+  - Avoid trigger chains that could cause infinite loops or hard-to-debug behavior
 ---
 
 {% asset_img sql.jpg SQL Study Note 6 cover: Triggers and Scheduled Events %}

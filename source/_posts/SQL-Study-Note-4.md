@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "SQL Views for storing and reusing query results as virtual tables."
+key_concepts:
+  - Views
+series: SQL
+series_index: 4
+takeaways:
+  - Views store query logic as virtual tables for reuse without duplicating data
+  - Not all views are updatable; views with aggregates, DISTINCT, or UNION cannot be updated
+  - WITH CHECK OPTION prevents updates that would cause rows to disappear from the view
+  - Use views to simplify complex queries and provide an abstraction layer over base tables
 ---
 
 {% asset_img sql.jpg SQL Study Note 4 cover: SQL Views as virtual tables %}

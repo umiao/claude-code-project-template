@@ -9,6 +9,13 @@ tags:
 - Trading
 - Investment
 description: "Learning note of \"Options Futures and Other Derivatives\", 11th Edition."
+key_concepts:
+  - Financial Derivatives
+takeaways:
+  - Forward contracts are customized OTC agreements while futures are standardized exchange-traded instruments
+  - Options give the right but not obligation to buy (call) or sell (put) at a specified strike price
+  - American options can be exercised anytime before expiration; European options only at expiration
+  - Long positions profit from price increases while short positions profit from price decreases
 ---
 Learning note of "Options Futures and Other Derivatives", 11th Edition.
 {% asset_img cover.jpg Options Futures and Derivatives Note 1 cover: introduction to derivatives exchanges %}

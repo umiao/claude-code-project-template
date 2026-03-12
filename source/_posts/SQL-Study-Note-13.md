@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "Window function is also known as Online Analytical Processing function (LAP), which is able to conduct realtime processing and analyzing on the database data."
+key_concepts:
+  - Window Functions
+series: SQL
+series_index: 13
+takeaways:
+  - Window functions compute values across related rows without collapsing them like GROUP BY does
+  - RANK, DENSE_RANK, and ROW_NUMBER differ in how they handle ties in ordering
+  - PARTITION BY defines the window scope while ORDER BY determines computation order within partitions
+  - Sliding window frames (ROWS/RANGE BETWEEN) enable running totals and moving averages
 ---
 
 Window function is also known as **Online Analytical Processing function (LAP)**, which is able to conduct realtime processing and analyzing on the database data. 

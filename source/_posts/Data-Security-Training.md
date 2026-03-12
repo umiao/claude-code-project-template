@@ -10,6 +10,13 @@ tags:
 - Cyber Security
 - Data Security
 description: "Notes and revisits of data & cyber security training session."
+key_concepts:
+  - Data Security
+takeaways:
+  - SQL injection is prevented by using parameterized queries instead of string concatenation
+  - XSS attacks are mitigated through proper output encoding and Content Security Policy headers
+  - OS command injection requires allowlist validation on any user input passed to system commands
+  - Weak session tokens from predictable generation algorithms enable session hijacking attacks
 ---
 Notes and revisits of data & cyber security training session.
 {% asset_img cover.jpg Data and Cyber Security Training cover: SQL injection and security threats %}

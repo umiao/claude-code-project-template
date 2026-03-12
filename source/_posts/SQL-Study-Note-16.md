@@ -8,6 +8,16 @@ tags:
 - SQL 
 - Data Science
 description: "The setting of query conditions, together with table creating can be further optimized."
+key_concepts:
+  - Query Optimization
+  - Normalization
+series: SQL
+series_index: 16
+takeaways:
+  - Disable implicit GROUP BY sorting with ORDER BY NULL when sort order is not needed
+  - Prefer JOIN over subqueries when the optimizer can better plan the execution
+  - TRUNCATE is faster than DELETE for removing all rows as it resets the table without row-level logging
+  - Use index-only retrieval with JOIN for efficient deep pagination instead of large OFFSET values
 ---
 The setting of query conditions, together with table creating can be further optimized.
 {% asset_img sql.jpg SQL Study Note 16 cover: Optimizing Query Conditions and Table Creation %}

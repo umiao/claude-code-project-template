@@ -8,6 +8,13 @@ tags:
   - Cake
   - Baking
   - Inspiration
+key_concepts:
+  - Baking and Cake Design
+takeaways:
+  - Organize design inspiration by category (characters, cream techniques, fruits, structures) for easy reference
+  - Study diverse cake styles to develop a personal aesthetic and expand creative range
+  - Cream technique variety (gradient, texture, piping) is fundamental to cake visual appeal
+  - Innovative structures and unconventional shapes differentiate advanced designs from standard ones
 ---
 
 <style>

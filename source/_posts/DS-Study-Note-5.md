@@ -8,6 +8,16 @@ tags:
 - Machine Learning
 - SVM
 description: "SVM is a machine learning model which aims at finding a Decision Boundary with a subset of the training set. The SVM is a non-probabilistic binary classifier."
+key_concepts:
+  - Support Vector Machine
+  - Classification
+series: Data Science
+series_index: 5
+takeaways:
+  - SVM finds the maximum-margin hyperplane that best separates classes using only support vectors
+  - Soft margins with parameter C control the tradeoff between margin width and misclassification tolerance
+  - Kernel functions (RBF, polynomial) project data into higher dimensions for non-linear classification
+  - SVM training complexity is O(n^2) to O(n^3) making it less suitable for very large datasets
 ---
 SVM is a machine learning model which aims at finding a Decision Boundary with a subset of the training set. The SVM is a non-probabilistic binary classifier.
 {% asset_img svm.png DS Study Note 5 cover: Support Vector Machine classification %}

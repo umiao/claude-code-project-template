@@ -7,6 +7,16 @@ tags:
 - Data Science
 - Machine Learning
 description: "The target of Machine Learning is to fit an (unknown) distribution. There lies three possible error: bias, variance and irreducible error."
+key_concepts:
+  - Bias-Variance Tradeoff
+  - Cross-Validation
+series: Data Science
+series_index: 2
+takeaways:
+  - Bias measures how far off predictions are from truth; variance measures prediction instability across datasets
+  - Complex models trade low bias for high variance (overfitting); simple models do the reverse (underfitting)
+  - K-fold cross-validation reduces variance in model evaluation by averaging across multiple train/test splits
+  - The optimal model complexity minimizes total error which is the sum of bias squared plus variance
 ---
 The target of Machine Learning is to fit an (unknown) distribution. There lies three possible error: bias, variance and irreducible error. 
 <!-- more -->

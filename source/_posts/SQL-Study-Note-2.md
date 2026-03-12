@@ -8,6 +8,16 @@ tags:
 - SQL 
 - Data Science
 description: "SQL data manipulation syntax including INSERT, UPDATE, and DELETE operations with table attributes."
+key_concepts:
+  - SQL DML Operations
+  - SQL Data Types
+series: SQL
+series_index: 2
+takeaways:
+  - Use LAST_INSERT_ID() to retrieve auto-generated IDs for subsequent operations
+  - Batch INSERT with SELECT enables efficient data migration between tables
+  - Always include WHERE clauses in UPDATE and DELETE to avoid modifying entire tables
+  - Understand column attributes (PK, NN, UQ, AI) to design robust table schemas
 ---
 
 {% asset_img sql.jpg SQL Study Note 2 cover: UPDATE, DELETE, and INSERT syntax %}

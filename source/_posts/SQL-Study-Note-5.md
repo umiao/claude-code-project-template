@@ -8,6 +8,15 @@ tags:
 - SQL 
 - Data Science
 description: "SQL stored procedures and user-defined functions for encapsulating reusable query logic."
+key_concepts:
+  - Stored Procedures
+series: SQL
+series_index: 5
+takeaways:
+  - Stored procedures encapsulate reusable SQL logic on the database server side
+  - Use SIGNAL to raise custom errors for parameter validation within procedures
+  - OUT parameters allow procedures to return computed values to the caller
+  - User-defined functions must return a value and can be used directly in SQL expressions
 ---
 
 {% asset_img sql.jpg SQL Study Note 5 cover: Stored Procedures and User-Defined Functions %}

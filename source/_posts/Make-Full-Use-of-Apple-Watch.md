@@ -8,6 +8,13 @@ tags:
 - Apple Watch
 - Tips
 description: "My pup sent me an Apple Watch as a gift, and for long time I have now idea how to make full use of it."
+key_concepts:
+  - Productivity Tools
+takeaways:
+  - Control Center provides quick access to connectivity, battery, and notification settings
+  - Health and fitness tracking features work best with consistent daily usage habits
+  - Remote camera access and compass navigation are underutilized productivity features
+  - Customizing watch face complications surfaces the most-used information at a glance
 ---
 My pup sent me an Apple Watch as a gift, and for long time I have now idea how to make full use of it.
 {% asset_img cover.jpg Apple Watch tips and features cover %}

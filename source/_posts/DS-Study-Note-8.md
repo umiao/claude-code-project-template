@@ -8,6 +8,17 @@ tags:
 - Machine Learning
 - Random Forest
 description: "Random Forest inherits the idea of bagging, which is part of Ensemble Learning paradigm."
+key_concepts:
+  - Random Forest
+  - Ensemble Methods
+  - Decision Trees
+series: Data Science
+series_index: 8
+takeaways:
+  - Random Forest reduces variance through bagging: training multiple trees on bootstrap samples and averaging
+  - Random feature selection at each split decorrelates trees and improves ensemble diversity
+  - Bagging trains models in parallel with equal weight while boosting trains sequentially with adaptive weights
+  - Random Forest handles high-dimensional data well and provides built-in feature importance rankings
 ---
 
 Random Forest inherits the idea of **bagging**, which is part of **Ensemble Learning** paradigm.
