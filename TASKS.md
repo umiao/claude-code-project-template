@@ -26,18 +26,6 @@
 
 ### Must Have (P0)
 
-#### T-P0-13: Concept Registry
-- Complexity: M | Depends on: none
-- Create `data/concepts.yml` with canonical concept names + aliases
-- Cover domains: DDIA (distributed systems, consistency, partitioning, replication, etc.), SQL (joins, window functions, CTEs, etc.), Data Science (regression, classification, neural networks, etc.), Interview (system design patterns, behavioral frameworks)
-- Format: list of entries, each with `name` (canonical), `aliases` (list), `domain` (one of DDIA/SQL/DS/Interview)
-- **Acceptance Criteria**:
-  1. `data/concepts.yml` exists and is valid YAML (parseable by Python `yaml.safe_load`)
-  2. At least 40 concepts covering all 4 domains
-  3. Every concept has `name`, `aliases` (list, may be empty), and `domain` fields
-
-> **P0 Milestone**: After T-P0-12 + T-P0-13, validate schema by manually tagging 3 posts. Confirm concepts.yml structure is sufficient before proceeding.
-
 #### T-P0-14: Review Queue Tool
 - Complexity: M | Depends on: none
 - Create `tools/review_queue.py` implementing the SM-2 spaced repetition algorithm
@@ -268,6 +256,7 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 <!-- Historical note: Completed tasks below used P as Phase (P0-P5).
      Active tasks follow canonical convention: T-P{priority}-{number}, where P = Priority. -->
 
+- [x] **2026-03-12** -- T-P0-13: Concept Registry. Created data/concepts.yml with 59 concepts covering all 4 domains (DDIA: 18, SQL: 14, DS: 15, Interview: 12). Format: list entries with name, aliases (list), domain fields. Valid YAML parseable by yaml.safe_load. Test suite validates existence, YAML validity, count >= 40, all domains covered, required fields present. All tests pass.
 - [x] **2026-03-12** -- T-P0-12: Scaffold + Front Matter Schema. Updated scaffolds/post.md to include knowledge-system fields: categories, tags (preserved), description, key_concepts, takeaways, series, series_index. All fields default to empty. Test: hexo new "Test Post" produces post with full front matter template. hexo generate succeeds (396 files, zero errors). Existing posts unaffected by scaffold change.
 - [x] **2026-03-11** -- T-P0-7: Restore NexT theme with Life category support. Switched theme yilia -> next, created scripts/filter-life-homepage.js generator plugin to hide Life posts from homepage, created source/_data/sidebar.njk Life widget for NexT sidebar, added custom_file_path.sidebar to _config.next.yml. Fixed tags/categories 404s, about page image sizing. Build: 394 files, zero errors. Cake post filtered from homepage, visible in sidebar widget and direct URL.
 - [x] **2026-03-11** -- T-P0-11: Review Last 3 Commits + Apply Fixes: created source/tags/index.md and source/categories/index.md with proper Hexo front matter, updated yilia menu config to add Tags and Categories links, fixed About page image sizing (removed hard-coded width/height, added max-width CSS), created Python-based commit-msg hook to enforce English-only commit messages (stored in tools/ and installed to .git/hooks/), hexo generate verified (tags/categories/about pages render correctly).

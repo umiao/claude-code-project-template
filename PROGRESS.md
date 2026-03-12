@@ -174,3 +174,10 @@
 - **Sanity check result**: Test post created with all 9 front matter fields (title, date, categories, tags, description, key_concepts, takeaways, series, series_index). `hexo generate` succeeded with 396 files, zero errors. Removed test post after verification.
 - **Status**: [DONE]
 - **Request**: Move T-P0-12 to Completed
+
+## 2026-03-12 -- [T-P0-13] Concept Registry
+- **What I did**: Created `data/concepts.yml` with 59 concepts covering all 4 required domains (DDIA: 18, SQL: 14, DS: 15, Interview: 12). Each concept has `name`, `aliases` (list, may be empty), and `domain` fields. Created comprehensive test suite `tests/test_concepts.py` with 6 tests validating file existence, YAML validity, count >= 40, domain coverage, required fields, and distribution.
+- **Deliverables**: `data/concepts.yml` (new), `tests/test_concepts.py` (new)
+- **Sanity check result**: All 6 tests pass. YAML parseable by `yaml.safe_load`. Total 59 concepts across 4 domains (DDIA, SQL, DS, Interview). Domain distribution verified. All concepts have required fields (name, aliases as list, domain).
+- **Status**: [DONE]
+- **Request**: Move T-P0-13 to Completed

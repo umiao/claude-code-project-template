@@ -1,0 +1,386 @@
+# Concept Registry for Blog Knowledge System
+# Each concept has:
+#   - name: canonical name
+#   - aliases: list of alternative names/terms (can be empty)
+#   - domain: one of DDIA/SQL/DS/Interview
+
+# DDIA: Distributed Systems and Data-Intensive Applications
+- name: Consistency
+  aliases:
+    - Strong Consistency
+    - Data Consistency
+  domain: DDIA
+
+- name: Eventual Consistency
+  aliases:
+    - Weak Consistency
+  domain: DDIA
+
+- name: Linearizability
+  aliases:
+    - Strong Linearizability
+    - Sequential Consistency
+  domain: DDIA
+
+- name: Partitioning
+  aliases:
+    - Sharding
+    - Data Partitioning
+    - Horizontal Partitioning
+  domain: DDIA
+
+- name: Replication
+  aliases:
+    - Data Replication
+    - Database Replication
+  domain: DDIA
+
+- name: Leader-Based Replication
+  aliases:
+    - Master-Slave Replication
+    - Primary-Secondary Replication
+  domain: DDIA
+
+- name: Multi-Leader Replication
+  aliases:
+    - Master-Master Replication
+  domain: DDIA
+
+- name: Leaderless Replication
+  aliases:
+    - Quorum Replication
+    - Dynamo-style Replication
+  domain: DDIA
+
+- name: CAP Theorem
+  aliases:
+    - Brewer's Theorem
+    - CAP
+  domain: DDIA
+
+- name: ACID
+  aliases:
+    - ACID Properties
+    - Database ACID
+  domain: DDIA
+
+- name: BASE
+  aliases:
+    - BASE Properties
+    - Basically Available Soft-state Eventual Consistency
+  domain: DDIA
+
+- name: Two-Phase Commit
+  aliases:
+    - 2PC
+    - Two Phase Commit Protocol
+  domain: DDIA
+
+- name: Consensus
+  aliases:
+    - Distributed Consensus
+    - Consensus Algorithm
+  domain: DDIA
+
+- name: Split Brain
+  aliases:
+    - Network Partition
+    - Brain Split Problem
+  domain: DDIA
+
+- name: MapReduce
+  aliases:
+    - Map Reduce
+    - Hadoop MapReduce
+  domain: DDIA
+
+- name: Batch Processing
+  aliases:
+    - Batch Jobs
+    - Offline Processing
+  domain: DDIA
+
+- name: Stream Processing
+  aliases:
+    - Real-time Processing
+    - Event Stream Processing
+  domain: DDIA
+
+- name: Distributed Transactions
+  aliases:
+    - Cross-Database Transactions
+    - Multi-Node Transactions
+  domain: DDIA
+
+# SQL: Database Query Language and Concepts
+- name: SQL Joins
+  aliases:
+    - Joins
+    - Inner Join
+    - Outer Join
+    - Left Join
+    - Right Join
+  domain: SQL
+
+- name: Window Functions
+  aliases:
+    - Analytic Functions
+    - Windowing Functions
+  domain: SQL
+
+- name: Common Table Expressions
+  aliases:
+    - CTE
+    - WITH clause
+  domain: SQL
+
+- name: Subqueries
+  aliases:
+    - Nested Queries
+    - Inner Query
+  domain: SQL
+
+- name: Database Indexes
+  aliases:
+    - Index
+    - B-Tree Index
+    - Hash Index
+  domain: SQL
+
+- name: Normalization
+  aliases:
+    - Database Normalization
+    - Normal Forms
+    - 1NF
+    - 2NF
+    - 3NF
+  domain: SQL
+
+- name: Query Optimization
+  aliases:
+    - Query Performance
+    - SQL Optimization
+  domain: SQL
+
+- name: Aggregate Functions
+  aliases:
+    - Aggregates
+    - SUM
+    - COUNT
+    - AVG
+  domain: SQL
+
+- name: GROUP BY
+  aliases:
+    - Group By Clause
+    - Grouping
+  domain: SQL
+
+- name: HAVING Clause
+  aliases:
+    - Having
+    - Post-Aggregate Filter
+  domain: SQL
+
+- name: SQL Transactions
+  aliases:
+    - Database Transactions
+    - BEGIN COMMIT ROLLBACK
+  domain: SQL
+
+- name: Foreign Keys
+  aliases:
+    - FK
+    - Referential Integrity
+  domain: SQL
+
+- name: Views
+  aliases:
+    - Database Views
+    - Virtual Tables
+  domain: SQL
+
+- name: Stored Procedures
+  aliases:
+    - Procedures
+    - Sprocs
+  domain: SQL
+
+# DS: Data Science and Machine Learning
+- name: Linear Regression
+  aliases:
+    - Regression
+    - Least Squares Regression
+  domain: DS
+
+- name: Logistic Regression
+  aliases:
+    - Logit Model
+    - Binary Classification Regression
+  domain: DS
+
+- name: Classification
+  aliases:
+    - Supervised Classification
+    - Binary Classification
+    - Multi-class Classification
+  domain: DS
+
+- name: Neural Networks
+  aliases:
+    - Artificial Neural Networks
+    - ANN
+    - Deep Neural Networks
+  domain: DS
+
+- name: Decision Trees
+  aliases:
+    - Tree-based Models
+    - CART
+  domain: DS
+
+- name: Random Forest
+  aliases:
+    - Random Forests
+    - Ensemble Trees
+  domain: DS
+
+- name: Gradient Descent
+  aliases:
+    - Stochastic Gradient Descent
+    - SGD
+    - Optimization Algorithm
+  domain: DS
+
+- name: Overfitting
+  aliases:
+    - Model Overfitting
+    - High Variance
+  domain: DS
+
+- name: Cross-Validation
+  aliases:
+    - K-Fold Cross-Validation
+    - CV
+    - Model Validation
+  domain: DS
+
+- name: Feature Engineering
+  aliases:
+    - Feature Extraction
+    - Feature Selection
+  domain: DS
+
+- name: Regularization
+  aliases:
+    - L1 Regularization
+    - L2 Regularization
+    - Ridge
+    - Lasso
+  domain: DS
+
+- name: Bias-Variance Tradeoff
+  aliases:
+    - Bias Variance Tradeoff
+    - Model Complexity Tradeoff
+  domain: DS
+
+- name: Clustering
+  aliases:
+    - Unsupervised Clustering
+    - K-Means
+    - Hierarchical Clustering
+  domain: DS
+
+- name: Dimensionality Reduction
+  aliases:
+    - PCA
+    - Principal Component Analysis
+    - Feature Reduction
+  domain: DS
+
+- name: Ensemble Methods
+  aliases:
+    - Ensemble Learning
+    - Model Ensembles
+  domain: DS
+
+# Interview: System Design and Behavioral Frameworks
+- name: System Design Patterns
+  aliases:
+    - Design Patterns
+    - Architectural Patterns
+  domain: Interview
+
+- name: STAR Method
+  aliases:
+    - STAR Framework
+    - Situation Task Action Result
+  domain: Interview
+
+- name: Rate Limiting
+  aliases:
+    - API Rate Limiting
+    - Throttling
+    - Request Rate Limiting
+  domain: Interview
+
+- name: Load Balancing
+  aliases:
+    - Load Balancer
+    - Traffic Distribution
+  domain: Interview
+
+- name: Caching Strategies
+  aliases:
+    - Cache
+    - Caching Patterns
+    - Redis Cache
+    - Memcached
+  domain: Interview
+
+- name: API Design
+  aliases:
+    - RESTful API
+    - API Architecture
+    - REST API Design
+  domain: Interview
+
+- name: Microservices Architecture
+  aliases:
+    - Microservices
+    - Service-Oriented Architecture
+    - SOA
+  domain: Interview
+
+- name: Database Sharding
+  aliases:
+    - Sharding Strategy
+    - Horizontal Sharding
+  domain: Interview
+
+- name: Message Queues
+  aliases:
+    - Message Queue
+    - Async Processing
+    - Event Queue
+  domain: Interview
+
+- name: CAP Theorem in Interviews
+  aliases:
+    - CAP Trade-offs
+    - Consistency Availability Partition Tolerance
+  domain: Interview
+
+- name: Scalability Patterns
+  aliases:
+    - Horizontal Scaling
+    - Vertical Scaling
+    - Scale-Out
+  domain: Interview
+
+- name: Circuit Breaker Pattern
+  aliases:
+    - Circuit Breaker
+    - Fault Tolerance Pattern
+  domain: Interview
