@@ -33,18 +33,6 @@
 
 ### Nice to Have (P2)
 
-#### T-P2-4: Concept Index Generator Plugin
-- Complexity: M | Depends on: T-P1-9
-- Create `scripts/generate-concept-index.js` as a Hexo generator plugin
-- Reads `key_concepts` from all post front matter, produces alphabetical index page at `/concepts/`
-- Create `source/concepts/index.md` scaffold page
-- Format: each concept links to all posts that reference it
-- **Acceptance Criteria**:
-  1. `scripts/generate-concept-index.js` exists and is loaded by Hexo
-  2. `hexo generate` produces `public/concepts/index.html`
-  3. Concept index page lists concepts alphabetically with links to relevant posts
-  4. At least the 19 DDIA posts' concepts appear correctly
-
 #### T-P2-5: Series Navigation Plugin
 - Complexity: S | Depends on: T-P1-9
 - Create `scripts/series-nav.js` as a Hexo filter plugin
@@ -187,3 +175,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P1-9: Enrich DDIA Series (Pilot): Added key_concepts, takeaways, series: DDIA, series_index to all 19 DDIA posts. Added 10 new DDIA concepts to concepts.yml. Spot-checked 3 posts for accuracy. hexo generate succeeds.
 
 - [x] **2026-03-12** -- T-P1-10: Enrich SQL + DS + Remaining Posts: Added key_concepts, takeaways, and series metadata to all 41 remaining posts (16 SQL, 9 DS, 16 misc). Added 29 new concepts to concepts.yml (SQL, DS, Interview, General domains). Fixed 4 previously-enriched posts. All 64 posts validated. hexo generate succeeds.
+
+- [x] **2026-03-12** -- T-P2-4: Concept Index Generator Plugin: Created `scripts/generate-concept-index.js` Hexo generator that reads key_concepts from all posts, produces alphabetical `/concepts/index.html` with letter navigation and 87 concepts linked to their posts.

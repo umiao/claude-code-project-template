@@ -237,3 +237,10 @@
 - **Sanity check result**: All 4 ACs met: (1) All 64 posts have non-empty key_concepts and takeaways. (2) SQL posts have series: SQL with series_index 1-16; DS posts have series: Data Science with series_index 1-9. (3) Python validation confirms all key_concepts values exist in concepts.yml (0 errors across 64 posts). (4) `hexo generate` succeeds with 54 files, no errors or warnings.
 - **Status**: [DONE]
 - **Request**: Move T-P1-10 to Completed
+
+## 2026-03-12 -- [T-P2-4] Concept Index Generator Plugin
+- **What I did**: Created `scripts/generate-concept-index.js` Hexo generator plugin that reads `key_concepts` from all post front matter, builds an alphabetical concept-to-posts index, and outputs `/concepts/index.html`. Page includes letter navigation (A-Z), definition list of concepts with linked posts, and inline styling.
+- **Deliverables**: `scripts/generate-concept-index.js`
+- **Sanity check result**: All 4 ACs met: (1) Plugin file exists and is loaded by Hexo. (2) `hexo generate` produces `public/concepts/index.html`. (3) 87 concepts listed alphabetically with letter nav and post links. (4) DDIA concepts (ACID, Replication, MapReduce, LSM-Tree, etc.) appear correctly with proper post links.
+- **Status**: [DONE]
+- **Request**: Move T-P2-4 to Completed
