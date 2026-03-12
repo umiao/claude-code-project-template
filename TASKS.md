@@ -33,16 +33,6 @@
 
 ### Nice to Have (P2)
 
-#### T-P2-7: Interview Prep Hub
-- Complexity: M | Depends on: none
-- Create `source/interview/index.md` with sections: System Design (DDIA + Alex Xu concepts), Behavioral, Brainteasers, OOD, SQL highlights, system design patterns derived from DDIA
-- Add "Interview" to NexT nav menu in `_config.next.yml`
-- **Acceptance Criteria**:
-  1. `source/interview/index.md` exists with all listed sections
-  2. Nav menu updated in `_config.next.yml`
-  3. `hexo generate` produces `public/interview/index.html`
-  4. Page contains actionable study content (not just headers)
-
 #### T-P2-8: Cheat Sheets
 - Complexity: L | Depends on: T-P1-9
 - Create `source/cheatsheet/ddia.md` (all 19 DDIA notes condensed into single-page reference)
@@ -158,3 +148,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P2-5: Series Navigation Plugin: Created `scripts/series-nav.js` Hexo filter plugin that injects prev/next navigation links into series posts using `series` and `series_index` front matter. All 46 series posts get nav links.
 
 - [x] **2026-03-12** -- T-P2-6: Related Posts Plugin: Created `scripts/related-posts.js` Hexo filter plugin that injects "Related Reading" section with top 5 related posts scored by tag overlap + key_concepts overlap (2x weight). 57 of 64 posts show related links.
+
+- [x] **2026-03-12** -- T-P2-7: Interview Prep Hub: Created `source/interview/index.md` with 7 sections (System Design DDIA, Alex Xu, SQL, DS/ML, Behavioral, OOD, Brainteasers). Added nav menu entry. Page has 13 tables, 87 links, and a 1-week study plan.

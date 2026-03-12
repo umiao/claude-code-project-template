@@ -258,3 +258,10 @@
 - **Sanity check result**: All 4 ACs met: (1) Plugin file exists and is loaded by Hexo. (2) 57 of 64 posts show "Related Reading" section with linked posts. (3) Related posts are relevant (DS-Study-Note-1 about Overfitting shows L1/L2 Regularization note first). (4) `hexo generate` succeeds with 425 files, no errors.
 - **Status**: [DONE]
 - **Request**: Move T-P2-6 to Completed
+
+## 2026-03-12 -- [T-P2-7] Interview Prep Hub
+- **What I did**: Created `source/interview/index.md` with structured interview prep content across 7 sections: System Design (DDIA concepts in tables), System Design (Alex Xu patterns), SQL quick reference and common patterns, Data Science/ML algorithms and concepts, Behavioral (STAR method), OOD (SOLID principles), and Brainteasers. Added "Interview" nav entry to `_config.next.yml`. Included a 1-week study plan with daily focus areas.
+- **Deliverables**: `source/interview/index.md`, `_config.next.yml` (nav menu update)
+- **Sanity check result**: All 4 ACs met: (1) `source/interview/index.md` exists with all listed sections. (2) Nav menu updated in `_config.next.yml`. (3) `hexo generate` produces `public/interview/index.html` (202 files, no errors). (4) Page contains actionable content: 13 tables, 87 links, study tips and common questions.
+- **Status**: [DONE]
+- **Request**: Move T-P2-7 to Completed
