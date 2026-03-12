@@ -265,3 +265,10 @@
 - **Sanity check result**: All 4 ACs met: (1) `source/interview/index.md` exists with all listed sections. (2) Nav menu updated in `_config.next.yml`. (3) `hexo generate` produces `public/interview/index.html` (202 files, no errors). (4) Page contains actionable content: 13 tables, 87 links, study tips and common questions.
 - **Status**: [DONE]
 - **Request**: Move T-P2-7 to Completed
+
+## 2026-03-12 -- [T-P2-8] Cheat Sheets
+- **What I did**: Created 3 cheat sheet pages under `source/cheatsheet/`: `ddia.md` (19 DDIA notes condensed into comparison tables covering storage engines, replication, partitioning, transactions, consensus, batch/stream processing), `sql.md` (16 SQL notes condensed with syntax examples, function references, optimization patterns, window functions), `ds.md` (9 DS notes condensed covering overfitting, bias-variance, SVM, Naive Bayes, regularization, ensemble methods, XGBoost/LightGBM). Created `index.md` hub page linking all three. Added "Cheatsheets" nav entry to `_config.next.yml`.
+- **Deliverables**: `source/cheatsheet/ddia.md`, `source/cheatsheet/sql.md`, `source/cheatsheet/ds.md`, `source/cheatsheet/index.md`, `_config.next.yml` (nav update)
+- **Sanity check result**: All 4 ACs met: (1) All 3 cheat sheet files exist under `source/cheatsheet/`. (2) Each covers all posts in its series (19 DDIA, 16 SQL, 9 DS). (3) Contains comparison tables and quick-reference content (136+116+150 table rows). (4) `hexo generate` produces all HTML pages (206 files, 0 errors).
+- **Status**: [DONE]
+- **Request**: Move T-P2-8 to Completed

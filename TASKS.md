@@ -33,17 +33,6 @@
 
 ### Nice to Have (P2)
 
-#### T-P2-8: Cheat Sheets
-- Complexity: L | Depends on: T-P1-9
-- Create `source/cheatsheet/ddia.md` (all 19 DDIA notes condensed into single-page reference)
-- Create `source/cheatsheet/sql.md` and `source/cheatsheet/ds.md`
-- Format: comparison tables, key formulas, one-liner summaries per topic
-- **Acceptance Criteria**:
-  1. All 3 cheat sheet files exist under `source/cheatsheet/`
-  2. Each cheat sheet covers all posts in its series
-  3. Contains comparison tables and quick-reference content (not just links)
-  4. `hexo generate` produces all 3 HTML pages
-
 > **P2 Checkpoint**: User can (1) search any concept via `/concepts/` page, (2) navigate series with prev/next links, (3) see related posts on every article, (4) use interview hub for prep, (5) quick-review via cheat sheets.
 
 ### Stretch Goals (P3)
@@ -150,3 +139,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P2-6: Related Posts Plugin: Created `scripts/related-posts.js` Hexo filter plugin that injects "Related Reading" section with top 5 related posts scored by tag overlap + key_concepts overlap (2x weight). 57 of 64 posts show related links.
 
 - [x] **2026-03-12** -- T-P2-7: Interview Prep Hub: Created `source/interview/index.md` with 7 sections (System Design DDIA, Alex Xu, SQL, DS/ML, Behavioral, OOD, Brainteasers). Added nav menu entry. Page has 13 tables, 87 links, and a 1-week study plan.
+
+- [x] **2026-03-12** -- T-P2-8: Cheat Sheets: Created 3 cheat sheet pages (`source/cheatsheet/ddia.md`, `sql.md`, `ds.md`) condensing all 19 DDIA, 16 SQL, and 9 DS posts into quick-reference format with comparison tables, key formulas, and decision guides. Added index page and nav entry.

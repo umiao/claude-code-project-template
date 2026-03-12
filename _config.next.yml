@@ -20,6 +20,7 @@ menu:
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   interview: /interview/ || fa fa-briefcase
+  cheatsheets: /cheatsheet/ || fa fa-file-alt
 
 menu_settings:
   icons: true
