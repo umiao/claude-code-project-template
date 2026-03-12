@@ -26,15 +26,6 @@
 
 ### Must Have (P0)
 
-#### T-P0-12: Scaffold + Front Matter Schema
-- Complexity: S | Depends on: none
-- Update `scaffolds/post.md` to include knowledge-system fields: `categories`, `tags`, `description`, `key_concepts`, `takeaways`, `series`, `series_index`
-- Ensure existing fields (title, date) are preserved; new fields default to empty lists/strings
-- **Acceptance Criteria**:
-  1. `scaffolds/post.md` contains all fields listed above with sensible defaults
-  2. `hexo new "Test Post"` creates a post with the full front matter template
-  3. `hexo generate` succeeds with no errors (existing posts unaffected by scaffold change)
-
 #### T-P0-13: Concept Registry
 - Complexity: M | Depends on: none
 - Create `data/concepts.yml` with canonical concept names + aliases
@@ -277,6 +268,7 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 <!-- Historical note: Completed tasks below used P as Phase (P0-P5).
      Active tasks follow canonical convention: T-P{priority}-{number}, where P = Priority. -->
 
+- [x] **2026-03-12** -- T-P0-12: Scaffold + Front Matter Schema. Updated scaffolds/post.md to include knowledge-system fields: categories, tags (preserved), description, key_concepts, takeaways, series, series_index. All fields default to empty. Test: hexo new "Test Post" produces post with full front matter template. hexo generate succeeds (396 files, zero errors). Existing posts unaffected by scaffold change.
 - [x] **2026-03-11** -- T-P0-7: Restore NexT theme with Life category support. Switched theme yilia -> next, created scripts/filter-life-homepage.js generator plugin to hide Life posts from homepage, created source/_data/sidebar.njk Life widget for NexT sidebar, added custom_file_path.sidebar to _config.next.yml. Fixed tags/categories 404s, about page image sizing. Build: 394 files, zero errors. Cake post filtered from homepage, visible in sidebar widget and direct URL.
 - [x] **2026-03-11** -- T-P0-11: Review Last 3 Commits + Apply Fixes: created source/tags/index.md and source/categories/index.md with proper Hexo front matter, updated yilia menu config to add Tags and Categories links, fixed About page image sizing (removed hard-coded width/height, added max-width CSS), created Python-based commit-msg hook to enforce English-only commit messages (stored in tools/ and installed to .git/hooks/), hexo generate verified (tags/categories/about pages render correctly).
 - [x] **2026-03-02** -- Git pre-commit hook for ruff version consistency: pinned ruff==0.1.14, fixed CI lint job, created pre-commit hook (version guard + lint + emoji scan), created setup-hooks.sh installer, updated docs.

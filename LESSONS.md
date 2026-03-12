@@ -51,3 +51,9 @@
 - **Fix / Correct approach**: Before making ANY major change (theme switches, removing functionality, reversing approved decisions, changing deployment targets), I must: (1) State the proposed change and why, (2) List 2-3 alternatives including "do nothing", (3) Show impact (what breaks, what changes, rollback cost), (4) Wait for explicit user approval before executing. This is now codified in CLAUDE.md "Major Change Approval Protocol".
 - **Related task**: T-P0-10
 - **Tags**: #theme #approval #major-change #communication
+
+### [2026-03-11] Task ID "P = Phase" anti-pattern went undetected
+- **Context**: When adding 18 new tasks to TASKS.md, I numbered them T-P3-*, T-P4-*, T-P5-* treating "P" as a sequential phase counter (Phase 1/2/3 of new work), continuing the pattern from completed tasks (P0/P1/P2). CLAUDE.md said "P = priority" but lacked explicit P0-P3 definitions, so the misuse was not caught by hooks or review.
+- **What went wrong / What I learned**: The existing `task_header_check.py` hook validates ID *format* (T-P\d+-\d+) but cannot validate *semantics* (whether P reflects actual priority). Without explicit priority-level definitions, "P3" looks valid whether it means "Stretch Goal" or "Phase 3". Convention drift happens when rules are implicit.
+- **Fix / Correct approach**: (1) Added explicit priority definitions to CLAUDE.md: P0=Must Have, P1=Should Have, P2=Nice to Have, P3=Stretch. (2) Added prohibition: "Never use P as a phase/stage counter." (3) Reassigned all 18 task IDs based on actual priority. (4) Changed TASKS.md section headers from "Phase N" to priority-based grouping ("Must Have (P0)", etc.).
+- **Tags**: #task-naming #convention-drift #implicit-rules

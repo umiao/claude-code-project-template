@@ -160,3 +160,17 @@
 - **Sanity check result**: Read back TASKS.md -- all 18 tasks present with acceptance criteria, complexity, depends-on fields. Dependency graph consistent with task specs. Completed section intact (15 entries).
 - **Status**: [DONE]
 - **Request**: No change (task planning only, no task IDs to move)
+
+## 2026-03-11 -- Fix TASKS.md Naming Convention (P = Priority, not Phase)
+- **What I did**: Reassigned all 18 active task IDs from phase-based (T-P3/P4/P5-*) to priority-based (T-P0/P1/P2/P3-*) per canonical convention. Updated CLAUDE.md with explicit P0-P3 priority definitions and prohibition against using P as phase counter. Rewrote TASKS.md section headers from "Phase N" to priority tiers ("Must Have (P0)", etc.). Updated all Depends-on references and dependency graph. Added historical note to Completed section. Logged lesson to LESSONS.md.
+- **Deliverables**: `CLAUDE.md` (priority definitions + prohibition), `TASKS.md` (18 IDs reassigned, section headers, dependency graph), `LESSONS.md` (convention drift lesson)
+- **Sanity check result**: No ID collisions between active (T-P0-12..T-P3-8) and completed (T-P0-1..T-P2-3) sections. All Depends-on references point to valid IDs. No old T-P4-*/T-P5-* IDs remain in TASKS.md. Hooks exit cleanly.
+- **Status**: [DONE]
+- **Request**: No change
+
+## 2026-03-12 -- [T-P0-12] Scaffold + Front Matter Schema
+- **What I did**: Updated `scaffolds/post.md` to include all knowledge-system front matter fields: categories, tags (preserved), description, key_concepts, takeaways, series, series_index. All new fields default to empty values. Tested with `hexo new "Test Post"` to verify scaffold generates correctly, then ran `hexo clean && hexo generate` to confirm existing posts unaffected.
+- **Deliverables**: `scaffolds/post.md` (modified)
+- **Sanity check result**: Test post created with all 9 front matter fields (title, date, categories, tags, description, key_concepts, takeaways, series, series_index). `hexo generate` succeeded with 396 files, zero errors. Removed test post after verification.
+- **Status**: [DONE]
+- **Request**: Move T-P0-12 to Completed
