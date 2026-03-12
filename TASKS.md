@@ -33,17 +33,6 @@
 
 ### Nice to Have (P2)
 
-#### T-P2-5: Series Navigation Plugin
-- Complexity: S | Depends on: T-P1-9
-- Create `scripts/series-nav.js` as a Hexo filter plugin
-- Uses `series` + `series_index` front matter to inject prev/next navigation links into post content
-- Follow pattern from `scripts/filter-life-homepage.js` for Hexo filter registration
-- **Acceptance Criteria**:
-  1. `scripts/series-nav.js` exists and is loaded by Hexo
-  2. DDIA posts show prev/next links (e.g., post 5 links to posts 4 and 6)
-  3. First post has no "prev", last post has no "next"
-  4. `hexo generate` succeeds with no errors
-
 #### T-P2-6: Related Posts Plugin
 - Complexity: M | Depends on: T-P1-9
 - Create `scripts/related-posts.js` as a Hexo filter plugin
@@ -177,3 +166,5 @@ T-P0-12 + T-P1-6 ---> T-P3-8 (plan-series)
 - [x] **2026-03-12** -- T-P1-10: Enrich SQL + DS + Remaining Posts: Added key_concepts, takeaways, and series metadata to all 41 remaining posts (16 SQL, 9 DS, 16 misc). Added 29 new concepts to concepts.yml (SQL, DS, Interview, General domains). Fixed 4 previously-enriched posts. All 64 posts validated. hexo generate succeeds.
 
 - [x] **2026-03-12** -- T-P2-4: Concept Index Generator Plugin: Created `scripts/generate-concept-index.js` Hexo generator that reads key_concepts from all posts, produces alphabetical `/concepts/index.html` with letter navigation and 87 concepts linked to their posts.
+
+- [x] **2026-03-12** -- T-P2-5: Series Navigation Plugin: Created `scripts/series-nav.js` Hexo filter plugin that injects prev/next navigation links into series posts using `series` and `series_index` front matter. All 46 series posts get nav links.

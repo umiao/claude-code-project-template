@@ -244,3 +244,10 @@
 - **Sanity check result**: All 4 ACs met: (1) Plugin file exists and is loaded by Hexo. (2) `hexo generate` produces `public/concepts/index.html`. (3) 87 concepts listed alphabetically with letter nav and post links. (4) DDIA concepts (ACID, Replication, MapReduce, LSM-Tree, etc.) appear correctly with proper post links.
 - **Status**: [DONE]
 - **Request**: Move T-P2-4 to Completed
+
+## 2026-03-12 -- [T-P2-5] Series Navigation Plugin
+- **What I did**: Created `scripts/series-nav.js` Hexo filter plugin that uses `series` and `series_index` front matter to inject prev/next navigation links at the bottom of series posts. Uses `hexo.model('Post')` to build complete series index before rendering. Includes inline styling with flexbox layout.
+- **Deliverables**: `scripts/series-nav.js`
+- **Sanity check result**: All 4 ACs met: (1) Plugin file exists and is loaded by Hexo. (2) DDIA post 5 shows prev (Part 4) and next (Part 6) links. (3) First post has empty prev, last post has empty next. (4) `hexo generate` succeeds with 425 files, no errors.
+- **Status**: [DONE]
+- **Request**: Move T-P2-5 to Completed
