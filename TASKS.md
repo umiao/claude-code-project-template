@@ -9,12 +9,6 @@
 
 ### P0 -- Must Have (core functionality)
 
-#### T-P0-13: CSS enhancements for index page cards
-- **Priority**: P0
-- **Complexity**: M
-- **Depends on**: T-P0-12
-- **Description**: Add styles to source/_data/styles.styl: image max-height+object-fit (no fixed aspect-ratio), excerpt text clamping (max-height+overflow:hidden), box-shadow hover (no translateY), spacing, responsive mobile. AC: card heights roughly consistent, images not distorted, clean mobile view.
-
 ### P1 -- Should Have (agentic intelligence)
 
 #### T-P1-14: Add sticky/featured posts with gallery banners
@@ -49,6 +43,7 @@
 
 ## Completed Tasks
 
+- [x] **2026-03-16** -- T-P0-13: CSS enhancements for index page cards. Add styles to source/_data/styles.styl: image max-height+object-fit (no fixed aspect-ratio), excerpt text clamping (max-
 - [x] **2026-03-16** -- T-P0-12: Switch to excerpt mode + fix posts with missing cover images. Set excerpt_description: false in _config.next.yml. Move cover images before <!-- more --> for ~12 posts. Standardize mo
 - [x] **2026-03-12** -- T-P3-8: /plan-series Skill: Created `.claude/skills/plan-series/SKILL.md` with 8-step workflow for scaffolding new blog series (series index page with Mermaid mindmap, stub posts with full front matter, concepts.yml registration, series master index update).
 - [x] **2026-03-12** -- T-P3-7: Anki Export Tool: Created `tools/export_anki.py` that reads key_concepts and takeaways from all 64 posts, generates 370 Anki flashcards (concept definition + takeaway recall cards) as tab-separated CSV to `data/anki_export.csv`. All file I/O uses encoding="utf-8".

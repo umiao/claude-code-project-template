@@ -119,3 +119,10 @@
 - **Sanity check result**: `hexo clean && hexo generate` succeeds (704 files). All 7 index pages have images (9+10+10+10+10+10+1). Verified DS-Study-Note-2, Missing-Value-Imputation, Missing-Values-Patterns all have `<img>` tags in their excerpt on paginated index pages.
 - **Status**: [DONE]
 - **Request**: `task_db.py update T-P0-12 --status completed`
+
+## 2026-03-16 -- [T-P0-13] CSS enhancements for index page cards
+- **What I did**: Added custom styles to `source/_data/styles.styl` for index page card improvements: (1) image max-height (320px desktop, 200px mobile) with `object-fit: cover` for consistent sizing without distortion, (2) excerpt text clamping with `-webkit-line-clamp` (4 lines desktop, 3 mobile), (3) box-shadow hover effect on `.post-block` (no translateY), (4) tighter spacing on post headers, (5) description line styling, (6) mobile responsive media query at 767px.
+- **Deliverables**: `source/_data/styles.styl` (modified)
+- **Sanity check result**: `hexo clean && hexo generate` succeeds (704 files). All custom styles compiled into `public/css/main.css` (verified: object-fit, webkit-line-clamp, box-shadow all present). All 7 index pages retain images (9+10+10+10+10+10+1).
+- **Status**: [DONE]
+- **Request**: `task_db.py update T-P0-13 --status completed`

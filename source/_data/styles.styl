@@ -1,3 +1,48 @@
+// -------------------------------------------------------
+// Index page card enhancements (T-P0-13)
+// -------------------------------------------------------
+
+// Post card hover effect -- subtle shadow, no vertical shift
+.post-block
+  transition box-shadow 0.3s ease
+  &:hover
+    box-shadow 0 4px 16px rgba(0, 0, 0, 0.12)
+
+// Constrain excerpt images to consistent height without distortion
+.posts-expand .post-body img
+  max-height 320px
+  width 100%
+  object-fit cover
+  border-radius 4px
+  margin-bottom 0.8em
+
+// Clamp excerpt text so cards stay roughly consistent height
+.posts-expand .post-body > p
+  max-height 6em
+  overflow hidden
+  display -webkit-box
+  -webkit-line-clamp 4
+  -webkit-box-orient vertical
+
+// Tighten spacing between post header and body
+.posts-expand .post-header
+  margin-bottom 0.5em
+
+// Description line styling
+.post-description
+  color #888
+  font-size 0.9em
+  margin-top 0.3em
+
+// Mobile responsive adjustments
+@media (max-width: 767px)
+  .posts-expand .post-body img
+    max-height 200px
+  .posts-expand .post-body > p
+    max-height 5em
+    -webkit-line-clamp 3
+
+// -------------------------------------------------------
 // Mermaid diagram container -- scrollable for large diagrams
 .mermaid-container
   max-height 80vh
