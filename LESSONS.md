@@ -57,3 +57,9 @@
 - **What went wrong / What I learned**: The existing `task_header_check.py` hook validates ID *format* (T-P\d+-\d+) but cannot validate *semantics* (whether P reflects actual priority). Without explicit priority-level definitions, "P3" looks valid whether it means "Stretch Goal" or "Phase 3". Convention drift happens when rules are implicit.
 - **Fix / Correct approach**: (1) Added explicit priority definitions to CLAUDE.md: P0=Must Have, P1=Should Have, P2=Nice to Have, P3=Stretch. (2) Added prohibition: "Never use P as a phase/stage counter." (3) Reassigned all 18 task IDs based on actual priority. (4) Changed TASKS.md section headers from "Phase N" to priority-based grouping ("Must Have (P0)", etc.).
 - **Tags**: #task-naming #convention-drift #implicit-rules
+
+### [2026-03-15] Deployed from wrong branch, sensitive content leaked
+- **Context**: `hexo deploy` was run from `blog-refactor` instead of `main`, causing unreleased feature pages (knowledge-map, cheatsheet, concepts, interview hub) and sensitive interview prep posts (`Behavioral-Interview-Questions-Crack.md`, `brainteaser_1.md`) to go live on `umiao.github.io`.
+- **What went wrong / What I learned**: The deploy script had no branch guard -- it would happily deploy from any branch. Additionally, sensitive personal content was stored in `source/_posts/` alongside regular posts, with no safety net to prevent publication.
+- **Fix / Correct approach**: (1) Added branch guard to `tools/safe-deploy.sh` that blocks deploys from non-main branches (with `DEPLOY_ALLOW_BRANCH` escape hatch). (2) Moved sensitive files to `source/_drafts/`. (3) Added source-path sensitive file check in deploy script (more stable than slug-based checks). (4) Added `render_drafts` config guard. Defense in depth: multiple checks catch the problem at different stages.
+- **Tags**: #deployment #security #branch-guard #sensitive-content
