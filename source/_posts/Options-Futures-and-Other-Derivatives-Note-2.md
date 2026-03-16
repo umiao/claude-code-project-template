@@ -19,7 +19,7 @@ takeaways:
   - Understanding trader motivations is essential for analyzing market behavior and derivative pricing
 ---
 Discussing different types of traders.
-{% asset_img cover.jpg Options Futures and Derivatives Note 2 cover: types of traders - hedgers, speculators %}
+<!-- {% asset_img cover.jpg Options Futures and Derivatives Note 2 cover: types of traders - hedgers, speculators %} -->
 <!-- more -->
 
 # Types of traders

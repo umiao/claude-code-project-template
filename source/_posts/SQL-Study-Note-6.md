@@ -19,7 +19,7 @@ takeaways:
   - Avoid trigger chains that could cause infinite loops or hard-to-debug behavior
 ---
 
-{% asset_img sql.jpg SQL Study Note 6 cover: Triggers and Scheduled Events %}
+<!-- {% asset_img sql.jpg SQL Study Note 6 cover: Triggers and Scheduled Events %} -->
 
 # Trigger
 

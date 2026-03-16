@@ -2,8 +2,8 @@
 title: Designing Data-Intensive-Applications-Note-1
 date: 2024-02-23 15:44:41
 sticky: 1
-photos:
-  - /2024/02/23/Designing-Data-Intensive-Applications-Note-1/cover.png
+# photos:
+#   - /2024/02/23/Designing-Data-Intensive-Applications-Note-1/cover.png
 categories:
 - [Data Science, Data System]
 tags:
@@ -24,7 +24,7 @@ series: DDIA
 series_index: 1
 ---
 Introduction to designing data intensive applications, a.k.a data systems, providing high-level ideas about what it is and why it is needed.
-{% asset_img cover.png DDIA Chapter 1 cover: Reliable, Scalable, and Maintainable Applications %}
+<!-- {% asset_img cover.png DDIA Chapter 1 cover: Reliable, Scalable, and Maintainable Applications %} -->
 <!-- more -->
 
 # Key Concepts

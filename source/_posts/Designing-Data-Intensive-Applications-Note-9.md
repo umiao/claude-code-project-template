@@ -21,7 +21,7 @@ series: DDIA
 series_index: 9
 ---
 Discussion on Data Flow and Message Passing.
-{% asset_img cover.png DDIA Chapter 9 cover: Data Flow and Message Passing %}
+<!-- {% asset_img cover.png DDIA Chapter 9 cover: Data Flow and Message Passing %} -->
 <!-- more -->
 
 ### Data Flow in Databases:

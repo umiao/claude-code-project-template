@@ -19,7 +19,7 @@ takeaways:
   - User-defined functions must return a value and can be used directly in SQL expressions
 ---
 
-{% asset_img sql.jpg SQL Study Note 5 cover: Stored Procedures and User-Defined Functions %}
+<!-- {% asset_img sql.jpg SQL Study Note 5 cover: Stored Procedures and User-Defined Functions %} -->
 
 # Stored Procedure
 

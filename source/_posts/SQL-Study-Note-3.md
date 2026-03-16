@@ -22,7 +22,7 @@ takeaways:
   - EXISTS is often more efficient than IN for checking related records
 ---
 
-{% asset_img sql.jpg SQL Study Note 3 cover: Functions and Aggregate Functions %}
+<!-- {% asset_img sql.jpg SQL Study Note 3 cover: Functions and Aggregate Functions %} -->
 
 # Function and the Aggregate Function
 <!-- more -->

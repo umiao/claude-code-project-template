@@ -19,7 +19,7 @@ takeaways:
   - Dimensionality reduction techniques like PCA and CNNs mitigate the curse at the cost of interpretability
 ---
 
-{% asset_img over.png DS Study Note 3 cover: Curse of Dimensionality %}
+<!-- {% asset_img over.png DS Study Note 3 cover: Curse of Dimensionality %} -->
 # Definition 
 **Dimension curse** stands for the troubles you would meet when processing **high-dimensional** data. *E.g.*, computation of **similarity, distance, neighbour or any metric based processing.**
 <!-- more -->

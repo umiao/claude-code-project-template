@@ -24,7 +24,7 @@ takeaways:
 - Third-party service extensibility is critical for global deployment
 ---
 Learning note of Alex Xu's system design interview book.
-{% asset_img cover.jpg System Design Interview Notes 2 cover: notification systems and distributed architectures %}
+<!-- {% asset_img cover.jpg System Design Interview Notes 2 cover: notification systems and distributed architectures %} -->
 <!-- more -->
 
 # Design a Notification System

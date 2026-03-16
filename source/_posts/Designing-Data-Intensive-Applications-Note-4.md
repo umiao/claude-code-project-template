@@ -21,7 +21,7 @@ series: DDIA
 series_index: 4
 ---
 Discussion on data model and query language.
-{% asset_img cover.png DDIA Chapter 4 cover: Data Models and Query Languages %}
+<!-- {% asset_img cover.png DDIA Chapter 4 cover: Data Models and Query Languages %} -->
 <!-- more -->
 
 

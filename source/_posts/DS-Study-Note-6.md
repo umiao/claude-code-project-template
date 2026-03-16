@@ -22,7 +22,7 @@ takeaways:
 
 **Naïve Bayesian Classifier**: is a typical learning based method which make hypothesis on the distribution of prediction target.
 
-{% asset_img 1.jpg DS Study Note 6 cover: Naive Bayesian classifier model %}
+<!-- {% asset_img 1.jpg DS Study Note 6 cover: Naive Bayesian classifier model %} -->
 
 <!-- more -->
 

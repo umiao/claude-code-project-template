@@ -19,7 +19,7 @@ takeaways:
   - Shell variables and environment configuration customize the command-line experience
 ---
 For a Software Engineer / Researcher, Linux and Vim should be the basic of basics (as important parts of CLI, Command Line Interface). In this post, we have discussed some basic knowledge as well as useful tips.
-{% asset_img cover.jpg Linux and Vim usage guide cover: command line interface basics %}
+<!-- {% asset_img cover.jpg Linux and Vim usage guide cover: command line interface basics %} -->
 <!-- more -->
 
 

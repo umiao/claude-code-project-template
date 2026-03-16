@@ -24,7 +24,7 @@ takeaways:
 - Web crawlers must balance politeness, priority, and freshness when scheduling URL downloads
 ---
 Continued notes from Alex Xu's System Design Interview book, covering system design problems from chapters 4-9.
-{% asset_img cover.jpg System Design Interview Notes cover: rate limiters, key-value stores, and web crawlers %}
+<!-- {% asset_img cover.jpg System Design Interview Notes cover: rate limiters, key-value stores, and web crawlers %} -->
 <!-- more -->
 
 # Design a Rate Limiter

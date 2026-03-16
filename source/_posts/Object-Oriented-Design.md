@@ -20,7 +20,7 @@ takeaways:
 
 Important principles as well as solution to concrete interview questions.
 
-{% asset_img ood.jpg Object-Oriented Design cover: SOLID principles and design patterns %}
+<!-- {% asset_img ood.jpg Object-Oriented Design cover: SOLID principles and design patterns %} -->
 <!-- more -->
 
 # SOLID Principles

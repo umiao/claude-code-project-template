@@ -21,7 +21,7 @@ takeaways:
   - git reset --soft/--mixed/--hard offer different levels of undo by moving HEAD, index, and working directory
 ---
 Continued Git learning notes covering branching, rebasing, and advanced topics.
-{% asset_img cover.jpg Introduction to Git cover: branching and advanced topics %}
+<!-- {% asset_img cover.jpg Introduction to Git cover: branching and advanced topics %} -->
 <!-- more -->
 
 # Branch

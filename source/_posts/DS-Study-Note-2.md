@@ -20,7 +20,7 @@ takeaways:
 ---
 The target of Machine Learning is to fit an (unknown) distribution. There lies three possible error: bias, variance and irreducible error.
 
-{% asset_img var.jpg DS Study Note 2 cover: Bias vs Variance tradeoff in machine learning %}
+<!-- {% asset_img var.jpg DS Study Note 2 cover: Bias vs Variance tradeoff in machine learning %} -->
 
 <!-- more -->
 >The irreducible error **CANNOT be avoided** with any algorithm as it can be viewed as the result of unknown factor, noise, accidents, etc. Thus, we would focus on the bias and variance error.

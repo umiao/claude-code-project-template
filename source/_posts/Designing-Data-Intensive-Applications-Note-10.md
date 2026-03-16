@@ -23,7 +23,7 @@ series: DDIA
 series_index: 10
 ---
 Discussion on distributed system goal and Replication implementations.
-{% asset_img cover.png DDIA Chapter 10 cover: Distributed Systems and Replication %}
+<!-- {% asset_img cover.png DDIA Chapter 10 cover: Distributed Systems and Replication %} -->
 <!-- more -->
 
 Distributed System:

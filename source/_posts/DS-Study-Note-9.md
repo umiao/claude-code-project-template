@@ -24,7 +24,7 @@ takeaways:
 # Gradient Boosting Machine Tree
 **GBMTree** stands for **Gradient Boosting Machine Tree**.
 
-{% asset_img theory.jpg DS Study Note 9 cover: Gradient Boosting Machine Tree theory %}
+<!-- {% asset_img theory.jpg DS Study Note 9 cover: Gradient Boosting Machine Tree theory %} -->
 
 <!-- more -->
 The idea is to train multiple serial **weak** learner, while the objective of each learner is to fit the **negative** gradient of the loss function of the previous cumulative model.

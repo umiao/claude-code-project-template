@@ -21,7 +21,7 @@ series: DDIA
 series_index: 14
 ---
 Discussion on partition related topics.
-{% asset_img cover.png DDIA Chapter 14 cover: Partitioning and Sharding %}
+<!-- {% asset_img cover.png DDIA Chapter 14 cover: Partitioning and Sharding %} -->
 <!-- more -->
 
 **Partition**: Known as **Shard** in MongoDB, Elasticsearch, and SolrCloud. Known as a **region** in HBase, a **tablet** in Bigtable, a **vnode** in Cassandra and Riak, and a **vBucket** in Couchbase. 

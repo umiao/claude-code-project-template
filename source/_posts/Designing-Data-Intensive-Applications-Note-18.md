@@ -21,7 +21,7 @@ series: DDIA
 series_index: 18
 ---
 Discussion on challenges with batch processing jobs.
-{% asset_img cover.png DDIA Chapter 18 cover: Batch Processing %}
+<!-- {% asset_img cover.png DDIA Chapter 18 cover: Batch Processing %} -->
 <!-- more -->
 
 ### Unix Tools (Pipe)

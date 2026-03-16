@@ -20,7 +20,7 @@ takeaways:
   - SVM training complexity is O(n^2) to O(n^3) making it less suitable for very large datasets
 ---
 SVM is a machine learning model which aims at finding a Decision Boundary with a subset of the training set. The SVM is a non-probabilistic binary classifier.
-{% asset_img svm.png DS Study Note 5 cover: Support Vector Machine classification %}
+<!-- {% asset_img svm.png DS Study Note 5 cover: Support Vector Machine classification %} -->
 <!-- more -->
 
 # Linear Separable

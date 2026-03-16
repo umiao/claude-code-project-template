@@ -21,7 +21,7 @@ takeaways:
   - Lightweight tags are simple pointers while annotated tags are full objects with metadata
 ---
 Thorough analysis and learning note based on git documentation (https://git-scm.com/book/en/v2).
-{% asset_img cover.jpg Introduction to Git cover: version control concepts %}
+<!-- {% asset_img cover.jpg Introduction to Git cover: version control concepts %} -->
 <!-- more -->
 
 - **Patches set**: the differences between files / versions; can be used to recreate files

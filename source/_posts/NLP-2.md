@@ -19,7 +19,7 @@ takeaways:
 ---
 
 Review the major NLP tasks as well as methods (in terms of text classification).
-{% asset_img cover.png NLP-2 cover: Survey on Text Classification methods %}
+<!-- {% asset_img cover.png NLP-2 cover: Survey on Text Classification methods %} -->
 <!-- more -->
 
 # Abstract

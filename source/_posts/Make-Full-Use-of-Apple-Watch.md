@@ -17,7 +17,7 @@ takeaways:
   - Customizing watch face complications surfaces the most-used information at a glance
 ---
 My pup sent me an Apple Watch as a gift, and for long time I have now idea how to make full use of it.
-{% asset_img cover.jpg Apple Watch tips and features cover %}
+<!-- {% asset_img cover.jpg Apple Watch tips and features cover %} -->
 <!-- more -->
 # Control Center / 控制中心
 <div class="TaskBody" role="region" aria-hidden="false" id="aria-apdaac531820">

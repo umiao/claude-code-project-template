@@ -154,3 +154,10 @@
 - **Sanity check result**: `hexo clean && hexo generate` produces 717 files with no errors. All 6 posts have series badges. Original permalinks preserved for Notes-1 and Notes-2.
 - **Status**: [DONE]
 - **Request**: `task_db.py update T-P3-17 --status completed`
+
+## 2026-03-16 -- [Ad-hoc] Revert 2-column grid and comment out cover images
+- **What I did**: Reverted the 2-column card grid CSS from `source/_data/styles.styl` (removed grid layout, card styling, cover image rules, excerpt constraints, mobile breakpoint). Commented out `photos:` front matter in 2 posts (DDIA-1, Cake Gallery) and `{% asset_img ... cover ... %}` tags in 63 posts by wrapping in HTML comments. This restores NexT's default single-column layout and removes cover images for cleaner yilia-compatible aesthetics.
+- **Deliverables**: `source/_data/styles.styl` (grid CSS removed), 63 posts in `source/_posts/` (cover asset_img commented out), 2 posts with `photos:` commented out
+- **Sanity check result**: `hexo clean && hexo generate` produces 717 files with no errors. Homepage HTML confirmed: all cover `<img>` tags are inside HTML comments, no `.post-gallery` divs rendered.
+- **Status**: [DONE]
+- **Request**: No task DB change (ad-hoc user request)

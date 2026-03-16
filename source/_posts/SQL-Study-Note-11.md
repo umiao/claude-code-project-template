@@ -18,7 +18,7 @@ takeaways:
   - Use REVOKE to remove privileges when roles or responsibilities change
   - Password expiration policies enforce regular credential rotation for security
 ---
-{% asset_img sql.jpg SQL Study Note 11 cover: User and Privilege Management %}
+<!-- {% asset_img sql.jpg SQL Study Note 11 cover: User and Privilege Management %} -->
 
 >Most data science practitioners would not be granted the privilege of managing the database system (not even the privilege to update / delete), so...
 <!-- more -->

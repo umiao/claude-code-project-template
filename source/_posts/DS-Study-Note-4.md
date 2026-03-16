@@ -19,7 +19,7 @@ takeaways:
   - Cost curves help choose classifiers when different types of errors have different business costs
 ---
 
-{% asset_img metric.png DS Study Note 4 cover: Machine Learning Evaluation Metrics %}
+<!-- {% asset_img metric.png DS Study Note 4 cover: Machine Learning Evaluation Metrics %} -->
 
 Metrics are used for model training and evaluation. It reveals a model's performance on a given dataset.
 <!-- more -->

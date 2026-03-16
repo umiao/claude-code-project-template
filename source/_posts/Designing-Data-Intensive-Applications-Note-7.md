@@ -21,7 +21,7 @@ series: DDIA
 series_index: 7
 ---
 Discussion on techniques related to data warehouse / OLAP.
-{% asset_img cover.png DDIA Chapter 7 cover: Data Warehousing and OLAP %}
+<!-- {% asset_img cover.png DDIA Chapter 7 cover: Data Warehousing and OLAP %} -->
 <!-- more -->
 
 ### Transaction:

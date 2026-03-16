@@ -21,7 +21,7 @@ series: DDIA
 series_index: 2
 ---
 Topics about scalability, load & press. Definition, metrics and mitigation.
-{% asset_img cover.png DDIA Chapter 2 cover: Scalability, Load and Performance Metrics %}
+<!-- {% asset_img cover.png DDIA Chapter 2 cover: Scalability, Load and Performance Metrics %} -->
 <!-- more -->
 
 # Scalability 

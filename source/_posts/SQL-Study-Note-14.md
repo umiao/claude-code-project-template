@@ -20,7 +20,7 @@ takeaways:
   - Query hints (USE/IGNORE/FORCE INDEX) can override the optimizer when it makes poor choices
 ---
 The optimization of SQL script can be extremely important, just as the importance of algorithm theory & analysis to programming.
-{% asset_img sql.jpg SQL Study Note 14 cover: Query Optimization - Always Use Index %}
+<!-- {% asset_img sql.jpg SQL Study Note 14 cover: Query Optimization - Always Use Index %} -->
 
 <!-- more -->
 # Introduction

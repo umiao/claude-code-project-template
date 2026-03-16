@@ -20,7 +20,7 @@ takeaways:
   - Choose the appropriate update strategy (restrict, cascade, set null) based on business rules
 ---
 
-{% asset_img sql.jpg SQL Study Note 9 cover: Data Modeling, Constraints, and Normalization %}
+<!-- {% asset_img sql.jpg SQL Study Note 9 cover: Data Modeling, Constraints, and Normalization %} -->
 
 # Data Modelling Pipeline
 1. Understand the requirements; 

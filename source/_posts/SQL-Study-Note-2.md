@@ -20,7 +20,7 @@ takeaways:
   - Understand column attributes (PK, NN, UQ, AI) to design robust table schemas
 ---
 
-{% asset_img sql.jpg SQL Study Note 2 cover: UPDATE, DELETE, and INSERT syntax %}
+<!-- {% asset_img sql.jpg SQL Study Note 2 cover: UPDATE, DELETE, and INSERT syntax %} -->
 
 # The update / delete / insert syntax
 <!-- more -->

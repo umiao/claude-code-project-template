@@ -23,7 +23,7 @@ takeaways:
 - Real-world systems like Facebook, Netflix, and Amazon demonstrate trade-offs between consistency and availability
 ---
 Continued notes from Alex Xu's System Design Interview book, covering system design problems from chapters 13-16 and real-world system case studies.
-{% asset_img cover.jpg System Design Interview Notes cover: autocomplete, video streaming, and cloud storage %}
+<!-- {% asset_img cover.jpg System Design Interview Notes cover: autocomplete, video streaming, and cloud storage %} -->
 <!-- more -->
 
 # Design a Search Autocomplete System

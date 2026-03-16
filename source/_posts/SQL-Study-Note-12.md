@@ -21,7 +21,7 @@ takeaways:
 
 **Common Table Expression (CTE)** is viewed as a better way to realize the functionality of subquery.
 
-{% asset_img sql.jpg SQL Study Note 12 cover: Common Table Expressions and UNION %}
+<!-- {% asset_img sql.jpg SQL Study Note 12 cover: Common Table Expressions and UNION %} -->
 
 <!-- more -->
 - Supported by MySQL >= 8.0

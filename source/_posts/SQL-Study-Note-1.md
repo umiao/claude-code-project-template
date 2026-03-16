@@ -20,7 +20,7 @@ takeaways:
   - UNION combines result sets from multiple queries while removing duplicates by default
 ---
 
-{% asset_img sql.jpg SQL Study Note 1 cover: Syntax Basics %}
+<!-- {% asset_img sql.jpg SQL Study Note 1 cover: Syntax Basics %} -->
 
 # Overview
 

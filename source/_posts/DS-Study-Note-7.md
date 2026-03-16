@@ -20,7 +20,7 @@ takeaways:
 ---
 The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the **projection** of a vector to the domain of **positive** real number. They can both be viewed as metrics of distance.
 
-{% asset_img reg.jpg DS Study Note 7 cover: L1 and L2 regularization %}
+<!-- {% asset_img reg.jpg DS Study Note 7 cover: L1 and L2 regularization %} -->
 
 <!-- more -->
 # Summary

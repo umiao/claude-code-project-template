@@ -15,7 +15,7 @@ takeaways:
   - Understanding the NLP task taxonomy helps navigate the field and choose appropriate techniques
 ---
 Have a glance on the NLP tasks and techniques. Will be discussed in a more detailed manner.
-{% asset_img rm.png NLP study roadmap cover: overview of NLP tasks and techniques %}
+<!-- {% asset_img rm.png NLP study roadmap cover: overview of NLP tasks and techniques %} -->
 <!-- more -->
 # General Roadmap for NLP Study
 

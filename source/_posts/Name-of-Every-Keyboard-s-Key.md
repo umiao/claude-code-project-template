@@ -17,7 +17,7 @@ takeaways:
   - Clear technical vocabulary is essential for effective code review and remote collaboration
 ---
 For better communication during teamwork / paircoding / code review... It is vital to keep every keyboard's key's name in mind.
-{% asset_img cover.jpg Keyboard keys reference cover: names of every key on a keyboard %}
+<!-- {% asset_img cover.jpg Keyboard keys reference cover: names of every key on a keyboard %} -->
 <!-- more -->
 
 

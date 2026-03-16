@@ -20,7 +20,7 @@ takeaways:
 ---
 
 Window function is also known as **Online Analytical Processing function (LAP)**, which is able to conduct realtime processing and analyzing on the database data. 
-{% asset_img sql.jpg SQL Study Note 13 cover: Window Functions %}
+<!-- {% asset_img sql.jpg SQL Study Note 13 cover: Window Functions %} -->
 
 <!-- more -->
 

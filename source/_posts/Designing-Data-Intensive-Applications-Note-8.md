@@ -20,7 +20,7 @@ series: DDIA
 series_index: 8
 ---
 Discussion on Encoding and Schema.
-{% asset_img cover.png DDIA Chapter 8 cover: Encoding, Schema Evolution and Compatibility %}
+<!-- {% asset_img cover.png DDIA Chapter 8 cover: Encoding, Schema Evolution and Compatibility %} -->
 <!-- more -->
 
 ### Encoding and Evaluation:

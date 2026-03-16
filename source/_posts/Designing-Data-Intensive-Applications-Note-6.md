@@ -21,7 +21,7 @@ series: DDIA
 series_index: 6
 ---
 Discussion on Indexes and Multi-Column Index solution (R-Tree).
-{% asset_img cover.png DDIA Chapter 6 cover: Indexes and Multi-Column Index with R-Trees %}
+<!-- {% asset_img cover.png DDIA Chapter 6 cover: Indexes and Multi-Column Index with R-Trees %} -->
 <!-- more -->
 
 

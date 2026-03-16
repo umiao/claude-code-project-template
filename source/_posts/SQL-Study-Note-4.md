@@ -19,7 +19,7 @@ takeaways:
   - Use views to simplify complex queries and provide an abstraction layer over base tables
 ---
 
-{% asset_img sql.jpg SQL Study Note 4 cover: SQL Views as virtual tables %}
+<!-- {% asset_img sql.jpg SQL Study Note 4 cover: SQL Views as virtual tables %} -->
 
 # View
 

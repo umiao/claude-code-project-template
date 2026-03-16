@@ -19,7 +19,7 @@ takeaways:
   - Read Uncommitted is fastest but risks dirty reads; Serializable is safest but slowest
 ---
 
-{% asset_img sql.jpg SQL Study Note 7 cover: Transactions and ACID Principles %}
+<!-- {% asset_img sql.jpg SQL Study Note 7 cover: Transactions and ACID Principles %} -->
 
 # Transactions
 

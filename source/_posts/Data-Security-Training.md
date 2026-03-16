@@ -19,7 +19,7 @@ takeaways:
   - Weak session tokens from predictable generation algorithms enable session hijacking attacks
 ---
 Notes and revisits of data & cyber security training session.
-{% asset_img cover.jpg Data and Cyber Security Training cover: SQL injection and security threats %}
+<!-- {% asset_img cover.jpg Data and Cyber Security Training cover: SQL injection and security threats %} -->
 <!-- more -->
 
 ## SQL Injection

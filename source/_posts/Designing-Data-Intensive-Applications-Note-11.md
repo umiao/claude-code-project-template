@@ -21,7 +21,7 @@ series: DDIA
 series_index: 11
 ---
 Discussion on implementation and optimization of replication log.
-{% asset_img cover.png DDIA Chapter 11 cover: Replication Log Implementation and Optimization %}
+<!-- {% asset_img cover.png DDIA Chapter 11 cover: Replication Log Implementation and Optimization %} -->
 <!-- more -->
 
 

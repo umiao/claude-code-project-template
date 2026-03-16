@@ -21,7 +21,7 @@ takeaways:
 
 Other issues which deserve attention when writing SELECT clause.
 
-{% asset_img sql.jpg SQL Study Note 15 cover: Optimizing SELECT and Data Manipulation %}
+<!-- {% asset_img sql.jpg SQL Study Note 15 cover: Optimizing SELECT and Data Manipulation %} -->
 <!-- more -->
 # Optimize the SELECT
 ## Avoid SELECT *

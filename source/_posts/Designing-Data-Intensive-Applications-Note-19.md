@@ -22,7 +22,7 @@ series: DDIA
 series_index: 19
 ---
 Discussion on challenges with stream processing.
-{% asset_img cover.png DDIA Chapter 19 cover: Stream Processing %}
+<!-- {% asset_img cover.png DDIA Chapter 19 cover: Stream Processing %} -->
 <!-- more -->
 
 ### Stream Processing

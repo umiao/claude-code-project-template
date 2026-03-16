@@ -19,7 +19,7 @@ takeaways:
   - Avoid ENUM as it creates maintenance burden when values need to change
 ---
 
-{% asset_img sql.jpg SQL Study Note 8 cover: MySQL Data Types %}
+<!-- {% asset_img sql.jpg SQL Study Note 8 cover: MySQL Data Types %} -->
 
 # Data Type of MySQL
 

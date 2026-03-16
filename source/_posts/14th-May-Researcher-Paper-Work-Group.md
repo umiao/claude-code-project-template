@@ -16,7 +16,7 @@ takeaways:
   - Paper discussion groups accelerate understanding of complex methodological papers
 ---
 Discussion on challenges with stream processing.
-{% asset_img cover.png Research Paper Work Group cover: robust selection and UCB procedure discussion %}
+<!-- {% asset_img cover.png Research Paper Work Group cover: robust selection and UCB procedure discussion %} -->
 <!-- more -->
 
 ### Upper-Confidence-Bound Procedure for Robust Selection of the Best

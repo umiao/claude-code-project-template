@@ -23,7 +23,7 @@ takeaways:
 
 Random Forest inherits the idea of **bagging**, which is part of **Ensemble Learning** paradigm.
 
-{% asset_img rf.png DS Study Note 8 cover: Random Forest and ensemble learning %}
+<!-- {% asset_img rf.png DS Study Note 8 cover: Random Forest and ensemble learning %} -->
 
 <!-- more -->
 # Introduction to Ensemble Learning

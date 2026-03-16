@@ -20,7 +20,7 @@ takeaways:
   - Use index-only retrieval with JOIN for efficient deep pagination instead of large OFFSET values
 ---
 The setting of query conditions, together with table creating can be further optimized.
-{% asset_img sql.jpg SQL Study Note 16 cover: Optimizing Query Conditions and Table Creation %}
+<!-- {% asset_img sql.jpg SQL Study Note 16 cover: Optimizing Query Conditions and Table Creation %} -->
 <!-- more -->
 
 

@@ -21,7 +21,7 @@ series: DDIA
 series_index: 5
 ---
 Discussion on Storage structures.
-{% asset_img cover.png DDIA Chapter 5 cover: Storage Structures and Retrieval %}
+<!-- {% asset_img cover.png DDIA Chapter 5 cover: Storage Structures and Retrieval %} -->
 <!-- more -->
 
 

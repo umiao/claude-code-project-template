@@ -22,7 +22,7 @@ series: DDIA
 series_index: 16
 ---
 Discussion on challenges with distributed systems.
-{% asset_img cover.png DDIA Chapter 16 cover: Challenges in Distributed Systems %}
+<!-- {% asset_img cover.png DDIA Chapter 16 cover: Challenges in Distributed Systems %} -->
 <!-- more -->
 
 ### Faults and Partial Failure

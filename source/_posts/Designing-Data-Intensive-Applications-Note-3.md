@@ -20,7 +20,7 @@ series: DDIA
 series_index: 3
 ---
 Discussion on maintainability, evolvability and operability.
-{% asset_img cover.png DDIA Chapter 3 cover: Maintainability, Evolvability and Operability %}
+<!-- {% asset_img cover.png DDIA Chapter 3 cover: Maintainability, Evolvability and Operability %} -->
 <!-- more -->
 
 # Maintainability

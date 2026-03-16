@@ -18,7 +18,7 @@ takeaways:
   - Long positions profit from price increases while short positions profit from price decreases
 ---
 Learning note of "Options Futures and Other Derivatives", 11th Edition.
-{% asset_img cover.jpg Options Futures and Derivatives Note 1 cover: introduction to derivatives exchanges %}
+<!-- {% asset_img cover.jpg Options Futures and Derivatives Note 1 cover: introduction to derivatives exchanges %} -->
 <!-- more -->
 
 # Introduction

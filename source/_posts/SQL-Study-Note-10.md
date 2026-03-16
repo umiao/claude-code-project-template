@@ -19,7 +19,7 @@ takeaways:
   - Composite index column order matters; queries must use the leftmost prefix to benefit
   - Full-text indexes with MATCH AGAINST enable efficient text search across large datasets
 ---
-{% asset_img sql.jpg SQL Study Note 10 cover: Database Indexes %}
+<!-- {% asset_img sql.jpg SQL Study Note 10 cover: Database Indexes %} -->
 
 **Index** can be used to find the row (line) numbers corresponding to the value being queried. Index is added to certain columns and is stored in memory (RAM) for most times.
 <!-- more -->
