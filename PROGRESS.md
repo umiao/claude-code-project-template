@@ -133,3 +133,10 @@
 - **Sanity check result**: `hexo clean && hexo generate` succeeds (704 files). Sticky posts appear at top of home page (Cake first, DDIA-1 second). Gallery banners render with correct images. Sticky flag (thumbtack icon) displays. All 7 index pages correct (10+10+10+10+10+10+2 = 62 posts).
 - **Status**: [DONE]
 - **Request**: `task_db.py update T-P1-14 --status completed`
+
+## 2026-03-16 -- [T-P2-15] Batch front matter update script
+- **What I did**: Created `tools/update_frontmatter.py` -- a CLI tool for bulk adding, setting, or removing front matter fields across Hexo posts. Supports `--set` (overwrite), `--add` (skip if exists), `--remove`, `--filter` (regex/exact/not-equal on any field including nested YAML lists), and `--dry-run`. Fixed YAML list parsing to handle both indented and non-indented list items (e.g., `- [Data Science, SQL]`).
+- **Deliverables**: `tools/update_frontmatter.py` (new)
+- **Sanity check result**: Dry-run tests verified: (1) `--add comments: true` matches all 62 posts, (2) `--filter categories~=SQL` matches 16 SQL posts, (3) `--remove sticky` matches 2 sticky posts, (4) no-args error handled, (5) ruff clean.
+- **Status**: [DONE]
+- **Request**: `task_db.py update T-P2-15 --status completed`

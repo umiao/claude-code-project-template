@@ -13,12 +13,6 @@
 
 ### P2 -- Nice to Have
 
-#### T-P2-15: Batch front matter update script
-- **Priority**: P2
-- **Complexity**: S
-- **Depends on**: None
-- **Description**: Python script tools/update_frontmatter.py for bulk adding/updating front matter fields. Supports dry-run. Off critical path -- useful for future maintenance.
-
 #### T-P2-16: Series badges on home page
 - **Priority**: P2
 - **Complexity**: M
@@ -39,6 +33,7 @@
 
 > 16 completed tasks archived to [archive/completed_tasks.md](archive/completed_tasks.md).
 
+- [x] **2026-03-16** -- T-P2-15: Batch front matter update script. Python script tools/update_frontmatter.py for bulk adding/updating front matter fields. Supports dry-run. Off critical p
 - [x] **2026-03-16** -- T-P1-14: Add sticky/featured posts with gallery banners. Add sticky: 1 + photos: front matter to 1-2 highlight posts. NexT renders full-width gallery banner above title. AC: pin
 - [x] **2026-03-16** -- T-P0-13: CSS enhancements for index page cards. Add styles to source/_data/styles.styl: image max-height+object-fit (no fixed aspect-ratio), excerpt text clamping (max-
 - [x] **2026-03-16** -- T-P0-12: Switch to excerpt mode + fix posts with missing cover images. Set excerpt_description: false in _config.next.yml. Move cover images before <!-- more --> for ~12 posts. Standardize mo
