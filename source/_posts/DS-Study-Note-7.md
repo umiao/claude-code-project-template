@@ -18,10 +18,11 @@ takeaways:
   - L1 may have multiple optimal solutions while L2 guarantees a unique optimum
   - The regularization strength hyperparameter controls the tradeoff between fitting data and model simplicity
 ---
-The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the **projection** of a vector to the domain of **positive** real number. They can both be viewed as metrics of distance. 
+The essence of L1 and L2 regularization (with corresponding L1 / L2 Norm): the **projection** of a vector to the domain of **positive** real number. They can both be viewed as metrics of distance.
+
+{% asset_img reg.jpg DS Study Note 7 cover: L1 and L2 regularization %}
 
 <!-- more -->
-{% asset_img reg.jpg DS Study Note 7 cover: L1 and L2 regularization %}
 # Summary
 1. L1 normalization would make many parameters become **zero** (equivalent of removing these parameters) due to the property of sparsification.
 2. L2 normalization is easier to calculate and avoid the issue of discussion on the absolute value function.

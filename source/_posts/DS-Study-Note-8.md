@@ -22,9 +22,10 @@ takeaways:
 ---
 
 Random Forest inherits the idea of **bagging**, which is part of **Ensemble Learning** paradigm.
-<!-- more -->
 
 {% asset_img rf.png DS Study Note 8 cover: Random Forest and ensemble learning %}
+
+<!-- more -->
 # Introduction to Ensemble Learning
 1. It can be simply categorized into **Boosting**, **Bagging** and **Stacking**.
 2. **Stacking**: use **Logistics Regression** to integrate multiple prediction results and output one single prediction. It can be viewed as a more complicated form of **voting** (most commonly appeared in classification tasks, take the result with most votes).

@@ -23,11 +23,12 @@ takeaways:
 
 # Gradient Boosting Machine Tree
 **GBMTree** stands for **Gradient Boosting Machine Tree**.
-<!-- more -->
-The idea is to train multiple serial **weak** learner, while the objective of each learner is to fit the **negative** gradient of the loss function of the previous cumulative model. 
-Thus, after this weak learner is attached, the loss of the new cumulative model shall be maximally reduced. Also, each base (weak) learner can be linearly combined with different weights (so that those learners with higher performance would contribute more to the result). A common implementation of the base learner is Tree Model (*e.g.*, Decision Tree).
 
 {% asset_img theory.jpg DS Study Note 9 cover: Gradient Boosting Machine Tree theory %}
+
+<!-- more -->
+The idea is to train multiple serial **weak** learner, while the objective of each learner is to fit the **negative** gradient of the loss function of the previous cumulative model.
+Thus, after this weak learner is attached, the loss of the new cumulative model shall be maximally reduced. Also, each base (weak) learner can be linearly combined with different weights (so that those learners with higher performance would contribute more to the result). A common implementation of the base learner is Tree Model (*e.g.*, Decision Tree).
 
 # Primary Feature
 The primary feature of GBM (Gradient Bossting Machine) is that, it conduct **Gradient Descent** in the space of function, instead of the space of model parameters (e.g., Neural Network calculates the gradient of current loss to the model parameters for update).

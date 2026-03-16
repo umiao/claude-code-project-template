@@ -69,7 +69,7 @@ footer:
 # ---------------------------------------------------------------
 # Post Settings
 # ---------------------------------------------------------------
-excerpt_description: true
+excerpt_description: false
 read_more_btn: true
 
 post_meta:

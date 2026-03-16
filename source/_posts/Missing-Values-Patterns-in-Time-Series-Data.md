@@ -17,9 +17,11 @@ takeaways:
 ---
 
 It is meaningful and believed to be possible to discover the pattern of the missing parts of the time series data. Such patterns may vary in different scenarios and sources and may be related with physical devices and configurations.
-<!-- more -->
-# Algorithms for pattern detection 
+
 {% asset_img img.jpg Distribution comparison of imputed values versus known patterns in time series %}
+
+<!-- more -->
+# Algorithms for pattern detection
 In the above image, we can find out the distribution and comparison between the imputed values VS the known patterns.
 
 

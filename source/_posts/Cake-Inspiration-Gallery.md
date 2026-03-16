@@ -17,6 +17,10 @@ takeaways:
   - Innovative structures and unconventional shapes differentiate advanced designs from standard ones
 ---
 
+A collection of cake inspiration organized by category -- from character designs to cream techniques, fruit arrangements, and innovative structures.
+
+<!-- more -->
+
 <style>
 /* Smooth page scroll */
 html { scroll-behavior: smooth; }
@@ -100,13 +104,9 @@ img.medium-zoom-image--opened {
 }
 </style>
 
-A collection of cake inspiration shared by my friend on 2026-03-09. Each image captures a unique technique or flavor combination worth revisiting. Organized by category for easy reference.
-
 **Quick Nav:** [IP Cakes](#1-Character-Cakes-x2F-IP卡通造型) | [Cream](#2-Cream-Techniques-x2F-奶油技法) | [Fruit](#3-Fruit-amp-Flavor-x2F-水果与口味) | [Structure](#4-Innovative-Structures-x2F-创新工艺) | [Art](#5-Artistic-Styles-x2F-艺术风格)
 
 ---
-
-<!-- more -->
 
 <div class="cake-section">
 
