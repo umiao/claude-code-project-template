@@ -293,3 +293,10 @@
 - **Sanity check result**: All 4 ACs met: (1) SKILL.md exists with complete 228-line skill instructions. (2) Step 4 creates series index under `source/series/<name>/index.md` with Mermaid mindmap and post_link tags. (3) Step 5 generates stub posts with scaffold template front matter (title, permalink, date, categories, tags, description, key_concepts, takeaways, series, series_index). (4) All referenced paths verified to exist. Skill auto-detected in available skills list.
 - **Status**: [DONE]
 - **Request**: Move T-P3-8 to Completed
+
+## 2026-03-15 -- Fix deployment discrepancy and exclude sensitive content
+- **What I did**: Moved sensitive interview prep posts (Behavioral-Interview-Questions-Crack.md, brainteaser_1.md) with asset folders from source/_posts/ to source/_drafts/. Hardened tools/safe-deploy.sh with 3 new guards: branch guard (blocks non-main deploys), sensitive file source-path check, and render_drafts config guard. Added protective comment in _config.yml. Committed on blog-refactor, merged into main via fast-forward. Verified locally: no sensitive content in public/, feature pages present, dry-run passes all guards.
+- **Deliverables**: `source/_drafts/Behavioral-Interview-Questions-Crack.md`, `source/_drafts/brainteaser_1.md`, `tools/safe-deploy.sh` (updated), `_config.yml` (updated), `LESSONS.md` (updated)
+- **Sanity check result**: hexo generate produces no sensitive dirs in public/. safe-deploy.sh --dry-run passes all 5 checks on main. Branch guard correctly blocks on blog-refactor.
+- **Status**: [DONE]
+- **Request**: No task to update (ad-hoc fix)
