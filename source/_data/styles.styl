@@ -43,6 +43,29 @@
     -webkit-line-clamp 3
 
 // -------------------------------------------------------
+// Series badge in post-meta (T-P2-16)
+// -------------------------------------------------------
+
+.post-meta-series .series-badge
+  display inline-block
+  padding 0 6px
+  border-radius 3px
+  background-color rgba(55, 198, 192, 0.12)
+  color #37c6c0
+  font-size 0.85em
+  font-weight 600
+  text-decoration none
+  transition background-color 0.2s ease
+  &:hover
+    background-color rgba(55, 198, 192, 0.25)
+    text-decoration none
+
+// Dark mode override
+.darkmode .post-meta-series .series-badge
+  background-color rgba(55, 198, 192, 0.18)
+  color #5dd9d3
+
+// -------------------------------------------------------
 // Mermaid diagram container -- scrollable for large diagrams
 .mermaid-container
   max-height 80vh

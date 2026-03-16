@@ -13,12 +13,6 @@
 
 ### P2 -- Nice to Have
 
-#### T-P2-16: Series badges on home page
-- **Priority**: P2
-- **Complexity**: M
-- **Depends on**: None
-- **Description**: Add series name/progress indicator in post meta via source/_data/post-meta.njk injection. Deferred.
-
 ### P3 -- Stretch Goals
 
 #### T-P3-17: Split XL posts into smaller units
@@ -33,6 +27,7 @@
 
 > 16 completed tasks archived to [archive/completed_tasks.md](archive/completed_tasks.md).
 
+- [x] **2026-03-16** -- T-P2-16: Series badges on home page. Add series name/progress indicator in post meta via source/_data/post-meta.njk injection. Deferred.
 - [x] **2026-03-16** -- T-P2-15: Batch front matter update script. Python script tools/update_frontmatter.py for bulk adding/updating front matter fields. Supports dry-run. Off critical p
 - [x] **2026-03-16** -- T-P1-14: Add sticky/featured posts with gallery banners. Add sticky: 1 + photos: front matter to 1-2 highlight posts. NexT renders full-width gallery banner above title. AC: pin
 - [x] **2026-03-16** -- T-P0-13: CSS enhancements for index page cards. Add styles to source/_data/styles.styl: image max-height+object-fit (no fixed aspect-ratio), excerpt text clamping (max-

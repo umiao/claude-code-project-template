@@ -140,3 +140,10 @@
 - **Sanity check result**: Dry-run tests verified: (1) `--add comments: true` matches all 62 posts, (2) `--filter categories~=SQL` matches 16 SQL posts, (3) `--remove sticky` matches 2 sticky posts, (4) no-args error handled, (5) ruff clean.
 - **Status**: [DONE]
 - **Request**: `task_db.py update T-P2-15 --status completed`
+
+## 2026-03-16 -- [T-P2-16] Add series badges on home page
+- **What I did**: Added series name and position badges to post-meta on all pages using NexT's `theme_inject` / `postMeta` injection point. Created `scripts/series-badge.js` that injects a series badge (book icon + series name + #index) for posts with `series` front matter. Added matching CSS styles (teal pill badge with hover effect, dark mode support) to `source/_data/styles.styl`.
+- **Deliverables**: `scripts/series-badge.js` (new), `source/_data/styles.styl` (modified)
+- **Sanity check result**: `hexo clean && hexo generate` produces 704 files with no errors. 54 pages contain series badges (46 post pages + index pages). Hexo server smoke test confirms 6 badges on index page 1. CSS compiled into `public/css/main.css`.
+- **Status**: [DONE]
+- **Request**: `task_db.py update T-P2-16 --status completed`
