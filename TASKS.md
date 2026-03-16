@@ -15,18 +15,13 @@
 
 ### P3 -- Stretch Goals
 
-#### T-P3-17: Split XL posts into smaller units
-- **Priority**: P3
-- **Complexity**: L
-- **Depends on**: None
-- **Description**: Split System Design Notes 1&2 (596+713 lines) and Git guide (435 lines) into smaller posts. Deferred -- does not impact home page visuals.
-
 ## Blocked
 
 ## Completed Tasks
 
 > 16 completed tasks archived to [archive/completed_tasks.md](archive/completed_tasks.md).
 
+- [x] **2026-03-16** -- T-P3-17: Split XL posts into smaller units. Split System Design Notes 1&2 (596+713 lines) and Git guide (435 lines) into smaller posts. Deferred -- does not impact 
 - [x] **2026-03-16** -- T-P2-16: Series badges on home page. Add series name/progress indicator in post meta via source/_data/post-meta.njk injection. Deferred.
 - [x] **2026-03-16** -- T-P2-15: Batch front matter update script. Python script tools/update_frontmatter.py for bulk adding/updating front matter fields. Supports dry-run. Off critical p
 - [x] **2026-03-16** -- T-P1-14: Add sticky/featured posts with gallery banners. Add sticky: 1 + photos: front matter to 1-2 highlight posts. NexT renders full-width gallery banner above title. AC: pin

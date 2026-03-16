@@ -147,3 +147,10 @@
 - **Sanity check result**: `hexo clean && hexo generate` produces 704 files with no errors. 54 pages contain series badges (46 post pages + index pages). Hexo server smoke test confirms 6 badges on index page 1. CSS compiled into `public/css/main.css`.
 - **Status**: [DONE]
 - **Request**: `task_db.py update T-P2-16 --status completed`
+
+## 2026-03-16 -- [T-P3-17] Split XL posts into smaller units
+- **What I did**: Split 3 oversized posts into 6 smaller ones. System Design Notes 1 (596 lines, ch1-9) split into Notes-1 (ch1-3, 289 lines) and Notes-3 (ch4-9, 332 lines). System Design Notes 2 (713 lines, ch10-16) split into Notes-2 (ch10-12, 229 lines) and Notes-4 (ch13-16+real world, 512 lines). Introduction to Git (435 lines) split into Part 1 Basics (199 lines) and Part 2 Branching & Advanced (264 lines). Updated series metadata (series_index 1-4 for SD, 1-2 for Git), created asset directories with relevant images for new posts, preserved original permalinks.
+- **Deliverables**: `source/_posts/System-Design-Interview-Alex-Xu-Notes-{1,2,3,4}.md`, `source/_posts/Introduction-to-Git.md`, `source/_posts/Introduction-to-Git-2.md`, plus corresponding asset directories
+- **Sanity check result**: `hexo clean && hexo generate` produces 717 files with no errors. All 6 posts have series badges. Original permalinks preserved for Notes-1 and Notes-2.
+- **Status**: [DONE]
+- **Request**: `task_db.py update T-P3-17 --status completed`
