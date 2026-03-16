@@ -48,7 +48,8 @@
       "Bash(do echo:*)",
       "Bash(do head:*)",
       "Bash(cd:*)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "WebFetch(domain:localhost)"
     ]
   }
 }

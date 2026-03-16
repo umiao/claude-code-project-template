@@ -478,5 +478,37 @@
     "repetitions": 0,
     "next_due": "2026-03-12",
     "content_hash": "408ef401929a022aafc1d15a61fcfd07"
+  },
+  "Behavioral-Interview-Questions-Crack": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "b56a785027e0e9e3974607350abd05da"
+  },
+  "Need-To-Knows-For-Software-Security-Engineer": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "4d390b5dd01887ad4dc6f208538b6ca7"
+  },
+  "System-Design-Interview-Alex-Xu-Notes-1": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "7b41c1c215d61df98bf8399f99832995"
+  },
+  "System-Design-Interview-Alex-Xu-Notes-2": {
+    "last_reviewed": null,
+    "interval": 0,
+    "easiness": 2.5,
+    "repetitions": 0,
+    "next_due": "2026-03-12",
+    "content_hash": "49e2554ba55a57054fe6820662cf1080"
   }
 }
