@@ -1,6 +1,9 @@
 ---
 title: Designing Data-Intensive-Applications-Note-1
 date: 2024-02-23 15:44:41
+sticky: 1
+photos:
+  - /2024/02/23/Designing-Data-Intensive-Applications-Note-1/cover.png
 categories:
 - [Data Science, Data System]
 tags:

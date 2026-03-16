@@ -1,6 +1,9 @@
 ---
 title: Cake Inspiration Gallery
 date: 2026-03-09
+sticky: 2
+photos:
+  - /2026/03/09/Cake-Inspiration-Gallery/loopy.png
 categories:
   - Life
   - Baking

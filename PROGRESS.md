@@ -126,3 +126,10 @@
 - **Sanity check result**: `hexo clean && hexo generate` succeeds (704 files). All custom styles compiled into `public/css/main.css` (verified: object-fit, webkit-line-clamp, box-shadow all present). All 7 index pages retain images (9+10+10+10+10+10+1).
 - **Status**: [DONE]
 - **Request**: `task_db.py update T-P0-13 --status completed`
+
+## 2026-03-16 -- [T-P1-14] Add sticky/featured posts with gallery banners
+- **What I did**: Added `sticky:` and `photos:` front matter to 2 posts: Cake Inspiration Gallery (sticky: 2, loopy.png) and DDIA Note 1 (sticky: 1, cover.png). Created `scripts/sticky-sort.js` to fix a bug where hexo-generator-index's timsort on `posts.data` was ignored by hexo-pagination's Query `.slice()` -- the custom script converts posts to a plain array with `.toArray()` wrapper for NexT template compatibility.
+- **Deliverables**: `source/_posts/Cake-Inspiration-Gallery.md` (modified), `source/_posts/Designing-Data-Intensive-Applications-Note-1.md` (modified), `scripts/sticky-sort.js` (new)
+- **Sanity check result**: `hexo clean && hexo generate` succeeds (704 files). Sticky posts appear at top of home page (Cake first, DDIA-1 second). Gallery banners render with correct images. Sticky flag (thumbtack icon) displays. All 7 index pages correct (10+10+10+10+10+10+2 = 62 posts).
+- **Status**: [DONE]
+- **Request**: `task_db.py update T-P1-14 --status completed`
