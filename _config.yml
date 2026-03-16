@@ -122,8 +122,10 @@ feed:
   content: true
   content_limit_delim: ' '
 
-# Mermaid tag
+# Mermaid tag (hexo-filter-mermaid-diagrams plugin -- DISABLED)
+# We use a custom scripts/mermaid-filter.js instead, which produces
+# markup compatible with NexT's client-side mermaid renderer.
 mermaid:
-  enable: true
+  enable: false
   # Available themes: default | dark | forest | neutral
   theme: default

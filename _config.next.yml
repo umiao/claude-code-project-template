@@ -129,7 +129,7 @@ math:
 # Mermaid
 # ---------------------------------------------------------------
 mermaid:
-  enable: true
+  enable: false
   theme:
     light: default
     dark: dark
@@ -153,13 +153,14 @@ mediumzoom: true
 # ---------------------------------------------------------------
 vendors:
   internal: local
-  plugins: cdnjs
+  plugins: local
 
 # ---------------------------------------------------------------
 # Custom Files
 # ---------------------------------------------------------------
 custom_file_path:
   sidebar: source/_data/sidebar.njk
+  style: source/_data/styles.styl
 
 # ---------------------------------------------------------------
 # Open Graph / Twitter Cards
@@ -174,5 +175,10 @@ open_graph:
 # ---------------------------------------------------------------
 motion:
   enable: true
-  async: false
+  async: true
   duration: 200
+
+# ---------------------------------------------------------------
+# PJAX - Instant page transitions without full reload
+# ---------------------------------------------------------------
+pjax: true

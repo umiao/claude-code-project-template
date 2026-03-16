@@ -1,0 +1,20 @@
+// Mermaid diagram container -- scrollable for large diagrams
+.mermaid-container
+  max-height 80vh
+  overflow auto
+  border 1px solid var(--body-bg-color)
+  border-radius 4px
+  margin 1em 0
+
+// Fallback UX when mermaid.js fails to load or hasn't run yet.
+// Once mermaid renders, it replaces the <pre> with an <svg>,
+// so these styles only apply while the raw code is still visible.
+pre > code.mermaid
+  font-size 0
+  &::before
+    font-size 1rem
+    content "Diagram loading... If it doesn't appear, please refresh or check your network connection."
+    display block
+    padding 1em
+    color #888
+    text-align center

@@ -300,3 +300,17 @@
 - **Sanity check result**: hexo generate produces no sensitive dirs in public/. safe-deploy.sh --dry-run passes all 5 checks on main. Branch guard correctly blocks on blog-refactor.
 - **Status**: [DONE]
 - **Request**: No task to update (ad-hoc fix)
+
+## 2026-03-15 -- Fix Mermaid rendering and speed up page animations
+- **What I did**: Fixed mermaid diagrams not rendering due to CSS selector mismatch between hexo-filter-mermaid-diagrams plugin and NexT theme. Disabled the plugin in `_config.yml` and created `scripts/mermaid-filter.js` that converts fenced mermaid blocks to `<pre><code class="mermaid">` markup matching NexT's selector. Sped up page transitions by setting `motion.async: true` (parallel animations) and enabling `pjax: true` (instant page transitions without full reload) in `_config.next.yml`.
+- **Deliverables**: `scripts/mermaid-filter.js` (new), `_config.yml` (disabled mermaid plugin), `_config.next.yml` (async motion + pjax)
+- **Sanity check result**: `hexo clean && hexo generate` succeeds (417 files). Mermaid markup `<pre><code class="mermaid">` found in 8 generated pages including knowledge-map, NLP-1, NLP-2, system-design-interview-alex-xu-notes-2, and series pages. PJAX JS (`pjax.js`) included in build output.
+- **Status**: [DONE]
+- **Request**: No task to update (ad-hoc fix)
+
+## 2026-03-16 -- Fix Knowledge Map mermaid rendering, layout, and interactivity
+- **What I did**: Fixed mermaid diagram showing raw text / "Syntax error" on the Knowledge Map page. Three root causes fixed: (1) CDN dependency -- mermaid.js loaded from cdnjs could fail; installed `@next-theme/plugins` and set `vendors.plugins: local`. (2) Markdown mangling -- `before_post_render` HTML output was corrupted by markdown renderer (en-dashes, `<p>` tags); rewrote `scripts/mermaid-filter.js` with two-phase placeholder pattern (extract before render, restore after). (3) NexT's mermaid handler innerHTML copying caused entity-encoding issues for mermaid parser; disabled NexT handler (`mermaid.enable: false`), switched to `<pre class="mermaid">` (mermaid v11 native format), and injected our own loader script that loads local mermaid.min.js and calls `mermaid.run()` directly. Also added scrollable container CSS, MutationObserver-based click handler for node interactivity, and CSS-only fallback UX.
+- **Deliverables**: `scripts/mermaid-filter.js` (rewritten: placeholder + direct loader), `scripts/mermaid-click.js` (new, SVG node click handlers), `source/_data/styles.styl` (new, container + fallback CSS), `_config.next.yml` (plugins: local, mermaid.enable: false, custom style path), `package.json` (@next-theme/plugins added)
+- **Sanity check result**: `hexo clean && hexo generate` succeeds (704 files). Mermaid content in HTML uses raw `-->` and `"` (minimal encoding, only `&`). Local mermaid.min.js served at `/lib/mermaid/dist/mermaid.min.js`. User verified in browser: diagram renders correctly at http://localhost:4000/knowledge-map/.
+- **Status**: [DONE]
+- **Request**: No task to update (ad-hoc fix)
