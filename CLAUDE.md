@@ -123,7 +123,8 @@ May I proceed with option 2 (switch to NexT)?"
 - **Task IDs are auto-generated.** Never invent IDs manually.
   Use `task_db.py add --title "..." --priority P0` and the system assigns the next ID.
 - **For batch operations**: use `task_db.py batch --commands '[...]'` to wrap multiple
-  commands atomically.
+  commands atomically. Use flat keys: `{"cmd": "add", "title": "...", "priority": "P0"}`,
+  NOT nested `{"cmd": "add", "args": {"title": "..."}}`. Validate required fields.
 
 ## Behavior Rules
 - **Fix violations immediately**: When a check you run (lint, emoji scan, tests) discovers
@@ -153,12 +154,14 @@ May I proceed with option 2 (switch to NexT)?"
   Analysis of "why" comes AFTER identifying "what's different."
 
 ### Task Planning Mode
-When the user says "plan tasks" / "edit TASKS.md only" / contains keyword "TASKS.md":
-- **ONLY** read code and use `task_db.py` commands (add/update/reorder tasks, set dependencies)
-- Do **NOT** execute any task, write code, create files, or run tests
-- Do **NOT** use TaskCreate/TaskUpdate/TaskList tools (session-only, not persistent)
-- Write clear task specs with acceptance criteria, complexity, and dependencies
-- End by summarizing what changed
+Use the `/task-planning` skill for structured planning sessions. It activates plan mode
+(via `plan_mode.py activate`), which blocks all mutating tools via a PreToolUse hook,
+ensuring only read-only operations and `task_db.py` commands are allowed.
+
+Manual activation: `python .claude/hooks/plan_mode.py activate`
+Check status: `python .claude/hooks/plan_mode.py status`
+Deactivate: `python .claude/hooks/plan_mode.py deactivate`
+Validate output: `python .claude/hooks/plan_validate.py`
 
 ## Task Planning Rules
 
@@ -245,6 +248,7 @@ the full ruleset.
 
 Before stopping, complete these steps (the **Stop hook** enforces them):
 
+0. **Run checks**: `bash scripts/check.sh` (primary defense -- Stop hooks don't fire on pure text exits)
 1. **Verify**: Run code, check outputs exist, run tests if applicable
 2. **PROGRESS.md**: Append a session entry (format below)
 3. **TASKS.md**: Update task status via `task_db.py update T-XX-N --status completed`
