@@ -180,6 +180,23 @@ def _summarize_task_oneline(task_block: str) -> str:
     return " ".join(parts)
 
 
+def _get_completed_task_ids(content: str) -> set[str]:
+    """Extract task IDs from the Completed Tasks section of TASKS.md content.
+
+    Args:
+        content: Full text content of TASKS.md.
+
+    Returns:
+        Set of task ID strings found in the Completed Tasks section.
+    """
+    completed_match = re.search(
+        r"## Completed Tasks\s*\n(.*?)(?=\n## |\Z)", content, re.DOTALL
+    )
+    if not completed_match:
+        return set()
+    return set(re.findall(r"(T-P\d+-\d+)", completed_match.group(1)))
+
+
 def _get_active_tasks(root: Path, current_task_id: str | None) -> str:
     """Extract tasks with two-tier detail. DB-first, TASKS.md fallback."""
     # Try DB first
@@ -195,12 +212,7 @@ def _get_active_tasks(root: Path, current_task_id: str | None) -> str:
     content = tasks_file.read_text(encoding="utf-8")
 
     # Extract completed task IDs for dedup (defense against orphaned specs)
-    completed_ids: set[str] = set()
-    completed_match = re.search(
-        r"## Completed Tasks\s*\n(.*?)(?=\n## |\Z)", content, re.DOTALL
-    )
-    if completed_match:
-        completed_ids = set(re.findall(r"(T-P\d+-\d+)", completed_match.group(1)))
+    completed_ids = _get_completed_task_ids(content)
 
     sections: list[str] = []
 
