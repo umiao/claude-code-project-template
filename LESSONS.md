@@ -81,3 +81,8 @@
 - **What went wrong / What I learned**: The deploy script had no branch guard -- it would happily deploy from any branch. Additionally, sensitive personal content was stored in `source/_posts/` alongside regular posts, with no safety net to prevent publication.
 - **Fix / Correct approach**: (1) Added branch guard to `tools/safe-deploy.sh` that blocks deploys from non-main branches (with `DEPLOY_ALLOW_BRANCH` escape hatch). (2) Moved sensitive files to `source/_drafts/`. (3) Added source-path sensitive file check in deploy script (more stable than slug-based checks). (4) Added `render_drafts` config guard. Defense in depth: multiple checks catch the problem at different stages.
 - **Tags**: #deployment #security #branch-guard #sensitive-content
+
+### [2026-03-20] [PROPAGATED] Claude Code Bash tool ignores .bashrc
+- **Source**: MLInterviewPrep (propagated via cross-project review 2026-03-21)
+- **What I learned**: The Bash tool runs non-login, non-interactive shells. `.bashrc` and `.bash_profile` are NOT sourced. The only way to inject env vars is `$CLAUDE_ENV_FILE` (written by a SessionStart bash hook). All hook commands in `settings.json` must use absolute paths.
+- **Tags**: #windows #bash-tool #path #hooks #claude-code #propagated
