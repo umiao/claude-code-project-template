@@ -58,7 +58,7 @@ def test_concepts_required_fields():
             f"Concept '{concept['name']}' has non-list aliases"
 
         # Verify domain is one of the valid values
-        valid_domains = {"DDIA", "SQL", "DS", "Interview"}
+        valid_domains = {"DDIA", "SQL", "DS", "Interview", "General"}
         assert concept["domain"] in valid_domains, \
             f"Concept '{concept['name']}' has invalid domain: {concept['domain']}"
 
