@@ -152,6 +152,10 @@ May I proceed with option 2 (switch to NexT)?"
   and config between the two.  Every delta is a finding.  Do NOT skip to
   output-format analysis or external doc research before completing this diff.
   Analysis of "why" comes AFTER identifying "what's different."
+- **Schema migration rule**: `SQLAlchemy create_all()` only creates NEW tables,
+  never ALTERs existing ones. Any new column on an existing model needs a versioned
+  migration (idempotent ALTER TABLE). In-memory test DBs always start fresh and
+  will NOT catch missing migrations.
 
 ### Task Planning Mode
 Use the `/task-planning` skill for structured planning sessions. It activates plan mode
