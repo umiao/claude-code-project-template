@@ -82,6 +82,11 @@
 - **Fix / Correct approach**: (1) Added branch guard to `tools/safe-deploy.sh` that blocks deploys from non-main branches (with `DEPLOY_ALLOW_BRANCH` escape hatch). (2) Moved sensitive files to `source/_drafts/`. (3) Added source-path sensitive file check in deploy script (more stable than slug-based checks). (4) Added `render_drafts` config guard. Defense in depth: multiple checks catch the problem at different stages.
 - **Tags**: #deployment #security #branch-guard #sensitive-content
 
+### [2026-04-11] [PROPAGATED] Long-running bash scripts must trap SIGPIPE and log to an owned file
+- **Source**: MLInterviewPrep autonomous_run.sh (forensic diagnosis 2026-04-11, propagated to all projects)
+- **Rule**: Any bash script with `set -e` that loops and uses `echo` between iterations will die from SIGPIPE if its stdout fd gets closed by a parent harness (e.g., Claude Code's `run_in_background`). **Fix**: (1) `trap '' PIPE` at the top. (2) `exec > >(tee -a logs/<script>.log) 2>&1` to own stdout. (3) On Windows, use `python` not `python3` (Store stub exits code 49). A PowerShell native version (`autonomous_run.ps1`) is also available in this template.
+- **Tags**: #bash #sigpipe #orchestration #claude-code #background-subprocess #windows
+
 ### [2026-03-20] [PROPAGATED] Claude Code Bash tool ignores .bashrc
 - **Source**: MLInterviewPrep (propagated via cross-project review 2026-03-21)
 - **What I learned**: The Bash tool runs non-login, non-interactive shells. `.bashrc` and `.bash_profile` are NOT sourced. The only way to inject env vars is `$CLAUDE_ENV_FILE` (written by a SessionStart bash hook). All hook commands in `settings.json` must use absolute paths.
