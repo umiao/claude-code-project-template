@@ -69,6 +69,10 @@ May I proceed with option 2 (switch to NexT)?"
 ## Key Constraints
 - All API keys and cookies from .env, never hardcoded
 - Every function must have type hints and docstring
+- **Dependency source-of-truth**: Both `pyproject.toml` `[project].dependencies` and
+  `requirements.txt` list dependencies. Keep them in sync manually. When adding a new
+  dependency, add it to BOTH files. `pyproject.toml` is the canonical spec;
+  `requirements.txt` exists for `pip install -r` convenience.
 
 ## Git Conventions
 - **Commit message format**: `[T-XX-N] Brief English description of what was done`
@@ -82,6 +86,10 @@ May I proceed with option 2 (switch to NexT)?"
 ## Key Constraints
 - All API keys and cookies from .env, never hardcoded
 - Every function must have type hints and docstring
+- **Dependency source-of-truth**: Both `pyproject.toml` `[project].dependencies` and
+  `requirements.txt` list dependencies. Keep them in sync manually. When adding a new
+  dependency, add it to BOTH files. `pyproject.toml` is the canonical spec;
+  `requirements.txt` exists for `pip install -r` convenience.
 
 ## Git Conventions
 - **Commit message format**: `[T-XX-N] Brief English description of what was done`
