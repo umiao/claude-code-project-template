@@ -66,22 +66,24 @@ May I proceed with option 2 (switch to NexT)?"
 [Wait for user approval before executing]
 ```
 
-## Key Constraints
-- All API keys and cookies from .env, never hardcoded
-- Every function must have type hints and docstring
-- **Dependency source-of-truth**: Both `pyproject.toml` `[project].dependencies` and
-  `requirements.txt` list dependencies. Keep them in sync manually. When adding a new
-  dependency, add it to BOTH files. `pyproject.toml` is the canonical spec;
-  `requirements.txt` exists for `pip install -r` convenience.
+## Autonomous Mode Invocation
 
-## Git Conventions
-- **Commit message format**: `[T-XX-N] Brief English description of what was done`
-  - Describe the IMPLEMENTATION (what was done), not the task spec verbatim
-  - If the task title is in Chinese, translate/summarize to English
-  - Use the same brief-title style as PROGRESS.md entries
-  - Example: Task "刷新页面后conversation会丢失" -> `[T-P0-165] Recover conversation from plain log after page refresh`
-- **Language**: All commit messages in English. No CJK characters.
-- **Force-push**: Always use `--force-with-lease`, never `--force`.
+The proven invocation pattern for autonomous mode in this project:
+
+```bash
+cd <project-root> && bash tools/autonomous_run.sh [max_sessions]
+```
+
+Where:
+- `<project-root>` is THIS project's directory (the one containing `CLAUDE.md` and `.claude/tasks.db`).
+- `[max_sessions]` is a **positive integer** (default 5). Non-integer args are rejected at startup with a clear error; the script will not silently misinterpret a project name as a count (workspace-wide invariant `INV-AUTORUN-2`).
+- The script refuses to run if the caller's cwd is not the project root (`INV-AUTORUN-3`). Always `cd` first.
+
+**If `claude -p` hangs silently** (zero log output for >60s after the "Session N/N" banner): this is a known transient class — cold-start of MCP/plugin/hook init or transient API slowness, NOT auth, NOT script-form drift. Kill the runner, remove `.claude/autonomous.lock`, retry. See `docs/investigations/autorun_hang_2026-05-02.md` (in the workspace root) and root `LESSONS.md` 2026-05-02 entry for the full diagnosis.
+
+**Do NOT use** `claude -p PROMPT --bare` to test auth — `--bare` skips OAuth by design and will report "Not logged in" regardless of state. Use `claude auth status` (returns structured JSON with `loggedIn`, `email`, `subscriptionType`) for the proper auth probe.
+
+**Workspace-wide alternative**: from the workspace root, `bash scripts/autonomous_run.sh [max_sessions] <project_dir>` delegates to a sub-project. Functionally equivalent to the local form; the local form is preferred for clarity (no risk of cross-project confusion).
 
 ## Key Constraints
 - All API keys and cookies from .env, never hardcoded
@@ -115,6 +117,11 @@ May I proceed with option 2 (switch to NexT)?"
   PowerShell alternative.
 
 ## Prohibited Actions
+- **Never use bare `python` in hook commands or scripts.** The Windows Store
+  stub (`AppData/Local/Microsoft/WindowsApps/python.exe`) exits with code 49.
+  Use `/c/Anaconda/python.exe` (absolute path) in `settings.json` hooks.
+  The SessionStart hook `setup_python_env.sh` injects Anaconda into PATH
+  for Bash tool calls via `CLAUDE_ENV_FILE`.
 - Never hardcode API keys, cookies, or personal info
 - Never use emoji characters anywhere in the project
 - Never use subprocess.run(text=True) without encoding="utf-8"
@@ -131,8 +138,7 @@ May I proceed with option 2 (switch to NexT)?"
 - **Task IDs are auto-generated.** Never invent IDs manually.
   Use `task_db.py add --title "..." --priority P0` and the system assigns the next ID.
 - **For batch operations**: use `task_db.py batch --commands '[...]'` to wrap multiple
-  commands atomically. Use flat keys: `{"cmd": "add", "title": "...", "priority": "P0"}`,
-  NOT nested `{"cmd": "add", "args": {"title": "..."}}`. Validate required fields.
+  commands atomically.
 
 ## Behavior Rules
 - **Fix violations immediately**: When a check you run (lint, emoji scan, tests) discovers
@@ -160,20 +166,14 @@ May I proceed with option 2 (switch to NexT)?"
   and config between the two.  Every delta is a finding.  Do NOT skip to
   output-format analysis or external doc research before completing this diff.
   Analysis of "why" comes AFTER identifying "what's different."
-- **Schema migration rule**: `SQLAlchemy create_all()` only creates NEW tables,
-  never ALTERs existing ones. Any new column on an existing model needs a versioned
-  migration (idempotent ALTER TABLE). In-memory test DBs always start fresh and
-  will NOT catch missing migrations.
 
 ### Task Planning Mode
-Use the `/task-planning` skill for structured planning sessions. It activates plan mode
-(via `plan_mode.py activate`), which blocks all mutating tools via a PreToolUse hook,
-ensuring only read-only operations and `task_db.py` commands are allowed.
-
-Manual activation: `python .claude/hooks/plan_mode.py activate`
-Check status: `python .claude/hooks/plan_mode.py status`
-Deactivate: `python .claude/hooks/plan_mode.py deactivate`
-Validate output: `python .claude/hooks/plan_validate.py`
+When the user says "plan tasks" / "edit TASKS.md only" / contains keyword "TASKS.md":
+- **ONLY** read code and use `task_db.py` commands (add/update/reorder tasks, set dependencies)
+- Do **NOT** execute any task, write code, create files, or run tests
+- Do **NOT** use TaskCreate/TaskUpdate/TaskList tools (session-only, not persistent)
+- Write clear task specs with acceptance criteria, complexity, and dependencies
+- End by summarizing what changed
 
 ## Task Planning Rules
 
@@ -260,7 +260,6 @@ the full ruleset.
 
 Before stopping, complete these steps (the **Stop hook** enforces them):
 
-0. **Run checks**: `bash scripts/check.sh` (primary defense -- Stop hooks don't fire on pure text exits)
 1. **Verify**: Run code, check outputs exist, run tests if applicable
 2. **PROGRESS.md**: Append a session entry (format below)
 3. **TASKS.md**: Update task status via `task_db.py update T-XX-N --status completed`
