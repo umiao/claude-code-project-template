@@ -71,7 +71,7 @@ May I proceed with option 2 (switch to NexT)?"
 The proven invocation pattern for autonomous mode in this project:
 
 ```bash
-cd <project-root> && bash tools/autonomous_run.sh [max_sessions]
+cd <project-root> && bash scripts/autonomous_run.sh [max_sessions]
 ```
 
 Where:
