@@ -3,6 +3,8 @@
 ## Project Overview
 Personal blog built with Hexo static site generator and NexT theme, deployed to GitHub Pages.
 
+> **Doc discovery**: this project's docs are indexed in [`docs/INDEX.md`](docs/INDEX.md) (regenerate with `python ../scripts/index_docs.py --project claude-code-project-template`); every doc across the workspace is in the root [`../docs/INDEX.md`](../docs/INDEX.md).
+
 ## Tech Stack
 - Node.js
 - Hexo (static site generator)
