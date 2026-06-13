@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@next-theme/plugins": "^8.27.0",
-    "hexo": "^6.0.0",
+    "hexo": "^8.1.2",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-mermaid-diagrams": "^1.0.5",
     "hexo-generator-archive": "^1.0.0",
